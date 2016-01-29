@@ -67,8 +67,7 @@ class ModuleBase():
 class WriterModule(ModuleBase):
     def __init__(self):
         super(WriterModule,self).__init__()
-def handleMessage(self, message):
-        msgName, msgTo, msgContent = self.parseMessage(message)
+    def handleMessage(self, message):
         print("ModuleName: %s Message Header | To: %s Content: %s " % (self.name, message.recipient, message.content))
 
 import simplejson as json
