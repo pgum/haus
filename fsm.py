@@ -67,19 +67,15 @@ class ModuleBase():
 class WriterModule(ModuleBase):
     def __init__(self):
         super(WriterModule,self).__init__()
-
-    def parseMessage(self, message):
-        return (self.name, message.recipient, message.content)
-
-    def handleMessage(self, message):
+def handleMessage(self, message):
         msgName, msgTo, msgContent = self.parseMessage(message)
-        print("ModuleName: %s Message Header | To: %s Content: %s " % (msgName, msgTo, msgContent))
+        print("ModuleName: %s Message Header | To: %s Content: %s " % (self.name, message.recipient, message.content))
+
 import simplejson as json
 
 class MasterModule(ModuleBase):
     def __init__(self):
         super(MasterModule,self).__init__()
-
 
     def parseMessage(self, message):
         try:
@@ -93,8 +89,6 @@ class MasterModule(ModuleBase):
         except json.JSONDecodeError as e:
             print("bez akcji: %s" %(message.content))
 
-
     def handleMessage(self,message):
         self.writeToDebug(message)
         self.parseMessage(message)
-
