@@ -4,25 +4,31 @@ void printAction(short socketId, char* state){
     delay(100);
     Serial.print(socketId);
     Serial.print(" should be ");
-    Serial.print(state);
+    Serial.println(state);
   }
 
 class SocketController{
   RCSwitch rc;
-  char* homePin="10001";
-  char* ch[][]={"10000", "01000", "00100", "00010"};
+  String homePin;//="10001";
+  String ch[4];//[]={"10000", "01000", "00100", "00010"};
   public:
-  SocketController(){}
+  SocketController(){
+  homePin="10001";
+  ch[0]="10000";
+  ch[1]="01000";
+  ch[2]="00100";
+  ch[3]="00010";
+  }
 
   void initSocketController(int transmitterPin){
     rc.enableTransmit(transmitterPin);
-    rc.setPulseLength(320); // Optional set pulse length.
+//    rc.setPulseLength(320); // Optional set pulse length.
   }
   void turnOn(short int socketId){
-    mySwitch.switchOn(homePin, ch[socketId] );
+    rc.switchOn(homePin.c_str(), ch[socketId].c_str() );
   }
   void turnOff(short int socketId){
-    mySwitch.switchOff(homePin, ch[socketId] );
+    rc.switchOff(homePin.c_str(), ch[socketId].c_str() );
   }
 };
 
@@ -34,24 +40,25 @@ void setup() {
     Serial.begin(9600);
 }
 
-  const String turnOn="+";
-  const String turnOff="-";    
-  String command="";
-  int commandLength= command.length();
-void loop() {
+  const String turnOn="n";
+  const String turnOff="f";    
   
+void loop() {
+  String line="";
   if(Serial.available()){
-    command = Serial.readStringUntil(';');
+    line = Serial.readStringUntil(';');
   }
-  Serial.print(command.lenght());
-  /*
-  if(str[0] == turnOn){
-    sc.turnOn(str[1].toInt());
-    printAction(str[1], "On");
+    String command=String(line[0]);
+    String channel=String(line[1]);
+  
+  if(command == turnOn){
+    sc.turnOn(channel.toInt());
+    printAction(channel.toInt(), "On");
   }
-  if(str[0] == turnOff){
-    sc.turnOff(str[1].toInt());
+  if(command == turnOff){
+    sc.turnOff(channel.toInt());
+    printAction(channel.toInt(), "Off");
   }
-  */
   delay(10);
+  
 }
