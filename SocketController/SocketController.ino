@@ -1,11 +1,24 @@
 #include <RCSwitch.h>
 
-void printAction(short socketId, char* state){
-    delay(100);
-    Serial.print(socketId);
-    Serial.print(" should be ");
-    Serial.println(state);
+class RelayController{
+  short int InputPins[2];
+public:
+  RelayController(short int in1pin, short int in2pin){
+    InputPins[0]=in1pin;
+    InputPins[1]=in2pin;
   }
+  
+  void turnOn(short int input){
+    digitalWrite(InputPins[input], LOW);
+  }
+  void turnOff(short int input){
+    digitalWrite(InputPins[input], HIGH);
+  }
+  void initRelayController(){
+    pinMode(InputPins[0], OUTPUT);
+    pinMode(InputPins[1], OUTPUT);
+  }
+}
 
 class SocketController{
   RCSwitch rc;
@@ -33,13 +46,25 @@ class SocketController{
 };
 
 SocketController sc;
+RelayController rc;
 void setup() {
     // Transmitter is connected to Arduino Pin #10  
     sc.initSocketController(10);
-
+    rc.initRelayController(8,7);
     Serial.begin(9600);
 }
 
+void printAction(char* device ,short socketId, char* state){
+    delay(100);
+    Serial.print(device);
+    Serial.print(socketId);
+    Serial.print(" should be ");
+    Serial.println(state);
+  }
+
+  const String light="l"
+  const String relay="r"
+    
   const String turnOn="n";
   const String turnOff="f";    
   
@@ -48,16 +73,28 @@ void loop() {
   if(Serial.available()){
     line = Serial.readStringUntil(';');
   }
-    String command=String(line[0]);
-    String channel=String(line[1]);
-  
-  if(command == turnOn){
-    sc.turnOn(channel.toInt());
-    printAction(channel.toInt(), "On");
+    String device=String(line[0]);
+    String command=String(line[1]);
+    String channel=String(line[2]);
+  if(device == light){
+    if(command == turnOn){
+      sc.turnOn(channel.toInt());
+      printAction("(LIGHT)",channel.toInt(), "On");
+    }
+    if(command == turnOff){
+      sc.turnOff(channel.toInt());
+      printAction("(LIGHT)",channel.toInt(), "Off");
+    }  
   }
-  if(command == turnOff){
-    sc.turnOff(channel.toInt());
-    printAction(channel.toInt(), "Off");
+  if(device == relay){
+    if(command == turnOn){
+      rc.turnOn(channel.toInt());
+      printAction("(RELAY)",channel.toInt(), "On");
+    }
+    if(command == turnOff){
+      sc.turnOff(channel.toInt());
+      printAction("(RELAY)",channel.toInt(), "Off");
+    }
   }
   delay(10);
   
