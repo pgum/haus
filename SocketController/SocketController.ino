@@ -3,18 +3,19 @@
 class RelayController{
   short int InputPins[2];
 public:
-  RelayController(){  }
+  RelayController(){}
   
   void turnOn(short int input){
     digitalWrite(InputPins[input], LOW);
   }
+  
   void turnOff(short int input){
     digitalWrite(InputPins[input], HIGH);
   }
+  
   void initRelayController(short int in1pin, short int in2pin){
     InputPins[0]=in1pin;
     InputPins[1]=in2pin;
-
     pinMode(InputPins[0], OUTPUT);
     pinMode(InputPins[1], OUTPUT);
   }
@@ -46,7 +47,7 @@ class SocketController{
 };
 
 SocketController sc;
-RelayController rc;
+RelayController relayc;
 void setup() {
     // Transmitter is connected to Arduino Pin #10  
     sc.initSocketController(10);
@@ -88,11 +89,11 @@ void loop() {
   }
   if(device == relay){
     if(command == turnOn){
-      rc.turnOn(channel.toInt());
+      relayc.turnOn(channel.toInt());
       printAction("(RELAY)",channel.toInt(), "On");
     }
     if(command == turnOff){
-      sc.turnOff(channel.toInt());
+      relayc.turnOff(channel.toInt());
       printAction("(RELAY)",channel.toInt(), "Off");
     }
   }
