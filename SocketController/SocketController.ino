@@ -3,10 +3,7 @@
 class RelayController{
   short int InputPins[2];
 public:
-  RelayController(short int in1pin, short int in2pin){
-    InputPins[0]=in1pin;
-    InputPins[1]=in2pin;
-  }
+  RelayController(){  }
   
   void turnOn(short int input){
     digitalWrite(InputPins[input], LOW);
@@ -14,11 +11,14 @@ public:
   void turnOff(short int input){
     digitalWrite(InputPins[input], HIGH);
   }
-  void initRelayController(){
+  void initRelayController(short int in1pin, short int in2pin){
+    InputPins[0]=in1pin;
+    InputPins[1]=in2pin;
+
     pinMode(InputPins[0], OUTPUT);
     pinMode(InputPins[1], OUTPUT);
   }
-}
+};
 
 class SocketController{
   RCSwitch rc;
@@ -62,8 +62,8 @@ void printAction(char* device ,short socketId, char* state){
     Serial.println(state);
   }
 
-  const String light="l"
-  const String relay="r"
+  const String light="l";
+  const String relay="r";
     
   const String turnOn="n";
   const String turnOff="f";    
