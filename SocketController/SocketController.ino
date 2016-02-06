@@ -51,7 +51,7 @@ RelayController relayc;
 void setup() {
     // Transmitter is connected to Arduino Pin #10  
     sc.initSocketController(10);
-    rc.initRelayController(8,7);
+    relayc.initRelayController(8,7);
     Serial.begin(9600);
 }
 
