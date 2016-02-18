@@ -1,45 +1,54 @@
-
 <!DOCTYPE html>
 <html>
 <head>
-<style>
-.on {
-    background-color: #4CAF50;
-}
-.off {
-    background-color: #f44336; 
-}
-.button {
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-}
-.statusbox {
-    display: inline-block;
-    width: 250px;
-    height: 150px;
-    margin: 3px;
-}
-</style>
+ <head>
+ <link type="text/css" rel="stylesheet" href="/static/main.css" />
+ </head>
 </head>
 <body>
-<ul>
-<li><a href="/light/0?action=n" class="button on">Light A - ON</a><a href="/light/0?action=f" class="button off">Light A - OFF</a>
-<li><a href="/light/1?action=n" class="button on">Light B - ON</a><a href="/light/1?action=f" class="button off">Light B - OFF</a>
-<li><a href="/light/3?action=n" class="button on">Light D - ON</a><a href="/light/3?action=f" class="button off">Light D - OFF</a>
-</ul>
-<ul>
-<li><a href="/relay/0?action=n" class="button on">Relay 1 - ON</a><a href="/relay/0?action=f" class="button off">Relay 1 - OFF</a>
-<li><a href="/relay/1?action=n" class="button on">Relay 2 - ON</a><a href="/relay/1?action=f" class="button off">Relay 2 - OFF</a>
-</ul>
-</br>
-Last command: {{msg}}
+
+<div class="gray container">
+<div class="panel">
+<h2>Sockets</h2>
+% for (i,name) in ((0,'A'),(1,'B'),(3,'D')):
+<a href="/light/on/{{i}}" class="box clickable big on">Light {{name}} - ON</a><a href="/light/off/{{i}}" class="box clickable big off">Light {{name}} - OFF</a></br>
+% end
+<h2>Relays</h2>
+% for (i,name) in ((0,'1'),(1,'2')):
+<a href="/relay/on/{{i}}" class="box clickable big on">Relay {{name}} - ON</a><a href="/relay/off/{{i}}" class="box clickable big off">Relay {{name}} - OFF</a></br>
+% end
+</div>
+% if defined('status'):
+<div class="panel">
+<h2> Status </h2> 
+%  import simplejson as json
+%  status= json.loads(get('status'))
+%  for dev in status.keys():
+<div class="box {{dev}}">
+<h3> {{dev.title()}}s </h3>
+%   for channel_status in status[dev]:
+<div class= "box small {{channel_status}}"></div> 
+%   end
+</div>
+%  end
+</div>
+% end
+
+%if defined('msg'):
+<div class="panel">
+<h2>Last command to uC</h2>
+<h3>{{msg}}</h3>
+</div>
+%end
+%if defined('responses'):
+<div class="panel">
+<h2>Responses from uC</h2>
+% for response in responses:
+<h3>{{response}}</h3>
+% end
+</div>
+%end
+</div>
 
 </body>
 </html>
