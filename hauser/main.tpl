@@ -33,7 +33,9 @@
 %  end
 </div>
 % end
+</div>
 
+<div class="gray container">
 %if defined('msg'):
 <div class="panel">
 <h2>Last command to uC</h2>
