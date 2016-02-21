@@ -8,6 +8,7 @@ arduino= ardubro.Ardubro()
 amiibo= amiibro.Amiibro()
 
 def addToResponses(text):
+    global responses
     responses.append(text)
     if len(responses) > 10:
         responses=responses[-10:]
@@ -21,7 +22,7 @@ def main(device=None, action=None, channel=None):
         command="%s%s%s;" % (device[0], action[1], channel)
         response = arduino.sendCommand(command)
         addToResponses(response)
-    status=arduino.getStatus()
+        status=arduino.getStatus()
     return dict(status=json.dumps(status),msg = command, responses = responses)
 
 @route('/amigo/<hex>')
