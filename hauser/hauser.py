@@ -7,6 +7,11 @@ responses=[]
 arduino= ardubro.Ardubro()
 amiibo= amiibro.Amiibro()
 
+def addToResponses(text):
+    responses.append(text)
+    if len(responses) > 10:
+        responses=responses[-10:]
+
 @route('/')
 @route('/<device>/<action>/<channel:int>')
 @view('main.tpl')
@@ -14,22 +19,16 @@ def main(device=None, action=None, channel=None):
     command="nic"
     if device and action:
         command="%s%s%s;" % (device[0], action[1], channel)
-        responses.append(arduino.sendCommand(command))
+        response = arduino.sendCommand(command)
+        addToResponses(response)
     status=arduino.getStatus()
     return dict(status=json.dumps(status),msg = command, responses = responses)
-
-@route('/resetresp')
-def resetresponses():
-    responses=[]
-    return dict()
-
 
 @route('/amigo/<hex>')
 def amiibo_ctrl(hex=None):
     msgs= amiibo.broforce(hex)
-    responses.append(msgs)
+    addToResponses(msgs)
     return dict(msg = msgs)
-
 
 @route('/static/<filename>')
 def server_static(filename):
