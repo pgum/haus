@@ -1,4 +1,5 @@
 from bottle import route, run, debug, template, view, static_file
+import simplejson as json
 import amiibro
 import ardubro
 
