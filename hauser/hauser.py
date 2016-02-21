@@ -22,7 +22,7 @@ def sendToArduino(command):
     return out
 
 def getStatusFromArduino():
-    status = "00011" #sendToArduino("s;")
+    status = "ffnnn" #sendToArduino("s;")
     ret={'light':(status[0], status[1], status[2]), 'relay': (status[3], status[4])}
     return ret
 
