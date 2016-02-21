@@ -1,8 +1,14 @@
+.1 {
+    background-color: #4CAF50;
+}
+.0 {
+    background-color: #f44336;
+}
 .on {
     background-color: #4CAF50;
 }
 .off {
-    background-color: #f44336; 
+    background-color: #f44336;
 }
 .gray {
     background-color: #454545;
