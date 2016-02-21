@@ -20,11 +20,10 @@ public:
     pinMode(InputPins[1], OUTPUT);
   }
 };
-
 class SocketController{
   RCSwitch rc;
-  String homePin;//="10001";
-  String ch[4];//[]={"10000", "01000", "00100", "00010"};
+  String homePin;
+  String ch[4];
   public:
   SocketController(){
   homePin="10001";
