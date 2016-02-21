@@ -2,7 +2,7 @@ import simplejson as json
 import serial
 
 class Ardubro:
-    def __init__(self, port='dev/ttyACM0', baud=9600):
+    def __init__(self, port='/dev/ttyACM0', baud=9600):
         self.ser = serial.Serial(
         port=port,
         baudrate=baud)
