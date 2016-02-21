@@ -1,9 +1,11 @@
 from bottle import route, run, debug, template, view, static_file
+import simplejson as json
 import serial
+import amiibro
 
 ser = serial.Serial(
-	port='/dev/ttyACM0',
-	baudrate=9600)
+    port='/dev/ttyACM0',
+    baudrate=9600)
 ser.close()
 ser.open()
 
@@ -20,9 +22,9 @@ def sendToArduino(command):
     return out
 
 def getStatusFromArduino():
-    status = sendToArduino("s;")
-    ret={'light':(status[0],status[1],status[2]), 'relay':(status[3],status[4])}
-    return status
+    status = "00011" #sendToArduino("s;")
+    ret={'light':(status[0], status[0], status[0]), 'relay': (status[0], status[0], status[0])}
+    return ret
 
 
 responses=[]
@@ -34,19 +36,25 @@ def main(device=None, action=None, channel=None):
     if device and action:
         command="%s%s%s;" % (device[0], action[1], channel)
         responses.append(sendToArduino(command))
-    import simplejson as json
     status=getStatusFromArduino()
     return dict(status=json.dumps(status),msg = command, responses = responses)
 
+@route('/resetresp')
+def resetresponses():
+    responses=[]
+    return dict()
+
+
 @route('/amigo/<hex>')
-def broforce(hex=None):
-    responses.append(hex)
-    return dict(msg=hex)
+def amiibo(hex=None):
+    msgs= amiibro.Amiibro().broforce(hex)
+    responses.append(msgs)
+    return dict(msg = msgs)
+
 
 @route('/static/<filename>')
 def server_static(filename):
   return static_file(filename, root='./static/')
-
 
 debug(True)
 run(host='0.0.0.0', port=80, reloader=True)
