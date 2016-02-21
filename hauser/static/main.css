@@ -1,0 +1,44 @@
+.on {
+    background-color: #4CAF50;
+}
+.off {
+    background-color: #f44336; 
+}
+.gray {
+    background-color: #454545;
+}
+.clickable {
+    cursor: pointer;
+}
+body {
+
+}
+.box{
+    color: white;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+}
+.panel{
+    background-color: #666666;
+    }
+.container{
+    color: white;
+    padding: 5px 10px;
+    width: 340px;
+}
+.small{
+    display: inline-block;
+    width: 55px;
+    height: 55px;
+    margin: 3px;
+}
+.big{
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+    margin: 3px 5px;
+}
