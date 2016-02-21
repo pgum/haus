@@ -1,32 +1,9 @@
 from bottle import route, run, debug, template, view, static_file
-import simplejson as json
-import serial
 import amiibro
-
-ser = serial.Serial(
-    port='/dev/ttyACM0',
-    baudrate=9600)
-ser.close()
-ser.open()
-
-
-def sendToArduino(command):
-    import time
-    print("send: %s" % command)
-    time.sleep(0.2)
-    ser.write(command)
-    time.sleep(0.5)
-    out=""
-    while ser.inWaiting() > 0:
-        out += ser.read(1)
-    return out
-
-def getStatusFromArduino():
-    status = "ffnnn" #sendToArduino("s;")
-    ret={'light':(status[0], status[1], status[2]), 'relay': (status[3], status[4])}
-    return ret
+import ardubro
 
 responses=[]
+arduino=ardubro.Ardubro()
 
 @route('/')
 @route('/<device>/<action>/<channel:int>')
@@ -35,8 +12,8 @@ def main(device=None, action=None, channel=None):
     command="nic"
     if device and action:
         command="%s%s%s;" % (device[0], action[1], channel)
-        responses.append(sendToArduino(command))
-    status=getStatusFromArduino()
+        responses.append(arduino.sendCommand(command))
+    status=arduino.getStatus()
     return dict(status=json.dumps(status),msg = command, responses = responses)
 
 @route('/resetresp')
