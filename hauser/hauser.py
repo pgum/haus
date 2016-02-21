@@ -3,8 +3,8 @@ import amiibro
 import ardubro
 
 responses=[]
-arduino= Ardubro()
-amiibo= Amiibro()
+arduino= ardubro.Ardubro()
+amiibo= amiibro.Amiibro()
 
 @route('/')
 @route('/<device>/<action>/<channel:int>')
