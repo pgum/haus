@@ -3,7 +3,8 @@ import amiibro
 import ardubro
 
 responses=[]
-arduino=ardubro.Ardubro()
+arduino= Ardubro()
+amiibo= Amiibro()
 
 @route('/')
 @route('/<device>/<action>/<channel:int>')
@@ -23,8 +24,8 @@ def resetresponses():
 
 
 @route('/amigo/<hex>')
-def amiibo(hex=None):
-    msgs= amiibro.Amiibro().broforce(hex)
+def amiibo_ctrl(hex=None):
+    msgs= amiibo.broforce(hex)
     responses.append(msgs)
     return dict(msg = msgs)
 
