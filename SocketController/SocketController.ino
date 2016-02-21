@@ -2,14 +2,17 @@
 
 class RelayController{
   short int InputPins[2];
+  bool status[2];
 public:
   RelayController(){}
   
   void turnOn(short int input){
+    status[input]=true;
     digitalWrite(InputPins[input], LOW);
   }
   
   void turnOff(short int input){
+    status[input]=false;
     digitalWrite(InputPins[input], HIGH);
   }
   
@@ -18,12 +21,22 @@ public:
     InputPins[1]=in2pin;
     pinMode(InputPins[0], OUTPUT);
     pinMode(InputPins[1], OUTPUT);
+    turnOff(0);
+    turnOff(1);
   }
+  String getStatus(){
+    String reti="";
+    for(int i=0; i<2; ++i){
+      if(status[i]){ reti += "n"; }
+      else{ reti+= "f"; }
+    }
 };
+
 class SocketController{
   RCSwitch rc;
   String homePin;
   String ch[4];
+  bool status[4];
   public:
   SocketController(){
   homePin="10001";
@@ -32,23 +45,36 @@ class SocketController{
   ch[2]="00100";
   ch[3]="00010";
   }
+  String getStatus(){
+    String reti="";
+    for(int i=0; i<2; ++i){
+      if(status[i]){ reti += "n"; }
+      else{ reti+= "f"; }
+    }
 
   void initSocketController(int transmitterPin){
     rc.enableTransmit(transmitterPin);
+    status = { false, false, false, false };
+    turnOff(0);
+    turnOff(1);
+    turnOff(2);
+    turnOff(3);
 //    rc.setPulseLength(320); // Optional set pulse length.
   }
   void turnOn(short int socketId){
     rc.switchOn(homePin.c_str(), ch[socketId].c_str() );
+    status[socketId]=true;
   }
   void turnOff(short int socketId){
     rc.switchOff(homePin.c_str(), ch[socketId].c_str() );
+    status[socketId]=false;
   }
 };
 
 SocketController sc;
 RelayController relayc;
 void setup() {
-    // Transmitter is connected to Arduino Pin #10  
+    // Transmitter is connected to Arduino Pin #10
     sc.initSocketController(10);
     relayc.initRelayController(8,7);
     Serial.begin(9600);
@@ -62,20 +88,34 @@ void printAction(char* device ,short socketId, char* state){
     Serial.println(state);
   }
 
+void printAction(String lights, String relay){
+    String status=lights + relay;
+    char buffer[7];
+    status.toCharArray(buffer, 7);
+    delay(100);
+    Serial.println(status);
+  }
+
   const String light="l";
   const String relay="r";
-    
+  const String status="s";
+
   const String turnOn="n";
-  const String turnOff="f";    
-  
+  const String turnOff="f";
+
 void loop() {
   String line="";
   if(Serial.available()){
     line = Serial.readStringUntil(';');
   }
-    String device=String(line[0]);
-    String command=String(line[1]);
-    String channel=String(line[2]);
+  String device=String(line[0]);
+  if(device == status){
+        printAction(sc.getStatus(), relayc.getStatus())
+        delay(10);
+        return();
+  }
+  String command=String(line[1]);
+  String channel=String(line[2]);
   if(device == light){
     if(command == turnOn){
       sc.turnOn(channel.toInt());
@@ -84,7 +124,7 @@ void loop() {
     if(command == turnOff){
       sc.turnOff(channel.toInt());
       printAction("(LIGHT)",channel.toInt(), "Off");
-    }  
+    }
   }
   if(device == relay){
     if(command == turnOn){
@@ -97,5 +137,4 @@ void loop() {
     }
   }
   delay(10);
-  
 }
