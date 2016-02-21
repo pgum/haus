@@ -9,18 +9,18 @@ class Ardubro:
         self.ser.close()
         self.ser.open()
 
-    def sendCommand(command):
+    def sendCommand(self, command):
         import time
         print("send: %s" % command)
         time.sleep(0.2)
-        ser.write(command)
-        time.sleep(0.5)
+        self.ser.write(command)
+        time.sleep(0.3)
         out=""
-        while ser.inWaiting() > 0:
+        while self.ser.inWaiting() > 0:
             out += ser.read(1)
         return out
 
-    def getStatus():
+    def getStatus(self):
         status = "ffnnnn" #sendCommand("s;")
         ret={'light': (status[0], status[1], status[2]), 'relay': (status[4], status[5])}
         return ret
