@@ -7,7 +7,7 @@ class KodiTalker:
         self.header=self.prepare_credentials("kodi:kodi")
 
     def prepare_credentials(self,credentials):
-        encoded_credentials = base64.b64encode(self.credentials)
+        encoded_credentials = base64.b64encode(credentials)
         authorization = b'Basic ' + encoded_credentials
         return { 'Content-Type': 'application/json', 'Authorization': authorization }
 
@@ -26,18 +26,18 @@ class KodiTalker:
 
     def send_command(self,command, times=1):
         results=[]
-        req = urllib2.Request(self.url, command, self.headers)
+        req = urllib2.Request(self.url, command, self.header)
         for i in range(times): results.append(urllib2.urlopen(req))
         print(results)
         return results
 
     def PlayPause(self):
         jsonToSend= self.prepare_json('Player.PlayPause', { 'playerid': self.playerId})
-        return append(send_command(jsonToSend), times)
+        return self.send_command(jsonToSend)
 
     def SongSkip(self, prev_or_next, times = 1):
         jsonToSend= self.prepare_json('Player.GoTo', { 'playerid': self.playerId, 'to': prev_or_next})
-        return append(send_command(jsonToSend), times)
+        return self.send_command(jsonToSend, times)
 
     def SongNext(self):
         return self.SongSkip("next")
@@ -47,15 +47,15 @@ class KodiTalker:
 
     def Volume(self,amount, increment_or_decrement):
         jsonToSend= self.prepare_json("Application.SetVolume", { "volume": increment_or_decrement })
-        return send_command(jsonToSend,amount)
+        return self.send_command(jsonToSend, amount)
 
-    def VolumeUp(amount):
+    def VolumeUp(self, amount):
         return self.Volume(amount,"increment")
 
-    def VolumeDown(amount):
+    def VolumeDown(self, amount):
         return self.Volume(amount,"decrement")
 
-    def PlayYoutubeSong(videoId):
+    def PlayYoutubeSong(self, videoId):
         jsonToSend= self.prepare_json("Player.Open",
                 { "item": { "file": "plugin://plugin.video.youtube/?action=play_video&videoid=" + str(videoId)}})
-        return send_command(jsonToSend)
+        return self.send_command(jsonToSend)
