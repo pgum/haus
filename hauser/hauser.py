@@ -14,6 +14,10 @@ def addToResponses(text):
         responses=responses[-10:]
 
 @route('/')
+@view('main.tpl')
+def status():
+    return dict(status=json.dumps(arduino.getStatus()), msg = "", responses= responses)
+
 @route('/<device>/<action>/<channel:int>')
 @view('main.tpl')
 def main(device=None, action=None, channel=None):
@@ -27,7 +31,8 @@ def main(device=None, action=None, channel=None):
 
 @route('/amigo/<hex>')
 def amiibo_ctrl(hex=None):
-    msgs= amiibo.broforce(hex)
+    msgs="None Hex Amigo"
+    if hex: msgs= amiibo.handleTag(hex)
     addToResponses(msgs)
     return dict(msg = msgs)
 
