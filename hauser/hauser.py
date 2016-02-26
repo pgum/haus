@@ -1,13 +1,13 @@
 from bottle import route, run, debug, template, view, static_file
 import simplejson as json
-import koditalker
-import amiibro
-import ardubro
+from koditalker import KodiTalker
+from amiibro import Amiibro
+from ardubro import Ardubro
 
 responses=[]
-arduino= ardubro.Ardubro()
-amiibo= amiibro.Amiibro()
-kodiTalker = koditalker.KodiTalker()
+arduino= Ardubro()
+amiibo= Amiibro()
+kodiTalker = KodiTalker()
 amiibo.amiibos={
                 "04625FAA554980": {'name': "Mewtwo" , 'method': kodiTalker.PlayPause , 'params': None},
                 "0457ABE29A3D80": {'name': "Pikachu", 'method': kodiTalker.VolumeUp  , 'params': 10},
