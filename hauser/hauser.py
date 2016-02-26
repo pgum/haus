@@ -6,6 +6,7 @@ from ardubro import Ardubro
 
 responses=[]
 arduino= Ardubro()
+arduino.initConnection()
 amiibo= Amiibro()
 kodiTalker = KodiTalker()
 amiibo.amiibos={

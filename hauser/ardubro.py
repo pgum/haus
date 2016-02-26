@@ -1,12 +1,22 @@
-from serial import Serial
+from serial import Serial, SerialException
 from time import sleep
 
 
 class Ardubro(Serial):
     def __init__(self, relays= 2, setDebug=True, port='/dev/ttyACM0', baudrate=9600, *args, **kwargs):
+        self.established=False
         self.debug= setDebug
         self.relayStatus= [True for relay in range(relays)]
-        Serial.__init__(self, port=port, baudrate=baudrate, *args, **kwargs)
+
+    def initConnection(self):
+        self.established=False
+        if not self.established:
+            try:
+                Serial.__init__(self, port=port, baudrate=baudrate, *args, **kwargs)
+                self.established=True
+            except SerialException:
+                pass
+        return self.established
 
     def switchRelayOn(self, relay):
         self.relayStatus[relay]=True
