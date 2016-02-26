@@ -1,11 +1,17 @@
 from bottle import route, run, debug, template, view, static_file
 import simplejson as json
+import koditalker
 import amiibro
 import ardubro
 
 responses=[]
 arduino= ardubro.Ardubro()
 amiibo= amiibro.Amiibro()
+kodiTalker = koditalker.KodiTalker()
+amiibo.amiibos={
+                "04625FAA554980": {'name': "Mewtwo" , 'method': kodiTalker.PlayPause , 'params': None},
+                "0457ABE29A3D80": {'name': "Pikachu", 'method': kodiTalker.VolumeUp  , 'params': 10},
+                "040C9A0AFE3D81": {'name': "Kirby"  , 'method': kodiTalker.VolumeDown, 'params': 10}}
 
 def addToResponses(text):
     global responses
@@ -16,7 +22,7 @@ def addToResponses(text):
 @route('/')
 @view('main.tpl')
 def status():
-    return dict(status=json.dumps(arduino.getStatus()), msg = "", responses= responses)
+    return dict(msg = "", responses= responses)
 
 @route('/<device>/<action>/<channel:int>')
 @view('main.tpl')
@@ -26,8 +32,7 @@ def main(device=None, action=None, channel=None):
         command="%s%s%s;" % (device[0], action[1], channel)
         response = arduino.sendCommand(command)
         addToResponses(response)
-        status=arduino.getStatus()
-    return dict(status=json.dumps(status),msg = command, responses = responses)
+    return dict(msg = command, responses = responses)
 
 @route('/amigo/<hex>')
 def amiibo_ctrl(hex=None):
