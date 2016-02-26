@@ -1,18 +1,16 @@
 from bottle import route, run, debug, template, view, static_file
-import simplejson as json
-from koditalker import KodiTalker
-from amiibro import Amiibro
 from ardubro import Ardubro
+from amiibro import Amiibro
+from koditalker import KodiTalker
 
 responses=[]
 arduino= Ardubro()
-arduino.initConnection()
 amiibo= Amiibro()
 kodiTalker = KodiTalker()
 amiibo.amiibos={
                 "04625FAA554980": {'name': "Mewtwo" , 'method': kodiTalker.PlayPause , 'params': None},
-                "0457ABE29A3D80": {'name': "Pikachu", 'method': kodiTalker.VolumeUp  , 'params': 10},
-                "040C9A0AFE3D81": {'name': "Kirby"  , 'method': kodiTalker.VolumeDown, 'params': 10}}
+                "0457ABE29A3D80": {'name': "Pikachu", 'method': kodiTalker.VolumeUp  , 'params': 20},
+                "040C9A0AFE3D81": {'name': "Kirby"  , 'method': kodiTalker.VolumeDown, 'params': 20}}
 
 def addToResponses(text):
     global responses
@@ -25,20 +23,24 @@ def addToResponses(text):
 def status():
     return dict(msg = "", responses= responses)
 
-@route('/<device>/<action>/<channel:int>')
-@view('main.tpl')
-def main(device=None, action=None, channel=None):
-    command="nic"
-    if device and action:
-        command="%s%s%s;" % (device[0], action[1], channel)
-        response = arduino.sendCommand(command)
-        addToResponses(response)
-    return dict(msg = command, responses = responses)
+@route('/kodi/<action>/<param>')
+@route('/light/<action>/<channel:int>')
+def blank(*args, **kwargs):
+    return kwargs
 
-@route('/amigo/<hex>')
-def amiibo_ctrl(hex=None):
+@route('/relay/<action>/<channel:int>')
+@view('main.tpl')
+def main(action=None, channel=None):
+    response=None
+    if action == "on":  response = arduino.switchRelayOn(channel)
+    if action == "off": response = arduino.switchRelayOff(channel)
+    if response: addToResponses(response)
+    return dict(msg = "Relay action: Turn %s %s; Response: %s" % (channel, action, response), responses = responses)
+
+@route('/amigo/<tag>')
+def amiibo_ctrl(tag=None):
     msgs="None Hex Amigo"
-    if hex: msgs= amiibo.handleTag(hex)
+    if tag: msgs= amiibo.handleTag(tag)
     addToResponses(msgs)
     return dict(msg = msgs)
 
@@ -47,4 +49,4 @@ def server_static(filename):
   return static_file(filename, root='./static/')
 
 debug(True)
-run(host='0.0.0.0', port=80, reloader=True)
+run(host='0.0.0.0', port=8070, reloader=True)
