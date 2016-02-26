@@ -1,10 +1,13 @@
 import simplejson as json
-import urllib, urllib2, base64
+import urllib, base64
+try : import urllib2
+except: import urllib.request
+
 class KodiTalker:
     def __init__(self):
         self.url = "http://nest:8090/jsonrpc"
         self.playerId=1
-        self.header=self.prepare_credentials("kodi:kodi")
+        self.header=self.prepare_credentials(b"kodi:kodi")
 
     def prepare_credentials(self,credentials):
         encoded_credentials = base64.b64encode(credentials)
