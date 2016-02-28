@@ -1,35 +1,93 @@
-/*
-  Simple example for receiving
-  
-  https://github.com/sui77/rc-switch/
-*/
-
 #include <RCSwitch.h>
 
-RCSwitch mySwitch = RCSwitch();
+int LightSwitchInterruptPin = 3
+volatile bool hasSwitchStateChanged= false;
 
-void setup() {
+void LightSwitchEvent(){
+  hasSwitchStateChanged= true;
+}
+//TODO: change to template class
+class RelayController{
+  short int InputPins[2];
+  bool status[2];
+  int RelayTurnOnCodes[2];
+  int RelayTurnOffCodes[2];
+public:
+  RelayController(){}
+
+  void turnOn(short int input){
+    status[input]=true;
+    digitalWrite(InputPins[input], status[input]);
+  }
+
+  void turnOff(short int input){
+    status[input]=false;
+    digitalWrite(InputPins[input], status[input]);
+  }
+  void toggle(shor int input){
+    status[input]=!status[input];
+    digitalWrite(InputPins[input], status[input]);
+  }
+
+  void initController(short int in1pin, short int in2pin){
+    RelayTurnOnCodes={12358, 5813}; //TODO: move as parameter
+    RelayTurnOffCodes={8532, 3185}; //TODO: move as parameter
+    InputPins[0]=in1pin;
+    InputPins[1]=in2pin;
+    pinMode(InputPins[0], OUTPUT);
+    pinMode(InputPins[1], OUTPUT);
+    turnOff(0);
+    turnOff(1);
+  }
+  String getStatus(){
+    String reti="";
+    for(int i=0; i<2; ++i){
+      reti+= status[i] ? "n" : "f";
+    }
+    return reti;
+};
+
+
+RCSwitch rcReceiver= RCSwitch();
+RelayController relayController= RelayController();
+
+void setup(){
   Serial.begin(9600);
-  mySwitch.enableReceive(0);  // Receiver on interrupt 0 => that is pin #2
+  relayController.initController(8,7);
+  rcReceiver.enableReceive(0);  // Receiver on interrupt 0 => that is pin #2
+  attachInterrupt(digitalPinToInterupt(LightSwitchInterruptPin), LightSwitchEvent, CHANGE);
 }
 
 void loop() {
-  if (mySwitch.available()) {
-    
-    int value = mySwitch.getReceivedValue();
-    
+  if (rc.available()) {
+
+    int value = rcReceiver.getReceivedValue();
+
     if (value == 0) {
       Serial.print("Unknown encoding");
     } else {
       Serial.print("Received ");
-      Serial.print( mySwitch.getReceivedValue() );
+      Serial.print( rcReceiver.getReceivedValue() );
       Serial.print(" / ");
-      Serial.print( mySwitch.getReceivedBitlength() );
+      Serial.print( rcReceiver.getReceivedBitlength() );
       Serial.print("bit ");
       Serial.print("Protocol: ");
-      Serial.println( mySwitch.getReceivedProtocol() );
+      Serial.println( rcReceiver.getReceivedProtocol() );
     }
+  if (value > 0){
+    for(int i=0; i<MAX_RELAYS; ++i){
+      if( RelayTurnOnCodes[i] == value){
+        relayController.turnOn(i);}
+      if( RelayTurnOffCodes[i] == value){
+        RelayController.turnOff(i);}
+  }
+  rcReceiver.resetAvailable();
+  }
 
-    mySwitch.resetAvailable();
+  if (hasSwitchStateChanged){
+    Serial.print("Switch Has Changed!");
+    relayController.toggle(0);
+    hasSwitchStateChanged=false;
+
   }
 }
