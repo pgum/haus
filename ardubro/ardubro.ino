@@ -1,4 +1,5 @@
 #include <RCSwitch.h>
+#define NOT_AN_INTERRUPT -1
 
 int LightSwitchInterruptPin = 3;
 volatile bool hasSwitchStateChanged= false;
