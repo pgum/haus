@@ -84,9 +84,9 @@ void loop() {
     } else {
       Serial.print("Received: ");
       unsigned long recievedValue = rcReceiver.getReceivedValue();
-      Serial.print(recievedValue);
-      if(isCodeToTurnOn(value)){ statusToSetAtTheEnd[0]=true;}
-      if(isCodeToTurnOff(value)){ statusToSetAtTheEnd[0]=false;}
+      Serial.println(recievedValue);
+      if(isCodeToTurnOn(recievedValue)){ statusToSetAtTheEnd[0]=true;}
+      if(isCodeToTurnOff(recievedValue)){ statusToSetAtTheEnd[0]=false;}
     }
     rcReceiver.resetAvailable();
   }
