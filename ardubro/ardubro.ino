@@ -87,8 +87,7 @@ void loop() {
       Serial.print("Protocol: ");
       Serial.println( rcReceiver.getReceivedProtocol() );
       Serial.print("Check Code On: ");
-      short int checkResult = ;
-      Serial.println(checkCodeOn(value)checkResult);
+      Serial.println(checkCodeOn(value));
       if(checkCodeOn(value)){ statusToSetAtTheEnd[0]=true;}
       Serial.print("Check Code Off: ");
       Serial.println(checkCodeOff(value));
