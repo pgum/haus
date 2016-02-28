@@ -2,10 +2,14 @@
 #define NOT_AN_INTERRUPT -1
 
 int LightSwitchInterruptPin = 3;
-volatile bool hasSwitchStateChanged= false;
+volatile bool switchState= false;
 
-void LightSwitchEvent(){
-  hasSwitchStateChanged= true;
+void LightSwitchEventOn(){
+  switchState= true;
+}
+
+void LightSwitchEventOff(){
+  switchState= false;
 }
 
 //TODO: change to template class
@@ -24,22 +28,25 @@ public:
 
   bool checkCode(int code){
     for(int i=0; i<2; ++i){
-      if(RelayTurnOnCodes[i] == value){
+      if(RelayTurnOnCodes[i] == code){
         turnOn(i); return true;}
-      if(RelayTurnOffCodes[i] == value){
+      if(RelayTurnOffCodes[i] == code){
         turnOff(i); return true;}
     }
     return false;
   }
 
+  void turn(short int input, bool state){
+    status[input]=state;
+    digitalWrite(InputPins[input], status[state]);
+  }
+
   void turnOn(short int input){
-    status[input]=true;
-    digitalWrite(InputPins[input], status[input]);
+    turn(input, true);
   }
 
   void turnOff(short int input){
-    status[input]=false;
-    digitalWrite(InputPins[input], status[input]);
+    turn(input, false);
   }
   void toggle(short int input){
     status[input]=!status[input];
@@ -71,7 +78,8 @@ void setup(){
   Serial.begin(9600);
   relayController.initController(8,7);
   //rcReceiver.enableReceive(0);  // Receiver on interrupt 0 => that is pin #2
-  attachInterrupt(digitalPinToInterrupt(LightSwitchInterruptPin), LightSwitchEvent, CHANGE);
+  attachInterrupt(digitalPinToInterrupt(LightSwitchInterruptPin), LightSwitchEventOff, FALLING);
+  attachInterrupt(digitalPinToInterrupt(LightSwitchInterruptPin), LightSwitchEventOn, RISING);
 }
 
 void loop() {
@@ -95,11 +103,8 @@ void loop() {
     }
     rcReceiver.resetAvailable();
   }
-
-  if(hasSwitchStateChanged){
-    Serial.print("Switch Has Changed!");
-    relayController.toggle(0);
-    hasSwitchStateChanged=false;
-
-  }
+    Serial.print("dupa: ");
+    Serial.println(switchState);
+    relayController.turn(0,switchState);
+  
 }
