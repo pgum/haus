@@ -14,11 +14,11 @@ public:
   }
 
   void turnOn(short int input){
-    turn(input, true);
+    turn(input, LOW);
   }
 
   void turnOff(short int input){
-    turn(input, false);
+    turn(input, HIGH);
   }
   void toggle(short int input){
     status[input]=!status[input];
