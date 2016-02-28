@@ -27,7 +27,7 @@ public:
 
   void turn(short int input, bool state){
     status[input]=state;
-    digitalWrite(InputPins[input], status[state]);
+    digitalWrite(InputPins[input], state);
   }
 
   void turnOn(short int input){
