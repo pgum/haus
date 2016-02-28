@@ -6,6 +6,7 @@ volatile bool hasSwitchStateChanged= false;
 void LightSwitchEvent(){
   hasSwitchStateChanged= true;
 }
+
 //TODO: change to template class
 class RelayController{
   short int InputPins[2];
@@ -54,14 +55,14 @@ RelayController relayController= RelayController();
 void setup(){
   Serial.begin(9600);
   relayController.initController(8,7);
-  rcReceiver.enableReceive(0);  // Receiver on interrupt 0 => that is pin #2
+  //rcReceiver.enableReceive(0);  // Receiver on interrupt 0 => that is pin #2
   attachInterrupt(digitalPinToInterupt(LightSwitchInterruptPin), LightSwitchEvent, CHANGE);
 }
 
 void loop() {
   if (rc.available()) {
 
-    int value = rcReceiver.getReceivedValue();
+    int value = 0; //rcReceiver.getReceivedValue();
 
     if (value == 0) {
       Serial.print("Unknown encoding");
