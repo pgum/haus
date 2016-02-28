@@ -78,6 +78,7 @@ void setup(){
   Serial.begin(9600);
   relayController.initController(8,7);
   //rcReceiver.enableReceive(0);  // Receiver on interrupt 0 => that is pin #2
+  pinMode(LightSwitchInterruptPin, INPUT);
   attachInterrupt(digitalPinToInterrupt(LightSwitchInterruptPin), LightSwitchEventOff, FALLING);
   attachInterrupt(digitalPinToInterrupt(LightSwitchInterruptPin), LightSwitchEventOn, RISING);
 }
