@@ -71,24 +71,24 @@ void setup(){
 }
 bool switchState;
 void loop() {
-//  if(false /*rc.available()*/) {
-//    int value= rcReceiver.getReceivedValue();
-//    if(value == 0) {
-//      Serial.print("Unknown encoding");
-//    } else {
-//      Serial.print("Received ");
-//      Serial.print( rcReceiver.getReceivedValue() );
-//      Serial.print(" / ");
-//      Serial.print( rcReceiver.getReceivedBitlength() );
-//      Serial.print("bit ");
-//      Serial.print("Protocol: ");
-//      Serial.println( rcReceiver.getReceivedProtocol() );
-//    }
-//    if(value > 0){
-//      relayController.checkCode(value);
-//    }
-//    rcReceiver.resetAvailable();
-//  }
+  if(rc.available()) {
+    int value= rcReceiver.getReceivedValue();
+    if(value == 0) {
+      Serial.print("Unknown encoding");
+    } else {
+      Serial.print("Received ");
+      Serial.print( rcReceiver.getReceivedValue() );
+      Serial.print(" / ");
+      Serial.print( rcReceiver.getReceivedBitlength() );
+      Serial.print("bit ");
+      Serial.print("Protocol: ");
+      Serial.println( rcReceiver.getReceivedProtocol() );
+    }
+    if(value > 0){
+      relayController.checkCode(value);
+    }
+    rcReceiver.resetAvailable();
+  }
   bool lastState= switchState;
   switchState = digitalRead(LightSwitchPin);
   relayController.turn(0, switchState);
