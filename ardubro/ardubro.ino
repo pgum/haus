@@ -1,6 +1,6 @@
 #include <RCSwitch.h>
 
-int LightSwitchInterruptPin = 3
+int LightSwitchInterruptPin = 3;
 volatile bool hasSwitchStateChanged= false;
 
 void LightSwitchEvent(){
@@ -25,7 +25,7 @@ public:
     status[input]=false;
     digitalWrite(InputPins[input], status[input]);
   }
-  void toggle(shor int input){
+  void toggle(short int input){
     status[input]=!status[input];
     digitalWrite(InputPins[input], status[input]);
   }
@@ -60,11 +60,11 @@ void setup(){
 }
 
 void loop() {
-  if (rc.available()) {
+  if(false /*rc.available()*/) {
 
-    int value = 0; //rcReceiver.getReceivedValue();
+    int value= rcReceiver.getReceivedValue();
 
-    if (value == 0) {
+    if(value == 0) {
       Serial.print("Unknown encoding");
     } else {
       Serial.print("Received ");
@@ -75,17 +75,17 @@ void loop() {
       Serial.print("Protocol: ");
       Serial.println( rcReceiver.getReceivedProtocol() );
     }
-  if (value > 0){
-    for(int i=0; i<MAX_RELAYS; ++i){
-      if( RelayTurnOnCodes[i] == value){
-        relayController.turnOn(i);}
-      if( RelayTurnOffCodes[i] == value){
-        RelayController.turnOff(i);}
-  }
-  rcReceiver.resetAvailable();
+    if(value > 0){
+      for(int i=0; i<MAX_RELAYS; ++i){
+        if(RelayTurnOnCodes[i] == value){
+          relayController.turnOn(i);}
+        if(RelayTurnOffCodes[i] == value){
+          RelayController.turnOff(i);}
+    }
+    rcReceiver.resetAvailable();
   }
 
-  if (hasSwitchStateChanged){
+  if(hasSwitchStateChanged){
     Serial.print("Switch Has Changed!");
     relayController.toggle(0);
     hasSwitchStateChanged=false;
