@@ -65,16 +65,14 @@ RelayController relayController= RelayController();
 
 void setup(){
   Serial.begin(9600);
-  relayController.initController(8,7);
+  relayController.initController(13,7);
   //rcReceiver.enableReceive(0);  // Receiver on interrupt 0 => that is pin #2
   pinMode(LightSwitchInterruptPin, INPUT);
 }
 
 void loop() {
   if(false /*rc.available()*/) {
-
     int value= rcReceiver.getReceivedValue();
-
     if(value == 0) {
       Serial.print("Unknown encoding");
     } else {
@@ -91,8 +89,5 @@ void loop() {
     }
     rcReceiver.resetAvailable();
   }
-    Serial.print("dupa: ");
-
-    relayController.turn(0,digitalRead(LightSwitchInterruptPin));
-  
+  relayController.turn(0,digitalRead(LightSwitchInterruptPin));
 }
