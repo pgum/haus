@@ -65,13 +65,13 @@ RelayController relayController= RelayController();
 
 void setup(){
   Serial.begin(9600);
-  relayController.initController(8,7);
-  rcReceiver.enableReceive(0);  // Receiver on interrupt 0 => that is pin #2
+  relayController.initController(8,9);
+  rcReceiver.enableReceive(4);  // INT4 is on Pin7
   pinMode(LightSwitchPin, INPUT_PULLUP);
 }
 bool switchState;
 void loop() {
-  if(rc.available()) {
+  if(rcReceiver.available()) {
     int value= rcReceiver.getReceivedValue();
     if(value == 0) {
       Serial.print("Unknown encoding");
