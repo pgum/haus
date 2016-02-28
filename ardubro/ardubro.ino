@@ -45,18 +45,21 @@ public:
 
 RCSwitch rcReceiver= RCSwitch();
 
-unsigned long RelayTurnOnCodes[]={1381457};
-unsigned long RelayTurnOffCodes[]={1381460};
+//unsigned long RelayTurnOnCodes[]={1381457};
+//unsigned long RelayTurnOffCodes[]={1381460};
+
+unsigned long RelayTurnOnCodes[]={5201};
+unsigned long RelayTurnOffCodes[]={5471};
 RelayController relayController= RelayController();
 
-  bool isCodeToTurnOn(int code){
+  bool isCodeToTurnOn(unsigned long code){
       Serial.print("Turn On code: ");
       Serial.println( RelayTurnOnCodes[0]);
       Serial.print("Code 2 check: ");
       Serial.println( code);
       return RelayTurnOnCodes[0] == code;
   }
-  bool isCodeToTurnOff(int code){
+  bool isCodeToTurnOff(unsigned long code){
       Serial.print("Turn Off code: ");
       Serial.println( RelayTurnOffCodes[0]);
       Serial.print("Code to check: ");
