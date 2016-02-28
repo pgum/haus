@@ -15,8 +15,10 @@ class RelayController{
   int RelayTurnOffCodes[2];
 public:
   RelayController(){
-    RelayTurnOnCodes={12358, 5813}; //TODO: move as parameter
-    RelayTurnOffCodes={8532, 3185}; //TODO: move as parameter
+    RelayTurnOnCodes[0]=12358; //TODO: move as parameter
+    RelayTurnOnCodes[1]=5813; //TODO: move as parameter
+    RelayTurnOffCodes[0]=8532; //TODO: move as parameter
+    RelayTurnOffCodes[1]=3185; //TODO: move as parameter
     }
 
   void turnOn(short int input){
@@ -58,7 +60,7 @@ void setup(){
   Serial.begin(9600);
   relayController.initController(8,7);
   //rcReceiver.enableReceive(0);  // Receiver on interrupt 0 => that is pin #2
-  attachInterrupt(digitalPinToInterupt(LightSwitchInterruptPin), LightSwitchEvent, CHANGE);
+  attachInterrupt(digitalPinToInterrupt(LightSwitchInterruptPin), LightSwitchEvent, CHANGE);
 }
 
 void loop() {
