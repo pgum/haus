@@ -1,5 +1,5 @@
 #include <RCSwitch.h>
-int LightSwitchPin = 13;
+int LightSwitchPin = 11;
 
 //TODO: change to template class
 class RelayController{
@@ -65,7 +65,7 @@ RelayController relayController= RelayController();
 
 void setup(){
   Serial.begin(9600);
-  relayController.initController(11,7);
+  relayController.initController(13,7);
   //rcReceiver.enableReceive(0);  // Receiver on interrupt 0 => that is pin #2
   pinMode(LightSwitchPin, INPUT_PULLUP);
 }
