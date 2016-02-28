@@ -2,15 +2,6 @@
 #define NOT_AN_INTERRUPT -1
 
 int LightSwitchInterruptPin = 3;
-volatile bool switchState= false;
-
-void LightSwitchEventOn(){
-  switchState= true;
-}
-
-void LightSwitchEventOff(){
-  switchState= false;
-}
 
 //TODO: change to template class
 class RelayController{
@@ -79,8 +70,6 @@ void setup(){
   relayController.initController(8,7);
   //rcReceiver.enableReceive(0);  // Receiver on interrupt 0 => that is pin #2
   pinMode(LightSwitchInterruptPin, INPUT);
-  attachInterrupt(digitalPinToInterrupt(LightSwitchInterruptPin), LightSwitchEventOff, FALLING);
-  attachInterrupt(digitalPinToInterrupt(LightSwitchInterruptPin), LightSwitchEventOn, RISING);
 }
 
 void loop() {
@@ -106,6 +95,6 @@ void loop() {
   }
     Serial.print("dupa: ");
     Serial.println(switchState);
-    relayController.turn(0,switchState);
+    relayController.turn(0,digitalWrite(LightSwitchInterruptPin));
   
 }
