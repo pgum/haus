@@ -45,23 +45,18 @@ public:
 
 RCSwitch rcReceiver= RCSwitch();
 
-long int RelayTurnOnCodes[2];
-long int RelayTurnOffCodes[2];
+long int RelayTurnOnCodes[2]={1381457L,-1};
+long int RelayTurnOffCodes[2]={1381460L,-1};
 RelayController relayController= RelayController();
-
-  RelayTurnOnCodes[0]=1381457; //TODO: move as parameter
-  RelayTurnOnCodes[1]=-1; //TODO: move as parameter
-  RelayTurnOffCodes[0]=1381460; //TODO: move as parameter
-  RelayTurnOffCodes[1]=-1; //TODO: move as parameter
 
   short int checkCodeOn(int code){
     for(int i=0; i<2; ++i){
-      if(RelayTurnOnCodes[i] == code){return i;}
+      if(RelayTurnOnCodes[i] == code){return i;}}
       return -1;
   }
   short int checkCodeOff(int code){
     for(int i=0; i<2; ++i){
-      if(RelayTurnOffCodes[i] == code){return i;}
+      if(RelayTurnOffCodes[i] == code){return i;}}
       return -1;
   }
 
@@ -87,16 +82,20 @@ void loop() {
       Serial.print("bit ");
       Serial.print("Protocol: ");
       Serial.println( rcReceiver.getReceivedProtocol() );
+      Serial.print("Check Code On: ");
       short int checkResult = checkCodeOn(value);
+      Serial.println(checkResult);
       if(checkResult>=0){ statusToSetAtTheEnd[checkResult]=true;}
+      Serial.print("Check Code Off: ");
       checkResult = checkCodeOff(value);
+      Serial.println(checkResult);
       if(checkResult>=0){ statusToSetAtTheEnd[checkResult]=false;}
     }
     rcReceiver.resetAvailable();
   }
   bool lastState= switchState;
   switchState = digitalRead(LightSwitchPin);
-  relayController.turn(0, switchState);
+  //relayController.turn(0, switchState);
   if(lastState != switchState){
     Serial.print("Switch changed from:");
     Serial.print(lastState);
@@ -104,6 +103,7 @@ void loop() {
     Serial.println(switchState);
     statusToSetAtTheEnd[0]=switchState;
   }
+ 
   for(int i=0; i<2; ++i){
     relayController.turn(i, statusToSetAtTheEnd[i]);
   }
