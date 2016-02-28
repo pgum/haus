@@ -67,27 +67,35 @@ void setup(){
   Serial.begin(9600);
   relayController.initController(13,7);
   //rcReceiver.enableReceive(0);  // Receiver on interrupt 0 => that is pin #2
-  pinMode(LightSwitchInterruptPin, INPUT);
+  pinMode(LightSwitchInterruptPin, INPUT_PULLUP);
 }
-
+bool switchState;
 void loop() {
-  if(false /*rc.available()*/) {
-    int value= rcReceiver.getReceivedValue();
-    if(value == 0) {
-      Serial.print("Unknown encoding");
-    } else {
-      Serial.print("Received ");
-      Serial.print( rcReceiver.getReceivedValue() );
-      Serial.print(" / ");
-      Serial.print( rcReceiver.getReceivedBitlength() );
-      Serial.print("bit ");
-      Serial.print("Protocol: ");
-      Serial.println( rcReceiver.getReceivedProtocol() );
-    }
-    if(value > 0){
-      relayController.checkCode(value);
-    }
-    rcReceiver.resetAvailable();
+//  if(false /*rc.available()*/) {
+//    int value= rcReceiver.getReceivedValue();
+//    if(value == 0) {
+//      Serial.print("Unknown encoding");
+//    } else {
+//      Serial.print("Received ");
+//      Serial.print( rcReceiver.getReceivedValue() );
+//      Serial.print(" / ");
+//      Serial.print( rcReceiver.getReceivedBitlength() );
+//      Serial.print("bit ");
+//      Serial.print("Protocol: ");
+//      Serial.println( rcReceiver.getReceivedProtocol() );
+//    }
+//    if(value > 0){
+//      relayController.checkCode(value);
+//    }
+//    rcReceiver.resetAvailable();
+//  }
+  bool lastState= switchState;
+  switchState = digitalRead(LightSwitchInterruptPin);
+  relayController.turn(0, switchState);
+  if(lastState != switchState){
+    Serial.print("Switch changed from:");
+    Serial.print(lasState);
+    Serial.print(" to:");
+    Serial.println(switchState);
   }
-  relayController.turn(0,digitalRead(LightSwitchInterruptPin));
 }
