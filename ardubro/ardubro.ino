@@ -50,9 +50,17 @@ unsigned long RelayTurnOffCodes[]={1381460};
 RelayController relayController= RelayController();
 
   bool isCodeToTurnOn(int code){
+      Serial.print("Turn On code: ");
+      Serial.println( RelayTurnOnCodes[0]);
+      Serial.print("Code 2 check: ");
+      Serial.println( code);
       return RelayTurnOnCodes[0] == code;
   }
   bool isCodeToTurnOff(int code){
+      Serial.print("Turn Off code: ");
+      Serial.println( RelayTurnOffCodes[0]);
+      Serial.print("Code to check: ");
+      Serial.println( code);
       return RelayTurnOffCodes[0] == code;
   }
 
