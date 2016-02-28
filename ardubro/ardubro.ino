@@ -10,17 +10,27 @@ void LightSwitchEvent(){
 
 //TODO: change to template class
 class RelayController{
+public:
   short int InputPins[2];
   bool status[2];
   int RelayTurnOnCodes[2];
   int RelayTurnOffCodes[2];
-public:
   RelayController(){
     RelayTurnOnCodes[0]=12358; //TODO: move as parameter
     RelayTurnOnCodes[1]=5813; //TODO: move as parameter
     RelayTurnOffCodes[0]=8532; //TODO: move as parameter
     RelayTurnOffCodes[1]=3185; //TODO: move as parameter
     }
+
+  bool checkCode(int code){
+    for(int i=0; i<2; ++i){
+      if(RelayTurnOnCodes[i] == value){
+        turnOn(i); return true;}
+      if(RelayTurnOffCodes[i] == value){
+        turnOff(i); return true;}
+    }
+    return false;
+  }
 
   void turnOn(short int input){
     status[input]=true;
@@ -81,11 +91,7 @@ void loop() {
       Serial.println( rcReceiver.getReceivedProtocol() );
     }
     if(value > 0){
-      for(int i=0; i<MAX_RELAYS; ++i){
-        if(RelayTurnOnCodes[i] == value){
-          relayController.turnOn(i);}
-        if(RelayTurnOffCodes[i] == value){
-          RelayController.turnOff(i);}
+      relayController.checkCode(value);
     }
     rcReceiver.resetAvailable();
   }
