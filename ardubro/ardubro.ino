@@ -45,11 +45,11 @@ public:
 
 RCSwitch rcReceiver= RCSwitch();
 
-//unsigned long RelayTurnOnCodes[]={1381457};
-//unsigned long RelayTurnOffCodes[]={1381460};
+unsigned long RelayTurnOnCodes[]={1381457};
+unsigned long RelayTurnOffCodes[]={1381460};
 
-unsigned long RelayTurnOnCodes[]={5201};
-unsigned long RelayTurnOffCodes[]={5471};
+//unsigned long RelayTurnOnCodes[]={5201};
+//unsigned long RelayTurnOffCodes[]={5471};
 RelayController relayController= RelayController();
 
   bool isCodeToTurnOn(unsigned long code){
@@ -82,13 +82,9 @@ void loop() {
     if(value == 0) {
       Serial.print("Unknown encoding");
     } else {
-      Serial.print("Received ");
-      Serial.print( rcReceiver.getReceivedValue() );
-      Serial.print(" / ");
-      Serial.print( rcReceiver.getReceivedBitlength() );
-      Serial.print("bit ");
-      Serial.print("Protocol: ");
-      Serial.println( rcReceiver.getReceivedProtocol() );
+      Serial.print("Received: ");
+      unsigned long recievedValue = rcReceiver.getReceivedValue();
+      Serial.print(recievedValue);
       if(isCodeToTurnOn(value)){ statusToSetAtTheEnd[0]=true;}
       if(isCodeToTurnOff(value)){ statusToSetAtTheEnd[0]=false;}
     }
