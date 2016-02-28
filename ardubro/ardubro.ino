@@ -1,7 +1,5 @@
 #include <RCSwitch.h>
-#define NOT_AN_INTERRUPT -1
-
-int LightSwitchInterruptPin = 3;
+int LightSwitchInterruptPin = 11;
 
 //TODO: change to template class
 class RelayController{
@@ -94,7 +92,7 @@ void loop() {
     rcReceiver.resetAvailable();
   }
     Serial.print("dupa: ");
-    Serial.println(switchState);
-    relayController.turn(0,digitalWrite(LightSwitchInterruptPin));
+
+    relayController.turn(0,digitalRead(LightSwitchInterruptPin));
   
 }
