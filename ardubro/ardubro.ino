@@ -86,12 +86,8 @@ void loop() {
       Serial.print("bit ");
       Serial.print("Protocol: ");
       Serial.println( rcReceiver.getReceivedProtocol() );
-      Serial.print("Check Code On: ");
-      Serial.println(checkCodeOn(value));
-      if(checkCodeOn(value)){ statusToSetAtTheEnd[0]=true;}
-      Serial.print("Check Code Off: ");
-      Serial.println(checkCodeOff(value));
-      if(checkCodeOff(value)){ statusToSetAtTheEnd[0]=false;}
+      if(isCodeToTurnOn(value)){ statusToSetAtTheEnd[0]=true;}
+      if(isCodeToTurnOff(value)){ statusToSetAtTheEnd[0]=false;}
     }
     rcReceiver.resetAvailable();
   }
