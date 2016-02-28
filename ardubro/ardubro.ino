@@ -14,7 +14,10 @@ class RelayController{
   int RelayTurnOnCodes[2];
   int RelayTurnOffCodes[2];
 public:
-  RelayController(){}
+  RelayController(){
+    RelayTurnOnCodes={12358, 5813}; //TODO: move as parameter
+    RelayTurnOffCodes={8532, 3185}; //TODO: move as parameter
+    }
 
   void turnOn(short int input){
     status[input]=true;
@@ -31,8 +34,6 @@ public:
   }
 
   void initController(short int in1pin, short int in2pin){
-    RelayTurnOnCodes={12358, 5813}; //TODO: move as parameter
-    RelayTurnOffCodes={8532, 3185}; //TODO: move as parameter
     InputPins[0]=in1pin;
     InputPins[1]=in2pin;
     pinMode(InputPins[0], OUTPUT);
@@ -46,6 +47,7 @@ public:
       reti+= status[i] ? "n" : "f";
     }
     return reti;
+  }
 };
 
 
