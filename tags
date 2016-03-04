@@ -1,0 +1,1390 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+4NT_args	NFCBro/gradlew.bat	/^:4NT_args$/;"	l
+ACTIVATE	SocketController/libraries/RF24/nRF24L01.h	106;"	d
+APP_BASE_NAME	NFCBro/gradlew.bat	/^set APP_BASE_NAME=%~n0$/;"	v
+APP_HOME	NFCBro/gradlew.bat	/^set APP_HOME=%DIRNAME%$/;"	v
+ARC	SocketController/libraries/RF24/nRF24L01.h	76;"	d
+ARCH	SocketController/libraries/RF24/Makefile	/^ARCH=armv6zk$/;"	m
+ARCH	SocketController/libraries/RF24/Makefile	/^ARCH=armv7-a$/;"	m
+ARCH	SocketController/libraries/RF24/examples_RPi/Makefile	/^ARCH=armv6zk$/;"	m
+ARCH	SocketController/libraries/RF24/examples_RPi/Makefile	/^ARCH=armv7-a$/;"	m
+ARCH	SocketController/libraries/RF24/examples_RPi/extra/Makefile	/^ARCH=armv6zk$/;"	m
+ARCH	SocketController/libraries/RF24/examples_RPi/extra/Makefile	/^ARCH=armv7-a$/;"	m
+ARCH	SocketController/libraries/RF24/examples_RPi/interrupts/Makefile	/^ARCH=armv6zk$/;"	m
+ARCH	SocketController/libraries/RF24/examples_RPi/interrupts/Makefile	/^ARCH=armv7-a$/;"	m
+ARCH_DIR	SocketController/libraries/RF24/Makefile	/^ARCH_DIR=utility$/;"	m
+ARC_CNT	SocketController/libraries/RF24/nRF24L01.h	86;"	d
+ARD	SocketController/libraries/RF24/nRF24L01.h	75;"	d
+ARRAY_SIZE	SocketController/libraries/RF24/utility/BBB/spi.h	38;"	d
+AW	SocketController/libraries/RF24/nRF24L01.h	74;"	d
+Amiibro	hauser/amiibro.py	/^class Amiibro:$/;"	c
+Amiibro	hauser/hauser.py	/^from amiibro import Amiibro$/;"	i
+ApplicationTest	NFCBro/app/src/androidTest/java/killme/nfcbro/ApplicationTest.java	/^    public ApplicationTest() {$/;"	m	class:ApplicationTest
+ApplicationTest	NFCBro/app/src/androidTest/java/killme/nfcbro/ApplicationTest.java	/^public class ApplicationTest extends ApplicationTestCase<Application> {$/;"	c
+Ardubro	hauser/ardubro.py	/^class Ardubro(Serial):$/;"	c
+Ardubro	hauser/hauser.py	/^from ardubro import Ardubro$/;"	i
+BCK2835_LIBRARY_BUILD	SocketController/libraries/RF24/utility/RPi/bcm2835.c	22;"	d	file:
+BCM2835_BLOCK_SIZE	SocketController/libraries/RF24/utility/RPi/bcm2835.h	563;"	d
+BCM2835_BSC0_BASE	SocketController/libraries/RF24/utility/RPi/bcm2835.h	489;"	d
+BCM2835_BSC1_BASE	SocketController/libraries/RF24/utility/RPi/bcm2835.h	493;"	d
+BCM2835_BSC_A	SocketController/libraries/RF24/utility/RPi/bcm2835.h	877;"	d
+BCM2835_BSC_C	SocketController/libraries/RF24/utility/RPi/bcm2835.h	874;"	d
+BCM2835_BSC_CLKT	SocketController/libraries/RF24/utility/RPi/bcm2835.h	881;"	d
+BCM2835_BSC_C_CLEAR_1	SocketController/libraries/RF24/utility/RPi/bcm2835.h	889;"	d
+BCM2835_BSC_C_CLEAR_2	SocketController/libraries/RF24/utility/RPi/bcm2835.h	890;"	d
+BCM2835_BSC_C_I2CEN	SocketController/libraries/RF24/utility/RPi/bcm2835.h	884;"	d
+BCM2835_BSC_C_INTD	SocketController/libraries/RF24/utility/RPi/bcm2835.h	887;"	d
+BCM2835_BSC_C_INTR	SocketController/libraries/RF24/utility/RPi/bcm2835.h	885;"	d
+BCM2835_BSC_C_INTT	SocketController/libraries/RF24/utility/RPi/bcm2835.h	886;"	d
+BCM2835_BSC_C_READ	SocketController/libraries/RF24/utility/RPi/bcm2835.h	891;"	d
+BCM2835_BSC_C_ST	SocketController/libraries/RF24/utility/RPi/bcm2835.h	888;"	d
+BCM2835_BSC_DEL	SocketController/libraries/RF24/utility/RPi/bcm2835.h	880;"	d
+BCM2835_BSC_DIV	SocketController/libraries/RF24/utility/RPi/bcm2835.h	879;"	d
+BCM2835_BSC_DLEN	SocketController/libraries/RF24/utility/RPi/bcm2835.h	876;"	d
+BCM2835_BSC_FIFO	SocketController/libraries/RF24/utility/RPi/bcm2835.h	878;"	d
+BCM2835_BSC_FIFO_SIZE	SocketController/libraries/RF24/utility/RPi/bcm2835.h	905;"	d
+BCM2835_BSC_S	SocketController/libraries/RF24/utility/RPi/bcm2835.h	875;"	d
+BCM2835_BSC_S_CLKT	SocketController/libraries/RF24/utility/RPi/bcm2835.h	894;"	d
+BCM2835_BSC_S_DONE	SocketController/libraries/RF24/utility/RPi/bcm2835.h	902;"	d
+BCM2835_BSC_S_ERR	SocketController/libraries/RF24/utility/RPi/bcm2835.h	895;"	d
+BCM2835_BSC_S_RXD	SocketController/libraries/RF24/utility/RPi/bcm2835.h	898;"	d
+BCM2835_BSC_S_RXF	SocketController/libraries/RF24/utility/RPi/bcm2835.h	896;"	d
+BCM2835_BSC_S_RXR	SocketController/libraries/RF24/utility/RPi/bcm2835.h	900;"	d
+BCM2835_BSC_S_TA	SocketController/libraries/RF24/utility/RPi/bcm2835.h	903;"	d
+BCM2835_BSC_S_TXD	SocketController/libraries/RF24/utility/RPi/bcm2835.h	899;"	d
+BCM2835_BSC_S_TXE	SocketController/libraries/RF24/utility/RPi/bcm2835.h	897;"	d
+BCM2835_BSC_S_TXW	SocketController/libraries/RF24/utility/RPi/bcm2835.h	901;"	d
+BCM2835_CLOCK_BASE	SocketController/libraries/RF24/utility/RPi/bcm2835.h	483;"	d
+BCM2835_CORE_CLK_HZ	SocketController/libraries/RF24/utility/RPi/bcm2835.h	456;"	d
+BCM2835_GPAFEN0	SocketController/libraries/RF24/utility/RPi/bcm2835.h	597;"	d
+BCM2835_GPAFEN1	SocketController/libraries/RF24/utility/RPi/bcm2835.h	598;"	d
+BCM2835_GPAREN0	SocketController/libraries/RF24/utility/RPi/bcm2835.h	595;"	d
+BCM2835_GPAREN1	SocketController/libraries/RF24/utility/RPi/bcm2835.h	596;"	d
+BCM2835_GPCLR0	SocketController/libraries/RF24/utility/RPi/bcm2835.h	581;"	d
+BCM2835_GPCLR1	SocketController/libraries/RF24/utility/RPi/bcm2835.h	582;"	d
+BCM2835_GPEDS0	SocketController/libraries/RF24/utility/RPi/bcm2835.h	585;"	d
+BCM2835_GPEDS1	SocketController/libraries/RF24/utility/RPi/bcm2835.h	586;"	d
+BCM2835_GPFEN0	SocketController/libraries/RF24/utility/RPi/bcm2835.h	589;"	d
+BCM2835_GPFEN1	SocketController/libraries/RF24/utility/RPi/bcm2835.h	590;"	d
+BCM2835_GPFSEL0	SocketController/libraries/RF24/utility/RPi/bcm2835.h	573;"	d
+BCM2835_GPFSEL1	SocketController/libraries/RF24/utility/RPi/bcm2835.h	574;"	d
+BCM2835_GPFSEL2	SocketController/libraries/RF24/utility/RPi/bcm2835.h	575;"	d
+BCM2835_GPFSEL3	SocketController/libraries/RF24/utility/RPi/bcm2835.h	576;"	d
+BCM2835_GPFSEL4	SocketController/libraries/RF24/utility/RPi/bcm2835.h	577;"	d
+BCM2835_GPFSEL5	SocketController/libraries/RF24/utility/RPi/bcm2835.h	578;"	d
+BCM2835_GPHEN0	SocketController/libraries/RF24/utility/RPi/bcm2835.h	591;"	d
+BCM2835_GPHEN1	SocketController/libraries/RF24/utility/RPi/bcm2835.h	592;"	d
+BCM2835_GPIO_BASE	SocketController/libraries/RF24/utility/RPi/bcm2835.h	485;"	d
+BCM2835_GPIO_FSEL_ALT0	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    BCM2835_GPIO_FSEL_ALT0  = 0x04,   \/*!< Alternate function 0 0b100 *\/$/;"	e	enum:__anon2
+BCM2835_GPIO_FSEL_ALT1	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    BCM2835_GPIO_FSEL_ALT1  = 0x05,   \/*!< Alternate function 1 0b101 *\/$/;"	e	enum:__anon2
+BCM2835_GPIO_FSEL_ALT2	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    BCM2835_GPIO_FSEL_ALT2  = 0x06,   \/*!< Alternate function 2 0b110, *\/$/;"	e	enum:__anon2
+BCM2835_GPIO_FSEL_ALT3	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    BCM2835_GPIO_FSEL_ALT3  = 0x07,   \/*!< Alternate function 3 0b111 *\/$/;"	e	enum:__anon2
+BCM2835_GPIO_FSEL_ALT4	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    BCM2835_GPIO_FSEL_ALT4  = 0x03,   \/*!< Alternate function 4 0b011 *\/$/;"	e	enum:__anon2
+BCM2835_GPIO_FSEL_ALT5	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    BCM2835_GPIO_FSEL_ALT5  = 0x02,   \/*!< Alternate function 5 0b010 *\/$/;"	e	enum:__anon2
+BCM2835_GPIO_FSEL_INPT	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    BCM2835_GPIO_FSEL_INPT  = 0x00,   \/*!< Input 0b000 *\/$/;"	e	enum:__anon2
+BCM2835_GPIO_FSEL_MASK	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    BCM2835_GPIO_FSEL_MASK  = 0x07    \/*!< Function select bits mask 0b111 *\/$/;"	e	enum:__anon2
+BCM2835_GPIO_FSEL_OUTP	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    BCM2835_GPIO_FSEL_OUTP  = 0x01,   \/*!< Output 0b001 *\/$/;"	e	enum:__anon2
+BCM2835_GPIO_PADS	SocketController/libraries/RF24/utility/RPi/bcm2835.h	481;"	d
+BCM2835_GPIO_PUD_DOWN	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    BCM2835_GPIO_PUD_DOWN    = 0x01,   \/*!< Enable Pull Down control 0b01 *\/$/;"	e	enum:__anon3
+BCM2835_GPIO_PUD_OFF	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    BCM2835_GPIO_PUD_OFF     = 0x00,   \/*!< Off ? disable pull-up\/down 0b00 *\/$/;"	e	enum:__anon3
+BCM2835_GPIO_PUD_UP	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    BCM2835_GPIO_PUD_UP      = 0x02    \/*!< Enable Pull Up control 0b10  *\/$/;"	e	enum:__anon3
+BCM2835_GPIO_PWM	SocketController/libraries/RF24/utility/RPi/bcm2835.h	491;"	d
+BCM2835_GPLEN0	SocketController/libraries/RF24/utility/RPi/bcm2835.h	593;"	d
+BCM2835_GPLEN1	SocketController/libraries/RF24/utility/RPi/bcm2835.h	594;"	d
+BCM2835_GPLEV0	SocketController/libraries/RF24/utility/RPi/bcm2835.h	583;"	d
+BCM2835_GPLEV1	SocketController/libraries/RF24/utility/RPi/bcm2835.h	584;"	d
+BCM2835_GPPUD	SocketController/libraries/RF24/utility/RPi/bcm2835.h	599;"	d
+BCM2835_GPPUDCLK0	SocketController/libraries/RF24/utility/RPi/bcm2835.h	600;"	d
+BCM2835_GPPUDCLK1	SocketController/libraries/RF24/utility/RPi/bcm2835.h	601;"	d
+BCM2835_GPREN0	SocketController/libraries/RF24/utility/RPi/bcm2835.h	587;"	d
+BCM2835_GPREN1	SocketController/libraries/RF24/utility/RPi/bcm2835.h	588;"	d
+BCM2835_GPSET0	SocketController/libraries/RF24/utility/RPi/bcm2835.h	579;"	d
+BCM2835_GPSET1	SocketController/libraries/RF24/utility/RPi/bcm2835.h	580;"	d
+BCM2835_H	SocketController/libraries/RF24/utility/RPi/bcm2835.h	430;"	d
+BCM2835_HAVE_DMB	SocketController/libraries/RF24/utility/RPi/bcm2835.h	442;"	d
+BCM2835_I2C_CLOCK_DIVIDER_148	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    BCM2835_I2C_CLOCK_DIVIDER_148    = 148        \/*!< 148 = 59ns = 1.689 MHz *\/$/;"	e	enum:__anon10
+BCM2835_I2C_CLOCK_DIVIDER_150	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    BCM2835_I2C_CLOCK_DIVIDER_150    = 150,       \/*!< 150 = 60ns = 1.666 MHz (default at reset) *\/$/;"	e	enum:__anon10
+BCM2835_I2C_CLOCK_DIVIDER_2500	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    BCM2835_I2C_CLOCK_DIVIDER_2500   = 2500,      \/*!< 2500 = 10us = 100 kHz *\/$/;"	e	enum:__anon10
+BCM2835_I2C_CLOCK_DIVIDER_626	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    BCM2835_I2C_CLOCK_DIVIDER_626    = 626,       \/*!< 622 = 2.504us = 399.3610 kHz *\/$/;"	e	enum:__anon10
+BCM2835_I2C_REASON_ERROR_CLKT	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    BCM2835_I2C_REASON_ERROR_CLKT    = 0x02,      \/*!< Received Clock Stretch Timeout *\/$/;"	e	enum:__anon11
+BCM2835_I2C_REASON_ERROR_DATA	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    BCM2835_I2C_REASON_ERROR_DATA    = 0x04       \/*!< Not all data is sent \/ received *\/$/;"	e	enum:__anon11
+BCM2835_I2C_REASON_ERROR_NACK	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    BCM2835_I2C_REASON_ERROR_NACK    = 0x01,      \/*!< Received a NACK *\/$/;"	e	enum:__anon11
+BCM2835_I2C_REASON_OK	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    BCM2835_I2C_REASON_OK   	     = 0x00,      \/*!< Success *\/$/;"	e	enum:__anon11
+BCM2835_PADS_GPIO_0_27	SocketController/libraries/RF24/utility/RPi/bcm2835.h	630;"	d
+BCM2835_PADS_GPIO_28_45	SocketController/libraries/RF24/utility/RPi/bcm2835.h	631;"	d
+BCM2835_PADS_GPIO_46_53	SocketController/libraries/RF24/utility/RPi/bcm2835.h	632;"	d
+BCM2835_PAD_DRIVE_10mA	SocketController/libraries/RF24/utility/RPi/bcm2835.h	642;"	d
+BCM2835_PAD_DRIVE_12mA	SocketController/libraries/RF24/utility/RPi/bcm2835.h	643;"	d
+BCM2835_PAD_DRIVE_14mA	SocketController/libraries/RF24/utility/RPi/bcm2835.h	644;"	d
+BCM2835_PAD_DRIVE_16mA	SocketController/libraries/RF24/utility/RPi/bcm2835.h	645;"	d
+BCM2835_PAD_DRIVE_2mA	SocketController/libraries/RF24/utility/RPi/bcm2835.h	638;"	d
+BCM2835_PAD_DRIVE_4mA	SocketController/libraries/RF24/utility/RPi/bcm2835.h	639;"	d
+BCM2835_PAD_DRIVE_6mA	SocketController/libraries/RF24/utility/RPi/bcm2835.h	640;"	d
+BCM2835_PAD_DRIVE_8mA	SocketController/libraries/RF24/utility/RPi/bcm2835.h	641;"	d
+BCM2835_PAD_GROUP_GPIO_0_27	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    BCM2835_PAD_GROUP_GPIO_0_27         = 0, \/*!< Pad group for GPIO pads 0 to 27 *\/$/;"	e	enum:__anon4
+BCM2835_PAD_GROUP_GPIO_28_45	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    BCM2835_PAD_GROUP_GPIO_28_45        = 1, \/*!< Pad group for GPIO pads 28 to 45 *\/$/;"	e	enum:__anon4
+BCM2835_PAD_GROUP_GPIO_46_53	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    BCM2835_PAD_GROUP_GPIO_46_53        = 2  \/*!< Pad group for GPIO pads 46 to 53 *\/$/;"	e	enum:__anon4
+BCM2835_PAD_HYSTERESIS_ENABLED	SocketController/libraries/RF24/utility/RPi/bcm2835.h	637;"	d
+BCM2835_PAD_PASSWRD	SocketController/libraries/RF24/utility/RPi/bcm2835.h	635;"	d
+BCM2835_PAD_SLEW_RATE_UNLIMITED	SocketController/libraries/RF24/utility/RPi/bcm2835.h	636;"	d
+BCM2835_PAGE_SIZE	SocketController/libraries/RF24/utility/RPi/bcm2835.h	561;"	d
+BCM2835_PERI_BASE	SocketController/libraries/RF24/utility/RPi/bcm2835.h	472;"	d
+BCM2835_PERI_SIZE	SocketController/libraries/RF24/utility/RPi/bcm2835.h	474;"	d
+BCM2835_PWM0_DATA	SocketController/libraries/RF24/utility/RPi/bcm2835.h	953;"	d
+BCM2835_PWM0_ENABLE	SocketController/libraries/RF24/utility/RPi/bcm2835.h	978;"	d
+BCM2835_PWM0_MS_MODE	SocketController/libraries/RF24/utility/RPi/bcm2835.h	971;"	d
+BCM2835_PWM0_OFFSTATE	SocketController/libraries/RF24/utility/RPi/bcm2835.h	975;"	d
+BCM2835_PWM0_RANGE	SocketController/libraries/RF24/utility/RPi/bcm2835.h	952;"	d
+BCM2835_PWM0_REPEATFF	SocketController/libraries/RF24/utility/RPi/bcm2835.h	976;"	d
+BCM2835_PWM0_REVPOLAR	SocketController/libraries/RF24/utility/RPi/bcm2835.h	974;"	d
+BCM2835_PWM0_SERIAL	SocketController/libraries/RF24/utility/RPi/bcm2835.h	977;"	d
+BCM2835_PWM0_USEFIFO	SocketController/libraries/RF24/utility/RPi/bcm2835.h	973;"	d
+BCM2835_PWM1_DATA	SocketController/libraries/RF24/utility/RPi/bcm2835.h	956;"	d
+BCM2835_PWM1_ENABLE	SocketController/libraries/RF24/utility/RPi/bcm2835.h	969;"	d
+BCM2835_PWM1_MS_MODE	SocketController/libraries/RF24/utility/RPi/bcm2835.h	963;"	d
+BCM2835_PWM1_OFFSTATE	SocketController/libraries/RF24/utility/RPi/bcm2835.h	966;"	d
+BCM2835_PWM1_RANGE	SocketController/libraries/RF24/utility/RPi/bcm2835.h	955;"	d
+BCM2835_PWM1_REPEATFF	SocketController/libraries/RF24/utility/RPi/bcm2835.h	967;"	d
+BCM2835_PWM1_REVPOLAR	SocketController/libraries/RF24/utility/RPi/bcm2835.h	965;"	d
+BCM2835_PWM1_SERIAL	SocketController/libraries/RF24/utility/RPi/bcm2835.h	968;"	d
+BCM2835_PWM1_USEFIFO	SocketController/libraries/RF24/utility/RPi/bcm2835.h	964;"	d
+BCM2835_PWMCLK_CNTL	SocketController/libraries/RF24/utility/RPi/bcm2835.h	959;"	d
+BCM2835_PWMCLK_DIV	SocketController/libraries/RF24/utility/RPi/bcm2835.h	960;"	d
+BCM2835_PWM_CLEAR_FIFO	SocketController/libraries/RF24/utility/RPi/bcm2835.h	972;"	d
+BCM2835_PWM_CLOCK_DIVIDER_1	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    BCM2835_PWM_CLOCK_DIVIDER_1     = 1        \/*!< 1 = 4.6875kHz, same as divider 4096 *\/$/;"	e	enum:__anon12
+BCM2835_PWM_CLOCK_DIVIDER_1024	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    BCM2835_PWM_CLOCK_DIVIDER_1024  = 1024,    \/*!< 1024 = 18.75kHz *\/$/;"	e	enum:__anon12
+BCM2835_PWM_CLOCK_DIVIDER_128	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    BCM2835_PWM_CLOCK_DIVIDER_128   = 128,     \/*!< 128 = 150kHz *\/$/;"	e	enum:__anon12
+BCM2835_PWM_CLOCK_DIVIDER_16	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    BCM2835_PWM_CLOCK_DIVIDER_16    = 16,      \/*!< 16 = 1.2MHz *\/$/;"	e	enum:__anon12
+BCM2835_PWM_CLOCK_DIVIDER_2	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    BCM2835_PWM_CLOCK_DIVIDER_2     = 2,       \/*!< 2 = 9.6MHz, fastest you can get *\/$/;"	e	enum:__anon12
+BCM2835_PWM_CLOCK_DIVIDER_2048	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    BCM2835_PWM_CLOCK_DIVIDER_2048  = 2048,    \/*!< 2048 = 9.375kHz *\/$/;"	e	enum:__anon12
+BCM2835_PWM_CLOCK_DIVIDER_256	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    BCM2835_PWM_CLOCK_DIVIDER_256   = 256,     \/*!< 256 = 75kHz *\/$/;"	e	enum:__anon12
+BCM2835_PWM_CLOCK_DIVIDER_32	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    BCM2835_PWM_CLOCK_DIVIDER_32    = 32,      \/*!< 32 = 600.0kHz *\/$/;"	e	enum:__anon12
+BCM2835_PWM_CLOCK_DIVIDER_4	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    BCM2835_PWM_CLOCK_DIVIDER_4     = 4,       \/*!< 4 = 4.8MHz *\/$/;"	e	enum:__anon12
+BCM2835_PWM_CLOCK_DIVIDER_512	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    BCM2835_PWM_CLOCK_DIVIDER_512   = 512,     \/*!< 512 = 37.5kHz *\/$/;"	e	enum:__anon12
+BCM2835_PWM_CLOCK_DIVIDER_64	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    BCM2835_PWM_CLOCK_DIVIDER_64    = 64,      \/*!< 64 = 300kHz *\/$/;"	e	enum:__anon12
+BCM2835_PWM_CLOCK_DIVIDER_8	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    BCM2835_PWM_CLOCK_DIVIDER_8     = 8,       \/*!< 8 = 2.4MHz *\/$/;"	e	enum:__anon12
+BCM2835_PWM_CONTROL	SocketController/libraries/RF24/utility/RPi/bcm2835.h	949;"	d
+BCM2835_PWM_DMAC	SocketController/libraries/RF24/utility/RPi/bcm2835.h	951;"	d
+BCM2835_PWM_FIF1	SocketController/libraries/RF24/utility/RPi/bcm2835.h	954;"	d
+BCM2835_PWM_PASSWRD	SocketController/libraries/RF24/utility/RPi/bcm2835.h	961;"	d
+BCM2835_PWM_STATUS	SocketController/libraries/RF24/utility/RPi/bcm2835.h	950;"	d
+BCM2835_REGBASE_BSC0	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    BCM2835_REGBASE_BSC0 = 7, \/*!< Base of the BSC0 registers. *\/$/;"	e	enum:__anon1
+BCM2835_REGBASE_BSC1	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    BCM2835_REGBASE_BSC1 = 8  \/*!< Base of the BSC1 registers. *\/$/;"	e	enum:__anon1
+BCM2835_REGBASE_CLK	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    BCM2835_REGBASE_CLK  = 4, \/*!< Base of the CLK registers. *\/$/;"	e	enum:__anon1
+BCM2835_REGBASE_GPIO	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    BCM2835_REGBASE_GPIO = 2, \/*!< Base of the GPIO registers. *\/$/;"	e	enum:__anon1
+BCM2835_REGBASE_PADS	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    BCM2835_REGBASE_PADS = 5, \/*!< Base of the PADS registers. *\/$/;"	e	enum:__anon1
+BCM2835_REGBASE_PWM	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    BCM2835_REGBASE_PWM  = 3, \/*!< Base of the PWM registers. *\/$/;"	e	enum:__anon1
+BCM2835_REGBASE_SPI0	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    BCM2835_REGBASE_SPI0 = 6, \/*! Base of the SPI0 registers. *\/$/;"	e	enum:__anon1
+BCM2835_REGBASE_ST	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    BCM2835_REGBASE_ST   = 1, \/*!< Base of the ST (System Timer) registers. *\/$/;"	e	enum:__anon1
+BCM2835_SPI0_BASE	SocketController/libraries/RF24/utility/RPi/bcm2835.h	487;"	d
+BCM2835_SPI0_CLK	SocketController/libraries/RF24/utility/RPi/bcm2835.h	760;"	d
+BCM2835_SPI0_CS	SocketController/libraries/RF24/utility/RPi/bcm2835.h	758;"	d
+BCM2835_SPI0_CS_ADCS	SocketController/libraries/RF24/utility/RPi/bcm2835.h	780;"	d
+BCM2835_SPI0_CS_CLEAR	SocketController/libraries/RF24/utility/RPi/bcm2835.h	786;"	d
+BCM2835_SPI0_CS_CLEAR_RX	SocketController/libraries/RF24/utility/RPi/bcm2835.h	787;"	d
+BCM2835_SPI0_CS_CLEAR_TX	SocketController/libraries/RF24/utility/RPi/bcm2835.h	788;"	d
+BCM2835_SPI0_CS_CPHA	SocketController/libraries/RF24/utility/RPi/bcm2835.h	790;"	d
+BCM2835_SPI0_CS_CPOL	SocketController/libraries/RF24/utility/RPi/bcm2835.h	789;"	d
+BCM2835_SPI0_CS_CS	SocketController/libraries/RF24/utility/RPi/bcm2835.h	791;"	d
+BCM2835_SPI0_CS_CSPOL	SocketController/libraries/RF24/utility/RPi/bcm2835.h	785;"	d
+BCM2835_SPI0_CS_CSPOL0	SocketController/libraries/RF24/utility/RPi/bcm2835.h	770;"	d
+BCM2835_SPI0_CS_CSPOL1	SocketController/libraries/RF24/utility/RPi/bcm2835.h	769;"	d
+BCM2835_SPI0_CS_CSPOL2	SocketController/libraries/RF24/utility/RPi/bcm2835.h	768;"	d
+BCM2835_SPI0_CS_DMAEN	SocketController/libraries/RF24/utility/RPi/bcm2835.h	783;"	d
+BCM2835_SPI0_CS_DMA_LEN	SocketController/libraries/RF24/utility/RPi/bcm2835.h	767;"	d
+BCM2835_SPI0_CS_DONE	SocketController/libraries/RF24/utility/RPi/bcm2835.h	775;"	d
+BCM2835_SPI0_CS_INTD	SocketController/libraries/RF24/utility/RPi/bcm2835.h	782;"	d
+BCM2835_SPI0_CS_INTR	SocketController/libraries/RF24/utility/RPi/bcm2835.h	781;"	d
+BCM2835_SPI0_CS_LEN	SocketController/libraries/RF24/utility/RPi/bcm2835.h	778;"	d
+BCM2835_SPI0_CS_LEN_LONG	SocketController/libraries/RF24/utility/RPi/bcm2835.h	766;"	d
+BCM2835_SPI0_CS_LMONO	SocketController/libraries/RF24/utility/RPi/bcm2835.h	777;"	d
+BCM2835_SPI0_CS_REN	SocketController/libraries/RF24/utility/RPi/bcm2835.h	779;"	d
+BCM2835_SPI0_CS_RXD	SocketController/libraries/RF24/utility/RPi/bcm2835.h	774;"	d
+BCM2835_SPI0_CS_RXF	SocketController/libraries/RF24/utility/RPi/bcm2835.h	771;"	d
+BCM2835_SPI0_CS_RXR	SocketController/libraries/RF24/utility/RPi/bcm2835.h	772;"	d
+BCM2835_SPI0_CS_TA	SocketController/libraries/RF24/utility/RPi/bcm2835.h	784;"	d
+BCM2835_SPI0_CS_TE_EN	SocketController/libraries/RF24/utility/RPi/bcm2835.h	776;"	d
+BCM2835_SPI0_CS_TXD	SocketController/libraries/RF24/utility/RPi/bcm2835.h	773;"	d
+BCM2835_SPI0_DC	SocketController/libraries/RF24/utility/RPi/bcm2835.h	763;"	d
+BCM2835_SPI0_DLEN	SocketController/libraries/RF24/utility/RPi/bcm2835.h	761;"	d
+BCM2835_SPI0_FIFO	SocketController/libraries/RF24/utility/RPi/bcm2835.h	759;"	d
+BCM2835_SPI0_LTOH	SocketController/libraries/RF24/utility/RPi/bcm2835.h	762;"	d
+BCM2835_SPI_BIT_ORDER_LSBFIRST	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    BCM2835_SPI_BIT_ORDER_LSBFIRST = 0,  \/*!< LSB First *\/$/;"	e	enum:__anon6
+BCM2835_SPI_BIT_ORDER_MSBFIRST	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    BCM2835_SPI_BIT_ORDER_MSBFIRST = 1   \/*!< MSB First *\/$/;"	e	enum:__anon6
+BCM2835_SPI_CLOCK_DIVIDER_1	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    BCM2835_SPI_CLOCK_DIVIDER_1     = 1        \/*!< 1 = 262.144us = 3.814697260kHz, same as 0\/65536 *\/$/;"	e	enum:__anon9
+BCM2835_SPI_CLOCK_DIVIDER_1024	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    BCM2835_SPI_CLOCK_DIVIDER_1024  = 1024,    \/*!< 1024 = 4.096us = 244.140625kHz *\/$/;"	e	enum:__anon9
+BCM2835_SPI_CLOCK_DIVIDER_128	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    BCM2835_SPI_CLOCK_DIVIDER_128   = 128,     \/*!< 128 = 512ns = = 1.953125MHz *\/$/;"	e	enum:__anon9
+BCM2835_SPI_CLOCK_DIVIDER_16	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    BCM2835_SPI_CLOCK_DIVIDER_16    = 16,      \/*!< 16 = 64ns = 15.625MHz *\/$/;"	e	enum:__anon9
+BCM2835_SPI_CLOCK_DIVIDER_16384	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    BCM2835_SPI_CLOCK_DIVIDER_16384 = 16384,   \/*!< 16384 = 65.536us = 15.25878906kHz *\/$/;"	e	enum:__anon9
+BCM2835_SPI_CLOCK_DIVIDER_2	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    BCM2835_SPI_CLOCK_DIVIDER_2     = 2,       \/*!< 2 = 8ns = 125MHz, fastest you can get *\/$/;"	e	enum:__anon9
+BCM2835_SPI_CLOCK_DIVIDER_2048	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    BCM2835_SPI_CLOCK_DIVIDER_2048  = 2048,    \/*!< 2048 = 8.192us = 122.0703125kHz *\/$/;"	e	enum:__anon9
+BCM2835_SPI_CLOCK_DIVIDER_256	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    BCM2835_SPI_CLOCK_DIVIDER_256   = 256,     \/*!< 256 = 1.024us = 976.5625kHz *\/$/;"	e	enum:__anon9
+BCM2835_SPI_CLOCK_DIVIDER_32	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    BCM2835_SPI_CLOCK_DIVIDER_32    = 32,      \/*!< 32 = 128ns = 7.8125MHz *\/$/;"	e	enum:__anon9
+BCM2835_SPI_CLOCK_DIVIDER_32768	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    BCM2835_SPI_CLOCK_DIVIDER_32768 = 32768,   \/*!< 32768 = 131.072us = 7.629394531kHz *\/$/;"	e	enum:__anon9
+BCM2835_SPI_CLOCK_DIVIDER_4	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    BCM2835_SPI_CLOCK_DIVIDER_4     = 4,       \/*!< 4 = 16ns = 62.5MHz *\/$/;"	e	enum:__anon9
+BCM2835_SPI_CLOCK_DIVIDER_4096	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    BCM2835_SPI_CLOCK_DIVIDER_4096  = 4096,    \/*!< 4096 = 16.384us = 61.03515625kHz *\/$/;"	e	enum:__anon9
+BCM2835_SPI_CLOCK_DIVIDER_512	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    BCM2835_SPI_CLOCK_DIVIDER_512   = 512,     \/*!< 512 = 2.048us = 488.28125kHz *\/$/;"	e	enum:__anon9
+BCM2835_SPI_CLOCK_DIVIDER_64	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    BCM2835_SPI_CLOCK_DIVIDER_64    = 64,      \/*!< 64 = 256ns = 3.90625MHz *\/$/;"	e	enum:__anon9
+BCM2835_SPI_CLOCK_DIVIDER_65536	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    BCM2835_SPI_CLOCK_DIVIDER_65536 = 0,       \/*!< 65536 = 262.144us = 3.814697260kHz *\/$/;"	e	enum:__anon9
+BCM2835_SPI_CLOCK_DIVIDER_8	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    BCM2835_SPI_CLOCK_DIVIDER_8     = 8,       \/*!< 8 = 32ns = 31.25MHz *\/$/;"	e	enum:__anon9
+BCM2835_SPI_CLOCK_DIVIDER_8192	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    BCM2835_SPI_CLOCK_DIVIDER_8192  = 8192,    \/*!< 8192 = 32.768us = 30\/51757813kHz *\/$/;"	e	enum:__anon9
+BCM2835_SPI_CS0	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    BCM2835_SPI_CS0 = 0,     \/*!< Chip Select 0 *\/$/;"	e	enum:__anon8
+BCM2835_SPI_CS1	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    BCM2835_SPI_CS1 = 1,     \/*!< Chip Select 1 *\/$/;"	e	enum:__anon8
+BCM2835_SPI_CS2	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    BCM2835_SPI_CS2 = 2,     \/*!< Chip Select 2 (ie pins CS1 and CS2 are asserted) *\/$/;"	e	enum:__anon8
+BCM2835_SPI_CS_NONE	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    BCM2835_SPI_CS_NONE = 3  \/*!< No CS, control it yourself *\/$/;"	e	enum:__anon8
+BCM2835_SPI_MODE0	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    BCM2835_SPI_MODE0 = 0,  \/*!< CPOL = 0, CPHA = 0 *\/$/;"	e	enum:__anon7
+BCM2835_SPI_MODE1	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    BCM2835_SPI_MODE1 = 1,  \/*!< CPOL = 0, CPHA = 1 *\/$/;"	e	enum:__anon7
+BCM2835_SPI_MODE2	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    BCM2835_SPI_MODE2 = 2,  \/*!< CPOL = 1, CPHA = 0 *\/$/;"	e	enum:__anon7
+BCM2835_SPI_MODE3	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    BCM2835_SPI_MODE3 = 3   \/*!< CPOL = 1, CPHA = 1 *\/$/;"	e	enum:__anon7
+BCM2835_SPI_SPEED_128KHZ	SocketController/libraries/RF24/utility/RPi/bcm2835.h	864;"	d
+BCM2835_SPI_SPEED_16KHZ	SocketController/libraries/RF24/utility/RPi/bcm2835.h	867;"	d
+BCM2835_SPI_SPEED_16MHZ	SocketController/libraries/RF24/utility/RPi/bcm2835.h	857;"	d
+BCM2835_SPI_SPEED_1MHZ	SocketController/libraries/RF24/utility/RPi/bcm2835.h	861;"	d
+BCM2835_SPI_SPEED_256KHZ	SocketController/libraries/RF24/utility/RPi/bcm2835.h	863;"	d
+BCM2835_SPI_SPEED_2MHZ	SocketController/libraries/RF24/utility/RPi/bcm2835.h	860;"	d
+BCM2835_SPI_SPEED_32KHZ	SocketController/libraries/RF24/utility/RPi/bcm2835.h	866;"	d
+BCM2835_SPI_SPEED_32MHZ	SocketController/libraries/RF24/utility/RPi/bcm2835.h	856;"	d
+BCM2835_SPI_SPEED_4MHZ	SocketController/libraries/RF24/utility/RPi/bcm2835.h	859;"	d
+BCM2835_SPI_SPEED_512KHZ	SocketController/libraries/RF24/utility/RPi/bcm2835.h	862;"	d
+BCM2835_SPI_SPEED_64KHZ	SocketController/libraries/RF24/utility/RPi/bcm2835.h	865;"	d
+BCM2835_SPI_SPEED_64MHZ	SocketController/libraries/RF24/utility/RPi/bcm2835.h	855;"	d
+BCM2835_SPI_SPEED_8KHZ	SocketController/libraries/RF24/utility/RPi/bcm2835.h	868;"	d
+BCM2835_SPI_SPEED_8MHZ	SocketController/libraries/RF24/utility/RPi/bcm2835.h	858;"	d
+BCM2835_ST_BASE	SocketController/libraries/RF24/utility/RPi/bcm2835.h	479;"	d
+BCM2835_ST_CHI	SocketController/libraries/RF24/utility/RPi/bcm2835.h	943;"	d
+BCM2835_ST_CLO	SocketController/libraries/RF24/utility/RPi/bcm2835.h	942;"	d
+BCM2835_ST_CS	SocketController/libraries/RF24/utility/RPi/bcm2835.h	941;"	d
+BCM2835_VERSION	SocketController/libraries/RF24/utility/RPi/bcm2835.h	434;"	d
+BCMLOC	SocketController/libraries/RF24/examples_RPi/Makefile	/^BCMLOC=\/opt\/vc\/include\/bcm_host.h$/;"	m
+BCMLOC	SocketController/libraries/RF24/examples_RPi/interrupts/Makefile	/^BCMLOC=\/opt\/vc\/include\/bcm_host.h$/;"	m
+BMC2835_RPI2_DT_FILENAME	SocketController/libraries/RF24/utility/RPi/bcm2835.h	459;"	d
+BMC2835_RPI2_DT_PERI_BASE_ADDRESS_OFFSET	SocketController/libraries/RF24/utility/RPi/bcm2835.h	461;"	d
+BMC2835_RPI2_DT_PERI_SIZE_OFFSET	SocketController/libraries/RF24/utility/RPi/bcm2835.h	463;"	d
+BOOST_LIB	SocketController/libraries/RF24/RPi/pyRF24/setup.py	/^    BOOST_LIB = 'boost_python'$/;"	v
+BOOST_LIB	SocketController/libraries/RF24/RPi/pyRF24/setup.py	/^    BOOST_LIB = 'boost_python3'$/;"	v
+BOOST_PYTHON_MODULE	SocketController/libraries/RF24/RPi/pyRF24/pyRF24.cpp	/^BOOST_PYTHON_MODULE(RF24){$/;"	f
+ByteArrayToHexString	NFCBro/app/src/main/java/killme/nfcbro/MainActivity.java	/^    private String ByteArrayToHexString(byte[] inarray) {$/;"	m	class:MainActivity	file:
+CCFLAGS	SocketController/libraries/RF24/Makefile	/^CCFLAGS=-Ofast -mfpu=vfp -mfloat-abi=hard -march=$(ARCH) -mtune=arm1176jzf-s$/;"	m
+CCFLAGS	SocketController/libraries/RF24/examples_RPi/Makefile	/^CCFLAGS=-Ofast -mfpu=vfp -mfloat-abi=hard -march=$(ARCH) -mtune=arm1176jzf-s$/;"	m
+CCFLAGS	SocketController/libraries/RF24/examples_RPi/extra/Makefile	/^CCFLAGS=-Ofast -mfpu=vfp -mfloat-abi=hard -march=$(ARCH) -mtune=arm1176jzf-s$/;"	m
+CCFLAGS	SocketController/libraries/RF24/examples_RPi/interrupts/Makefile	/^CCFLAGS=-Ofast -mfpu=vfp -mfloat-abi=hard -march=$(ARCH) -mtune=arm1176jzf-s$/;"	m
+CD	SocketController/libraries/RF24/nRF24L01.h	36;"	d
+CHANGE	SocketController/libraries/RCSwitch/RCSwitch.h	49;"	d
+CLASSPATH	NFCBro/gradlew.bat	/^set CLASSPATH=%APP_HOME%\\gradle\\wrapper\\gradle-wrapper.jar$/;"	v
+CMD_LINE_ARGS	NFCBro/gradlew.bat	/^set CMD_LINE_ARGS=$/;"	v
+CMD_LINE_ARGS	NFCBro/gradlew.bat	/^set CMD_LINE_ARGS=%*$/;"	v
+CMD_LINE_ARGS	NFCBro/gradlew.bat	/^set CMD_LINE_ARGS=%\$$/;"	v
+COMPATIBLITY_H	SocketController/libraries/RF24/utility/BBB/compatibility.h	9;"	d
+COMPATIBLITY_H	SocketController/libraries/RF24/utility/MRAA/compatibility.h	9;"	d
+COMPATIBLITY_H	SocketController/libraries/RF24/utility/Template/compatibility.h	23;"	d
+CONFIG	SocketController/libraries/RF24/nRF24L01.h	27;"	d
+CRCO	SocketController/libraries/RF24/nRF24L01.h	59;"	d
+DEFAULT_JVM_OPTS	NFCBro/gradlew.bat	/^set DEFAULT_JVM_OPTS=$/;"	v
+DI	SocketController/libraries/RF24/RF24.cpp	1534;"	d	file:
+DI	SocketController/libraries/RF24/RF24.cpp	1541;"	d	file:
+DI	SocketController/libraries/RF24/RF24.cpp	1548;"	d	file:
+DIRECTION_IN	SocketController/libraries/RF24/utility/BBB/gpio.h	/^	static const int DIRECTION_IN = 0;$/;"	m	class:GPIO
+DIRECTION_IN	SocketController/libraries/RF24/utility/Template/gpio.h	/^	static const int DIRECTION_IN = 0;$/;"	v
+DIRECTION_OUT	SocketController/libraries/RF24/utility/BBB/gpio.h	/^	static const int DIRECTION_OUT = 1;$/;"	m	class:GPIO
+DIRECTION_OUT	SocketController/libraries/RF24/utility/Template/gpio.h	/^	static const int DIRECTION_OUT = 1;$/;"	v
+DIRNAME	NFCBro/gradlew.bat	/^if "%DIRNAME%" == "" set DIRNAME=.$/;"	v
+DIRNAME	NFCBro/gradlew.bat	/^set DIRNAME=%~dp0$/;"	v
+DO	SocketController/libraries/RF24/RF24.cpp	1535;"	d	file:
+DO	SocketController/libraries/RF24/RF24.cpp	1542;"	d	file:
+DO	SocketController/libraries/RF24/RF24.cpp	1549;"	d	file:
+DPL_P0	SocketController/libraries/RF24/nRF24L01.h	97;"	d
+DPL_P1	SocketController/libraries/RF24/nRF24L01.h	96;"	d
+DPL_P2	SocketController/libraries/RF24/nRF24L01.h	95;"	d
+DPL_P3	SocketController/libraries/RF24/nRF24L01.h	94;"	d
+DPL_P4	SocketController/libraries/RF24/nRF24L01.h	93;"	d
+DPL_P5	SocketController/libraries/RF24/nRF24L01.h	92;"	d
+DRIVER_DIR	SocketController/libraries/RF24/Makefile	/^DRIVER_DIR=$(ARCH_DIR)\/BBB$/;"	m
+DRIVER_DIR	SocketController/libraries/RF24/Makefile	/^DRIVER_DIR=$(ARCH_DIR)\/MRAA$/;"	m
+DRIVER_DIR	SocketController/libraries/RF24/Makefile	/^DRIVER_DIR=$(ARCH_DIR)\/RPi$/;"	m
+DYNPD	SocketController/libraries/RF24/nRF24L01.h	51;"	d
+ENAA_P0	SocketController/libraries/RF24/nRF24L01.h	67;"	d
+ENAA_P1	SocketController/libraries/RF24/nRF24L01.h	66;"	d
+ENAA_P2	SocketController/libraries/RF24/nRF24L01.h	65;"	d
+ENAA_P3	SocketController/libraries/RF24/nRF24L01.h	64;"	d
+ENAA_P4	SocketController/libraries/RF24/nRF24L01.h	63;"	d
+ENAA_P5	SocketController/libraries/RF24/nRF24L01.h	62;"	d
+EN_AA	SocketController/libraries/RF24/nRF24L01.h	28;"	d
+EN_ACK_PAY	SocketController/libraries/RF24/nRF24L01.h	99;"	d
+EN_CRC	SocketController/libraries/RF24/nRF24L01.h	58;"	d
+EN_DPL	SocketController/libraries/RF24/nRF24L01.h	98;"	d
+EN_DYN_ACK	SocketController/libraries/RF24/nRF24L01.h	100;"	d
+EN_RXADDR	SocketController/libraries/RF24/nRF24L01.h	29;"	d
+ERX_P0	SocketController/libraries/RF24/nRF24L01.h	73;"	d
+ERX_P1	SocketController/libraries/RF24/nRF24L01.h	72;"	d
+ERX_P2	SocketController/libraries/RF24/nRF24L01.h	71;"	d
+ERX_P3	SocketController/libraries/RF24/nRF24L01.h	70;"	d
+ERX_P4	SocketController/libraries/RF24/nRF24L01.h	69;"	d
+ERX_P5	SocketController/libraries/RF24/nRF24L01.h	68;"	d
+ExampleUnitTest	NFCBro/app/src/test/java/killme/nfcbro/ExampleUnitTest.java	/^public class ExampleUnitTest {$/;"	c
+Extension	SocketController/libraries/RF24/RPi/pyRF24/setup.py	/^from distutils.core import setup, Extension$/;"	i
+FEATURE	SocketController/libraries/RF24/nRF24L01.h	52;"	d
+FIFO_FULL	SocketController/libraries/RF24/nRF24L01.h	88;"	d
+FIFO_STATUS	SocketController/libraries/RF24/nRF24L01.h	50;"	d
+FLUSH_RX	SocketController/libraries/RF24/nRF24L01.h	112;"	d
+FLUSH_TX	SocketController/libraries/RF24/nRF24L01.h	111;"	d
+GPIO	SocketController/libraries/RF24/examples_RPi/pingpair_dyn.py	/^import RPi.GPIO as GPIO$/;"	i
+GPIO	SocketController/libraries/RF24/utility/BBB/gpio.cpp	/^GPIO::GPIO() {$/;"	f	class:GPIO
+GPIO	SocketController/libraries/RF24/utility/BBB/gpio.h	/^class GPIO {$/;"	c
+GPIO	SocketController/libraries/RF24/utility/MRAA/gpio.cpp	/^GPIO::GPIO() {$/;"	f	class:GPIO
+GPIO	SocketController/libraries/RF24/utility/MRAA/gpio.h	/^class GPIO {$/;"	c
+H	SocketController/libraries/RF24/utility/BBB/gpio.h	13;"	d
+H	SocketController/libraries/RF24/utility/Template/gpio.h	17;"	d
+HEADER_DIR	SocketController/libraries/RF24/Makefile	/^HEADER_DIR=${PREFIX}\/include\/RF24$/;"	m
+HIGH	SocketController/libraries/RF24/utility/BBB/RF24_arch_config.h	56;"	d
+HIGH	SocketController/libraries/RF24/utility/MRAA/RF24_arch_config.h	22;"	d
+HIGH	SocketController/libraries/RF24/utility/RPi/bcm2835.h	451;"	d
+HIGH	SocketController/libraries/RF24/utility/Template/RF24_arch_config.h	72;"	d
+Hauser	hauser/hauser.py	/^class Hauser:$/;"	c
+Hauser	hauser/hauser_web.py	/^from hauser import Hauser$/;"	i
+HighLow	SocketController/libraries/RCSwitch/RCSwitch.h	/^    struct HighLow {$/;"	s	class:RCSwitch
+IF_SERIAL_DEBUG	SocketController/libraries/RF24/RF24_config.h	102;"	d
+IF_SERIAL_DEBUG	SocketController/libraries/RF24/RF24_config.h	104;"	d
+IF_SERIAL_DEBUG	SocketController/libraries/RF24/utility/ATTiny/RF24_arch_config.h	33;"	d
+IF_SERIAL_DEBUG	SocketController/libraries/RF24/utility/ATTiny/RF24_arch_config.h	35;"	d
+IF_SERIAL_DEBUG	SocketController/libraries/RF24/utility/BBB/RF24_arch_config.h	30;"	d
+IF_SERIAL_DEBUG	SocketController/libraries/RF24/utility/BBB/RF24_arch_config.h	32;"	d
+IF_SERIAL_DEBUG	SocketController/libraries/RF24/utility/Due/RF24_arch_config.h	26;"	d
+IF_SERIAL_DEBUG	SocketController/libraries/RF24/utility/Due/RF24_arch_config.h	28;"	d
+IF_SERIAL_DEBUG	SocketController/libraries/RF24/utility/LittleWire/RF24_arch_config.h	29;"	d
+IF_SERIAL_DEBUG	SocketController/libraries/RF24/utility/LittleWire/RF24_arch_config.h	31;"	d
+IF_SERIAL_DEBUG	SocketController/libraries/RF24/utility/MRAA/RF24_arch_config.h	40;"	d
+IF_SERIAL_DEBUG	SocketController/libraries/RF24/utility/MRAA/RF24_arch_config.h	42;"	d
+IF_SERIAL_DEBUG	SocketController/libraries/RF24/utility/RPi/RF24_arch_config.h	34;"	d
+IF_SERIAL_DEBUG	SocketController/libraries/RF24/utility/RPi/RF24_arch_config.h	36;"	d
+IF_SERIAL_DEBUG	SocketController/libraries/RF24/utility/Teensy/RF24_arch_config.h	21;"	d
+IF_SERIAL_DEBUG	SocketController/libraries/RF24/utility/Teensy/RF24_arch_config.h	23;"	d
+IF_SERIAL_DEBUG	SocketController/libraries/RF24/utility/Template/RF24_arch_config.h	46;"	d
+IF_SERIAL_DEBUG	SocketController/libraries/RF24/utility/Template/RF24_arch_config.h	48;"	d
+INPUT	SocketController/libraries/RF24/utility/BBB/RF24_arch_config.h	57;"	d
+INPUT	SocketController/libraries/RF24/utility/MRAA/RF24_arch_config.h	56;"	d
+INPUT	SocketController/libraries/RF24/utility/Template/RF24_arch_config.h	73;"	d
+INT_EDGE_BOTH	SocketController/libraries/RF24/utility/RPi/interrupt.h	15;"	d
+INT_EDGE_FALLING	SocketController/libraries/RF24/utility/RPi/interrupt.h	13;"	d
+INT_EDGE_RISING	SocketController/libraries/RF24/utility/RPi/interrupt.h	14;"	d
+INT_EDGE_SETUP	SocketController/libraries/RF24/utility/RPi/interrupt.h	12;"	d
+JAVA_EXE	NFCBro/gradlew.bat	/^set JAVA_EXE=%JAVA_HOME%\/bin\/java.exe$/;"	v
+JAVA_EXE	NFCBro/gradlew.bat	/^set JAVA_EXE=java.exe$/;"	v
+JAVA_HOME	NFCBro/gradlew.bat	/^set JAVA_HOME=%JAVA_HOME:"=%$/;"	v
+KodiTalker	hauser/hauser_web.py	/^from koditalker import KodiTalker$/;"	i
+KodiTalker	hauser/koditalker.py	/^class KodiTalker:$/;"	c
+KodiTalker2	hauser/koditalker.py	/^class KodiTalker2:$/;"	c
+KodiTalker2	hauser/koditalker2.py	/^class KodiTalker2:$/;"	c
+LIB	SocketController/libraries/RF24/Makefile	/^LIB=librf24-bcm$/;"	m
+LIBDIR	SocketController/libraries/RF24/Makefile	/^LIBDIR=$(PREFIX)\/lib$/;"	m
+LIBNAME	SocketController/libraries/RF24/Makefile	/^LIBNAME=$(LIB).so.1.0$/;"	m
+LNA_HCURR	SocketController/libraries/RF24/nRF24L01.h	117;"	d
+LOW	SocketController/libraries/RF24/utility/BBB/RF24_arch_config.h	55;"	d
+LOW	SocketController/libraries/RF24/utility/MRAA/RF24_arch_config.h	23;"	d
+LOW	SocketController/libraries/RF24/utility/RPi/bcm2835.h	453;"	d
+LOW	SocketController/libraries/RF24/utility/Template/RF24_arch_config.h	71;"	d
+MASK_MAX_RT	SocketController/libraries/RF24/nRF24L01.h	57;"	d
+MASK_RX_DR	SocketController/libraries/RF24/nRF24L01.h	55;"	d
+MASK_TX_DS	SocketController/libraries/RF24/nRF24L01.h	56;"	d
+MAX_RT	SocketController/libraries/RF24/nRF24L01.h	82;"	d
+MRAA	SocketController/libraries/RF24/utility/MRAA/includes.h	6;"	d
+MSBFIRST	SocketController/libraries/RF24/utility/MRAA/RF24_arch_config.h	60;"	d
+MSBFIRST	SocketController/libraries/RF24/utility/RPi/spi.h	18;"	d
+MainActivity	NFCBro/app/src/main/java/killme/nfcbro/MainActivity.java	/^public class MainActivity extends AppCompatActivity {$/;"	c
+NOP	SocketController/libraries/RF24/nRF24L01.h	114;"	d
+NRF_STATUS	SocketController/libraries/RF24/nRF24L01.h	34;"	d
+OBJECTS	SocketController/libraries/RF24/Makefile	/^OBJECTS=RF24.o spi.o$/;"	m
+OBSERVE_TX	SocketController/libraries/RF24/nRF24L01.h	35;"	d
+OUTPUT	SocketController/libraries/RF24/utility/BBB/RF24_arch_config.h	58;"	d
+OUTPUT	SocketController/libraries/RF24/utility/MRAA/RF24_arch_config.h	57;"	d
+OUTPUT	SocketController/libraries/RF24/utility/RPi/RF24_arch_config.h	41;"	d
+OUTPUT	SocketController/libraries/RF24/utility/Template/RF24_arch_config.h	74;"	d
+OUTPUT_HIGH	SocketController/libraries/RF24/utility/BBB/gpio.h	/^	static const int OUTPUT_HIGH = 1;$/;"	m	class:GPIO
+OUTPUT_HIGH	SocketController/libraries/RF24/utility/Template/gpio.h	/^	static const int OUTPUT_HIGH = 1;$/;"	v
+OUTPUT_LOW	SocketController/libraries/RF24/utility/BBB/gpio.h	/^	static const int OUTPUT_LOW = 0;$/;"	m	class:GPIO
+OUTPUT_LOW	SocketController/libraries/RF24/utility/Template/gpio.h	/^	static const int OUTPUT_LOW = 0;$/;"	v
+PLL_LOCK	SocketController/libraries/RF24/nRF24L01.h	77;"	d
+PLOS_CNT	SocketController/libraries/RF24/nRF24L01.h	85;"	d
+PREFIX	SocketController/libraries/RF24/Makefile	/^PREFIX=\/usr\/local$/;"	m
+PRIM_RX	SocketController/libraries/RF24/nRF24L01.h	61;"	d
+PRIPSTR	SocketController/libraries/RF24/RF24_config.h	127;"	d
+PRIPSTR	SocketController/libraries/RF24/RF24_config.h	131;"	d
+PRIPSTR	SocketController/libraries/RF24/RF24_config.h	147;"	d
+PRIPSTR	SocketController/libraries/RF24/utility/ATTiny/RF24_arch_config.h	42;"	d
+PRIPSTR	SocketController/libraries/RF24/utility/BBB/RF24_arch_config.h	51;"	d
+PRIPSTR	SocketController/libraries/RF24/utility/Due/RF24_arch_config.h	33;"	d
+PRIPSTR	SocketController/libraries/RF24/utility/LittleWire/RF24_arch_config.h	26;"	d
+PRIPSTR	SocketController/libraries/RF24/utility/MRAA/RF24_arch_config.h	37;"	d
+PRIPSTR	SocketController/libraries/RF24/utility/RPi/RF24_arch_config.h	31;"	d
+PRIPSTR	SocketController/libraries/RF24/utility/Teensy/RF24_arch_config.h	27;"	d
+PRIPSTR	SocketController/libraries/RF24/utility/Template/RF24_arch_config.h	67;"	d
+PROGMEM	SocketController/libraries/RCSwitch/RCSwitch.h	41;"	d
+PROGMEM	SocketController/libraries/RF24/RF24.cpp	/^static const char * const rf24_crclength_e_str_P[] PROGMEM = {$/;"	v	file:
+PROGMEM	SocketController/libraries/RF24/RF24.cpp	/^static const char * const rf24_datarate_e_str_P[] PROGMEM = {$/;"	v	file:
+PROGMEM	SocketController/libraries/RF24/RF24.cpp	/^static const char * const rf24_model_e_str_P[] PROGMEM = {$/;"	v	file:
+PROGMEM	SocketController/libraries/RF24/RF24.cpp	/^static const char * const rf24_pa_dbm_e_str_P[] PROGMEM = {$/;"	v	file:
+PROGMEM	SocketController/libraries/RF24/RF24.cpp	/^static const char rf24_crclength_e_str_0[] PROGMEM = "Disabled";$/;"	v	file:
+PROGMEM	SocketController/libraries/RF24/RF24.cpp	/^static const char rf24_crclength_e_str_1[] PROGMEM = "8 bits";$/;"	v	file:
+PROGMEM	SocketController/libraries/RF24/RF24.cpp	/^static const char rf24_crclength_e_str_2[] PROGMEM = "16 bits" ;$/;"	v	file:
+PROGMEM	SocketController/libraries/RF24/RF24.cpp	/^static const char rf24_datarate_e_str_0[] PROGMEM = "1MBPS";$/;"	v	file:
+PROGMEM	SocketController/libraries/RF24/RF24.cpp	/^static const char rf24_datarate_e_str_1[] PROGMEM = "2MBPS";$/;"	v	file:
+PROGMEM	SocketController/libraries/RF24/RF24.cpp	/^static const char rf24_datarate_e_str_2[] PROGMEM = "250KBPS";$/;"	v	file:
+PROGMEM	SocketController/libraries/RF24/RF24.cpp	/^static const char rf24_model_e_str_0[] PROGMEM = "nRF24L01";$/;"	v	file:
+PROGMEM	SocketController/libraries/RF24/RF24.cpp	/^static const char rf24_model_e_str_1[] PROGMEM = "nRF24L01+";$/;"	v	file:
+PROGMEM	SocketController/libraries/RF24/RF24.cpp	/^static const char rf24_pa_dbm_e_str_0[] PROGMEM = "PA_MIN";$/;"	v	file:
+PROGMEM	SocketController/libraries/RF24/RF24.cpp	/^static const char rf24_pa_dbm_e_str_1[] PROGMEM = "PA_LOW";$/;"	v	file:
+PROGMEM	SocketController/libraries/RF24/RF24.cpp	/^static const char rf24_pa_dbm_e_str_2[] PROGMEM = "PA_HIGH";$/;"	v	file:
+PROGMEM	SocketController/libraries/RF24/RF24.cpp	/^static const char rf24_pa_dbm_e_str_3[] PROGMEM = "PA_MAX";$/;"	v	file:
+PROGMEM	SocketController/libraries/RF24/RF24.cpp	/^static const uint8_t child_payload_size[] PROGMEM =$/;"	v	file:
+PROGMEM	SocketController/libraries/RF24/RF24.cpp	/^static const uint8_t child_pipe[] PROGMEM =$/;"	v	file:
+PROGMEM	SocketController/libraries/RF24/RF24.cpp	/^static const uint8_t child_pipe_enable[] PROGMEM =$/;"	v	file:
+PROGMEM	SocketController/libraries/RF24/RF24_config.h	124;"	d
+PROGMEM	SocketController/libraries/RF24/RF24_config.h	144;"	d
+PROGMEM	SocketController/libraries/RF24/utility/BBB/RF24_arch_config.h	38;"	d
+PROGMEM	SocketController/libraries/RF24/utility/BBB/RF24_arch_config.h	39;"	d
+PROGMEM	SocketController/libraries/RF24/utility/BBB/RF24_arch_config.h	49;"	d
+PROGMEM	SocketController/libraries/RF24/utility/LittleWire/RF24_arch_config.h	25;"	d
+PROGMEM	SocketController/libraries/RF24/utility/MRAA/RF24_arch_config.h	36;"	d
+PROGMEM	SocketController/libraries/RF24/utility/RPi/RF24_arch_config.h	30;"	d
+PROGMEM	SocketController/libraries/RF24/utility/Template/RF24_arch_config.h	54;"	d
+PROGMEM	SocketController/libraries/RF24/utility/Template/RF24_arch_config.h	55;"	d
+PROGMEM	SocketController/libraries/RF24/utility/Template/RF24_arch_config.h	65;"	d
+PROGRAMS	SocketController/libraries/RF24/examples_RPi/Makefile	/^PROGRAMS = gettingstarted gettingstarted_call_response transfer pingpair_dyn$/;"	m
+PROGRAMS	SocketController/libraries/RF24/examples_RPi/extra/Makefile	/^PROGRAMS = rpi-hub scanner$/;"	m
+PROGRAMS	SocketController/libraries/RF24/examples_RPi/interrupts/Makefile	/^PROGRAMS = gettingstarted_call_response_int gettingstarted_call_response_int2 transfer_interrupt pingpair_dyn_int$/;"	m
+PSTR	SocketController/libraries/RF24/RF24_config.h	119;"	d
+PSTR	SocketController/libraries/RF24/RF24_config.h	141;"	d
+PSTR	SocketController/libraries/RF24/utility/BBB/RF24_arch_config.h	40;"	d
+PSTR	SocketController/libraries/RF24/utility/BBB/RF24_arch_config.h	41;"	d
+PSTR	SocketController/libraries/RF24/utility/BBB/RF24_arch_config.h	46;"	d
+PSTR	SocketController/libraries/RF24/utility/LittleWire/RF24_arch_config.h	22;"	d
+PSTR	SocketController/libraries/RF24/utility/MRAA/RF24_arch_config.h	32;"	d
+PSTR	SocketController/libraries/RF24/utility/RPi/RF24_arch_config.h	27;"	d
+PSTR	SocketController/libraries/RF24/utility/Template/RF24_arch_config.h	56;"	d
+PSTR	SocketController/libraries/RF24/utility/Template/RF24_arch_config.h	57;"	d
+PSTR	SocketController/libraries/RF24/utility/Template/RF24_arch_config.h	62;"	d
+PWR_UP	SocketController/libraries/RF24/nRF24L01.h	60;"	d
+PlayPause	hauser/koditalker.py	/^    def PlayPause(self):$/;"	m	class:KodiTalker
+PlayPause	hauser/koditalker.py	/^    def PlayPause(self):$/;"	m	class:KodiTalker2
+PlayPause	hauser/koditalker2.py	/^    def PlayPause(self):$/;"	m	class:KodiTalker2
+PlayYoutubeSong	hauser/koditalker.py	/^    def PlayYoutubeSong(self, videoId):$/;"	m	class:KodiTalker
+PlayYoutubeSong	hauser/koditalker.py	/^    def PlayYoutubeSong(self, videoId):$/;"	m	class:KodiTalker2
+PlayYoutubeSong	hauser/koditalker2.py	/^    def PlayYoutubeSong(self, videoId):$/;"	m	class:KodiTalker2
+Protocol	SocketController/libraries/RCSwitch/RCSwitch.h	/^    struct Protocol {$/;"	s	class:RCSwitch
+RCSWITCH_MAX_CHANGES	SocketController/libraries/RCSwitch/RCSwitch.h	74;"	d
+RCSwitch	SocketController/libraries/RCSwitch/RCSwitch.cpp	/^RCSwitch::RCSwitch() {$/;"	f	class:RCSwitch
+RCSwitch	SocketController/libraries/RCSwitch/RCSwitch.h	/^class RCSwitch {$/;"	c
+RCSwitch	hauser/socketstalker.py	/^        class RCSwitch():$/;"	c	function:SocketsTalker.__init__
+RCSwitchDisableReceiving	SocketController/libraries/RCSwitch/RCSwitch.h	69;"	d
+REGISTER_MASK	SocketController/libraries/RF24/nRF24L01.h	105;"	d
+REUSE_TX_PL	SocketController/libraries/RF24/nRF24L01.h	113;"	d
+RF24	SocketController/libraries/RF24/RF24.cpp	/^RF24::RF24(uint8_t _cepin, uint8_t _cspin):$/;"	f	class:RF24
+RF24	SocketController/libraries/RF24/RF24.cpp	/^RF24::RF24(uint8_t _cepin, uint8_t _cspin, uint32_t _spi_speed):$/;"	f	class:RF24
+RF24	SocketController/libraries/RF24/RF24.h	/^class RF24$/;"	c
+RF24_1MBPS	SocketController/libraries/RF24/RF24.h	/^typedef enum { RF24_1MBPS = 0, RF24_2MBPS, RF24_250KBPS } rf24_datarate_e;$/;"	e	enum:__anon14
+RF24_250KBPS	SocketController/libraries/RF24/RF24.h	/^typedef enum { RF24_1MBPS = 0, RF24_2MBPS, RF24_250KBPS } rf24_datarate_e;$/;"	e	enum:__anon14
+RF24_2MBPS	SocketController/libraries/RF24/RF24.h	/^typedef enum { RF24_1MBPS = 0, RF24_2MBPS, RF24_250KBPS } rf24_datarate_e;$/;"	e	enum:__anon14
+RF24_ARCH_GPIO_H	SocketController/libraries/RF24/utility/MRAA/gpio.h	7;"	d
+RF24_BBB	SocketController/libraries/RF24/utility/BBB/includes.h	5;"	d
+RF24_BBB	SocketController/libraries/RF24/utility/Template/includes.h	22;"	d
+RF24_CRC_16	SocketController/libraries/RF24/RF24.h	/^typedef enum { RF24_CRC_DISABLED = 0, RF24_CRC_8, RF24_CRC_16 } rf24_crclength_e;$/;"	e	enum:__anon15
+RF24_CRC_8	SocketController/libraries/RF24/RF24.h	/^typedef enum { RF24_CRC_DISABLED = 0, RF24_CRC_8, RF24_CRC_16 } rf24_crclength_e;$/;"	e	enum:__anon15
+RF24_CRC_DISABLED	SocketController/libraries/RF24/RF24.h	/^typedef enum { RF24_CRC_DISABLED = 0, RF24_CRC_8, RF24_CRC_16 } rf24_crclength_e;$/;"	e	enum:__anon15
+RF24_LINUX	SocketController/libraries/RF24/utility/BBB/RF24_arch_config.h	13;"	d
+RF24_LINUX	SocketController/libraries/RF24/utility/MRAA/RF24_arch_config.h	30;"	d
+RF24_LINUX	SocketController/libraries/RF24/utility/RPi/RF24_arch_config.h	5;"	d
+RF24_LINUX	SocketController/libraries/RF24/utility/Template/RF24_arch_config.h	29;"	d
+RF24_PA_ERROR	SocketController/libraries/RF24/RF24.h	/^typedef enum { RF24_PA_MIN = 0,RF24_PA_LOW, RF24_PA_HIGH, RF24_PA_MAX, RF24_PA_ERROR } rf24_pa_dbm_e ;$/;"	e	enum:__anon13
+RF24_PA_HIGH	SocketController/libraries/RF24/RF24.h	/^typedef enum { RF24_PA_MIN = 0,RF24_PA_LOW, RF24_PA_HIGH, RF24_PA_MAX, RF24_PA_ERROR } rf24_pa_dbm_e ;$/;"	e	enum:__anon13
+RF24_PA_LOW	SocketController/libraries/RF24/RF24.h	/^typedef enum { RF24_PA_MIN = 0,RF24_PA_LOW, RF24_PA_HIGH, RF24_PA_MAX, RF24_PA_ERROR } rf24_pa_dbm_e ;$/;"	e	enum:__anon13
+RF24_PA_MAX	SocketController/libraries/RF24/RF24.h	/^typedef enum { RF24_PA_MIN = 0,RF24_PA_LOW, RF24_PA_HIGH, RF24_PA_MAX, RF24_PA_ERROR } rf24_pa_dbm_e ;$/;"	e	enum:__anon13
+RF24_PA_MIN	SocketController/libraries/RF24/RF24.h	/^typedef enum { RF24_PA_MIN = 0,RF24_PA_LOW, RF24_PA_HIGH, RF24_PA_MAX, RF24_PA_ERROR } rf24_pa_dbm_e ;$/;"	e	enum:__anon13
+RF24_RPi	SocketController/libraries/RF24/utility/RPi/includes.h	5;"	d
+RF24_SPI_SPEED	SocketController/libraries/RF24/RF24_config.h	/^  const uint32_t RF24_SPI_SPEED = 10000000;  $/;"	v
+RF24_SPI_SPEED	SocketController/libraries/RF24/utility/RPi/spi.h	20;"	d
+RF24_SPI_TRANSACTIONS	SocketController/libraries/RF24/RF24_config.h	29;"	d
+RF24_SPI_TRANSACTIONS	SocketController/libraries/RF24/utility/RPi/RF24_arch_config.h	19;"	d
+RF24_TINY	SocketController/libraries/RF24/RF24_config.h	43;"	d
+RF_CH	SocketController/libraries/RF24/nRF24L01.h	32;"	d
+RF_DR	SocketController/libraries/RF24/nRF24L01.h	78;"	d
+RF_DR_HIGH	SocketController/libraries/RF24/nRF24L01.h	125;"	d
+RF_DR_LOW	SocketController/libraries/RF24/nRF24L01.h	124;"	d
+RF_PWR	SocketController/libraries/RF24/nRF24L01.h	79;"	d
+RF_PWR_HIGH	SocketController/libraries/RF24/nRF24L01.h	127;"	d
+RF_PWR_LOW	SocketController/libraries/RF24/nRF24L01.h	126;"	d
+RF_SETUP	SocketController/libraries/RF24/nRF24L01.h	33;"	d
+RPD	SocketController/libraries/RF24/nRF24L01.h	120;"	d
+RPI	SocketController/libraries/RF24/Makefile	/^  RPI=$(shell cat \/proc\/cpuinfo | grep Hardware | grep -c BCM2709)$/;"	m
+RPI	SocketController/libraries/RF24/Makefile	/^RPI=$(shell cat \/proc\/cpuinfo | grep Hardware | grep -c BCM2708)$/;"	m
+RPI	SocketController/libraries/RF24/Makefile	/^RPI=0$/;"	m
+RPI_BPLUS_GPIO_J8_03	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    RPI_BPLUS_GPIO_J8_03     =  2,  \/*!< B+, Pin J8-03 *\/$/;"	e	enum:__anon5
+RPI_BPLUS_GPIO_J8_05	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    RPI_BPLUS_GPIO_J8_05     =  3,  \/*!< B+, Pin J8-05 *\/$/;"	e	enum:__anon5
+RPI_BPLUS_GPIO_J8_07	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    RPI_BPLUS_GPIO_J8_07     =  4,  \/*!< B+, Pin J8-07 *\/$/;"	e	enum:__anon5
+RPI_BPLUS_GPIO_J8_08	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    RPI_BPLUS_GPIO_J8_08     = 14,  \/*!< B+, Pin J8-08, defaults to alt function 0 UART0_TXD *\/$/;"	e	enum:__anon5
+RPI_BPLUS_GPIO_J8_10	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    RPI_BPLUS_GPIO_J8_10     = 15,  \/*!< B+, Pin J8-10, defaults to alt function 0 UART0_RXD *\/$/;"	e	enum:__anon5
+RPI_BPLUS_GPIO_J8_11	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    RPI_BPLUS_GPIO_J8_11     = 17,  \/*!< B+, Pin J8-11 *\/$/;"	e	enum:__anon5
+RPI_BPLUS_GPIO_J8_12	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    RPI_BPLUS_GPIO_J8_12     = 18,  \/*!< B+, Pin J8-12, can be PWM channel 0 in ALT FUN 5 *\/$/;"	e	enum:__anon5
+RPI_BPLUS_GPIO_J8_13	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    RPI_BPLUS_GPIO_J8_13     = 27,  \/*!< B+, Pin J8-13 *\/$/;"	e	enum:__anon5
+RPI_BPLUS_GPIO_J8_15	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    RPI_BPLUS_GPIO_J8_15     = 22,  \/*!< B+, Pin J8-15 *\/$/;"	e	enum:__anon5
+RPI_BPLUS_GPIO_J8_16	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    RPI_BPLUS_GPIO_J8_16     = 23,  \/*!< B+, Pin J8-16 *\/$/;"	e	enum:__anon5
+RPI_BPLUS_GPIO_J8_18	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    RPI_BPLUS_GPIO_J8_18     = 24,  \/*!< B+, Pin J8-18 *\/$/;"	e	enum:__anon5
+RPI_BPLUS_GPIO_J8_19	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    RPI_BPLUS_GPIO_J8_19     = 10,  \/*!< B+, Pin J8-19, MOSI when SPI0 in use *\/$/;"	e	enum:__anon5
+RPI_BPLUS_GPIO_J8_21	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    RPI_BPLUS_GPIO_J8_21     =  9,  \/*!< B+, Pin J8-21, MISO when SPI0 in use *\/$/;"	e	enum:__anon5
+RPI_BPLUS_GPIO_J8_22	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    RPI_BPLUS_GPIO_J8_22     = 25,  \/*!< B+, Pin J8-22 *\/$/;"	e	enum:__anon5
+RPI_BPLUS_GPIO_J8_23	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    RPI_BPLUS_GPIO_J8_23     = 11,  \/*!< B+, Pin J8-23, CLK when SPI0 in use *\/$/;"	e	enum:__anon5
+RPI_BPLUS_GPIO_J8_24	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    RPI_BPLUS_GPIO_J8_24     =  8,  \/*!< B+, Pin J8-24, CE0 when SPI0 in use *\/$/;"	e	enum:__anon5
+RPI_BPLUS_GPIO_J8_26	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    RPI_BPLUS_GPIO_J8_26     =  7,  \/*!< B+, Pin J8-26, CE1 when SPI0 in use *\/$/;"	e	enum:__anon5
+RPI_BPLUS_GPIO_J8_29	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    RPI_BPLUS_GPIO_J8_29     =  5,  \/*!< B+, Pin J8-29,  *\/$/;"	e	enum:__anon5
+RPI_BPLUS_GPIO_J8_31	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    RPI_BPLUS_GPIO_J8_31     =  6,  \/*!< B+, Pin J8-31,  *\/$/;"	e	enum:__anon5
+RPI_BPLUS_GPIO_J8_32	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    RPI_BPLUS_GPIO_J8_32     = 12,  \/*!< B+, Pin J8-32,  *\/$/;"	e	enum:__anon5
+RPI_BPLUS_GPIO_J8_33	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    RPI_BPLUS_GPIO_J8_33     = 13,  \/*!< B+, Pin J8-33,  *\/$/;"	e	enum:__anon5
+RPI_BPLUS_GPIO_J8_35	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    RPI_BPLUS_GPIO_J8_35     = 19,  \/*!< B+, Pin J8-35,  *\/$/;"	e	enum:__anon5
+RPI_BPLUS_GPIO_J8_36	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    RPI_BPLUS_GPIO_J8_36     = 16,  \/*!< B+, Pin J8-36,  *\/$/;"	e	enum:__anon5
+RPI_BPLUS_GPIO_J8_37	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    RPI_BPLUS_GPIO_J8_37     = 26,  \/*!< B+, Pin J8-37,  *\/$/;"	e	enum:__anon5
+RPI_BPLUS_GPIO_J8_38	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    RPI_BPLUS_GPIO_J8_38     = 20,  \/*!< B+, Pin J8-38,  *\/$/;"	e	enum:__anon5
+RPI_BPLUS_GPIO_J8_40	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    RPI_BPLUS_GPIO_J8_40     = 21   \/*!< B+, Pin J8-40,  *\/$/;"	e	enum:__anon5
+RPI_GPIO_P1_03	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    RPI_GPIO_P1_03        =  0,  \/*!< Version 1, Pin P1-03 *\/$/;"	e	enum:__anon5
+RPI_GPIO_P1_05	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    RPI_GPIO_P1_05        =  1,  \/*!< Version 1, Pin P1-05 *\/$/;"	e	enum:__anon5
+RPI_GPIO_P1_07	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    RPI_GPIO_P1_07        =  4,  \/*!< Version 1, Pin P1-07 *\/$/;"	e	enum:__anon5
+RPI_GPIO_P1_08	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    RPI_GPIO_P1_08        = 14,  \/*!< Version 1, Pin P1-08, defaults to alt function 0 UART0_TXD *\/$/;"	e	enum:__anon5
+RPI_GPIO_P1_10	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    RPI_GPIO_P1_10        = 15,  \/*!< Version 1, Pin P1-10, defaults to alt function 0 UART0_RXD *\/$/;"	e	enum:__anon5
+RPI_GPIO_P1_11	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    RPI_GPIO_P1_11        = 17,  \/*!< Version 1, Pin P1-11 *\/$/;"	e	enum:__anon5
+RPI_GPIO_P1_12	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    RPI_GPIO_P1_12        = 18,  \/*!< Version 1, Pin P1-12, can be PWM channel 0 in ALT FUN 5 *\/$/;"	e	enum:__anon5
+RPI_GPIO_P1_13	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    RPI_GPIO_P1_13        = 21,  \/*!< Version 1, Pin P1-13 *\/$/;"	e	enum:__anon5
+RPI_GPIO_P1_15	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    RPI_GPIO_P1_15        = 22,  \/*!< Version 1, Pin P1-15 *\/$/;"	e	enum:__anon5
+RPI_GPIO_P1_16	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    RPI_GPIO_P1_16        = 23,  \/*!< Version 1, Pin P1-16 *\/$/;"	e	enum:__anon5
+RPI_GPIO_P1_18	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    RPI_GPIO_P1_18        = 24,  \/*!< Version 1, Pin P1-18 *\/$/;"	e	enum:__anon5
+RPI_GPIO_P1_19	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    RPI_GPIO_P1_19        = 10,  \/*!< Version 1, Pin P1-19, MOSI when SPI0 in use *\/$/;"	e	enum:__anon5
+RPI_GPIO_P1_21	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    RPI_GPIO_P1_21        =  9,  \/*!< Version 1, Pin P1-21, MISO when SPI0 in use *\/$/;"	e	enum:__anon5
+RPI_GPIO_P1_22	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    RPI_GPIO_P1_22        = 25,  \/*!< Version 1, Pin P1-22 *\/$/;"	e	enum:__anon5
+RPI_GPIO_P1_23	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    RPI_GPIO_P1_23        = 11,  \/*!< Version 1, Pin P1-23, CLK when SPI0 in use *\/$/;"	e	enum:__anon5
+RPI_GPIO_P1_24	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    RPI_GPIO_P1_24        =  8,  \/*!< Version 1, Pin P1-24, CE0 when SPI0 in use *\/$/;"	e	enum:__anon5
+RPI_GPIO_P1_26	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    RPI_GPIO_P1_26        =  7,  \/*!< Version 1, Pin P1-26, CE1 when SPI0 in use *\/$/;"	e	enum:__anon5
+RPI_V2_GPIO_P1_03	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    RPI_V2_GPIO_P1_03     =  2,  \/*!< Version 2, Pin P1-03 *\/$/;"	e	enum:__anon5
+RPI_V2_GPIO_P1_05	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    RPI_V2_GPIO_P1_05     =  3,  \/*!< Version 2, Pin P1-05 *\/$/;"	e	enum:__anon5
+RPI_V2_GPIO_P1_07	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    RPI_V2_GPIO_P1_07     =  4,  \/*!< Version 2, Pin P1-07 *\/$/;"	e	enum:__anon5
+RPI_V2_GPIO_P1_08	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    RPI_V2_GPIO_P1_08     = 14,  \/*!< Version 2, Pin P1-08, defaults to alt function 0 UART0_TXD *\/$/;"	e	enum:__anon5
+RPI_V2_GPIO_P1_10	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    RPI_V2_GPIO_P1_10     = 15,  \/*!< Version 2, Pin P1-10, defaults to alt function 0 UART0_RXD *\/$/;"	e	enum:__anon5
+RPI_V2_GPIO_P1_11	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    RPI_V2_GPIO_P1_11     = 17,  \/*!< Version 2, Pin P1-11 *\/$/;"	e	enum:__anon5
+RPI_V2_GPIO_P1_12	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    RPI_V2_GPIO_P1_12     = 18,  \/*!< Version 2, Pin P1-12, can be PWM channel 0 in ALT FUN 5 *\/$/;"	e	enum:__anon5
+RPI_V2_GPIO_P1_13	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    RPI_V2_GPIO_P1_13     = 27,  \/*!< Version 2, Pin P1-13 *\/$/;"	e	enum:__anon5
+RPI_V2_GPIO_P1_15	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    RPI_V2_GPIO_P1_15     = 22,  \/*!< Version 2, Pin P1-15 *\/$/;"	e	enum:__anon5
+RPI_V2_GPIO_P1_16	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    RPI_V2_GPIO_P1_16     = 23,  \/*!< Version 2, Pin P1-16 *\/$/;"	e	enum:__anon5
+RPI_V2_GPIO_P1_18	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    RPI_V2_GPIO_P1_18     = 24,  \/*!< Version 2, Pin P1-18 *\/$/;"	e	enum:__anon5
+RPI_V2_GPIO_P1_19	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    RPI_V2_GPIO_P1_19     = 10,  \/*!< Version 2, Pin P1-19, MOSI when SPI0 in use *\/$/;"	e	enum:__anon5
+RPI_V2_GPIO_P1_21	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    RPI_V2_GPIO_P1_21     =  9,  \/*!< Version 2, Pin P1-21, MISO when SPI0 in use *\/$/;"	e	enum:__anon5
+RPI_V2_GPIO_P1_22	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    RPI_V2_GPIO_P1_22     = 25,  \/*!< Version 2, Pin P1-22 *\/$/;"	e	enum:__anon5
+RPI_V2_GPIO_P1_23	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    RPI_V2_GPIO_P1_23     = 11,  \/*!< Version 2, Pin P1-23, CLK when SPI0 in use *\/$/;"	e	enum:__anon5
+RPI_V2_GPIO_P1_24	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    RPI_V2_GPIO_P1_24     =  8,  \/*!< Version 2, Pin P1-24, CE0 when SPI0 in use *\/$/;"	e	enum:__anon5
+RPI_V2_GPIO_P1_26	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    RPI_V2_GPIO_P1_26     =  7,  \/*!< Version 2, Pin P1-26, CE1 when SPI0 in use *\/$/;"	e	enum:__anon5
+RPI_V2_GPIO_P1_29	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    RPI_V2_GPIO_P1_29     =  5,  \/*!< Version 2, Pin P1-29 *\/$/;"	e	enum:__anon5
+RPI_V2_GPIO_P1_31	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    RPI_V2_GPIO_P1_31     =  6,  \/*!< Version 2, Pin P1-31 *\/$/;"	e	enum:__anon5
+RPI_V2_GPIO_P1_32	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    RPI_V2_GPIO_P1_32     = 12,  \/*!< Version 2, Pin P1-32 *\/$/;"	e	enum:__anon5
+RPI_V2_GPIO_P1_33	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    RPI_V2_GPIO_P1_33     = 13,  \/*!< Version 2, Pin P1-33 *\/$/;"	e	enum:__anon5
+RPI_V2_GPIO_P1_35	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    RPI_V2_GPIO_P1_35     = 19,  \/*!< Version 2, Pin P1-35 *\/$/;"	e	enum:__anon5
+RPI_V2_GPIO_P1_36	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    RPI_V2_GPIO_P1_36     = 16,  \/*!< Version 2, Pin P1-36 *\/$/;"	e	enum:__anon5
+RPI_V2_GPIO_P1_37	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    RPI_V2_GPIO_P1_37     = 26,  \/*!< Version 2, Pin P1-37 *\/$/;"	e	enum:__anon5
+RPI_V2_GPIO_P1_38	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    RPI_V2_GPIO_P1_38     = 20,  \/*!< Version 2, Pin P1-38 *\/$/;"	e	enum:__anon5
+RPI_V2_GPIO_P1_40	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    RPI_V2_GPIO_P1_40     = 21,  \/*!< Version 2, Pin P1-40 *\/$/;"	e	enum:__anon5
+RPI_V2_GPIO_P5_03	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    RPI_V2_GPIO_P5_03     = 28,  \/*!< Version 2, Pin P5-03 *\/$/;"	e	enum:__anon5
+RPI_V2_GPIO_P5_04	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    RPI_V2_GPIO_P5_04     = 29,  \/*!< Version 2, Pin P5-04 *\/$/;"	e	enum:__anon5
+RPI_V2_GPIO_P5_05	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    RPI_V2_GPIO_P5_05     = 30,  \/*!< Version 2, Pin P5-05 *\/$/;"	e	enum:__anon5
+RPI_V2_GPIO_P5_06	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^    RPI_V2_GPIO_P5_06     = 31,  \/*!< Version 2, Pin P5-06 *\/$/;"	e	enum:__anon5
+RPi	SocketController/libraries/RF24/examples_RPi/pingpair_dyn.py	/^import RPi.GPIO as GPIO$/;"	i
+RPiGPIOPin	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^} RPiGPIOPin;$/;"	t	typeref:enum:__anon5
+RX_ADDR_P0	SocketController/libraries/RF24/nRF24L01.h	37;"	d
+RX_ADDR_P1	SocketController/libraries/RF24/nRF24L01.h	38;"	d
+RX_ADDR_P2	SocketController/libraries/RF24/nRF24L01.h	39;"	d
+RX_ADDR_P3	SocketController/libraries/RF24/nRF24L01.h	40;"	d
+RX_ADDR_P4	SocketController/libraries/RF24/nRF24L01.h	41;"	d
+RX_ADDR_P5	SocketController/libraries/RF24/nRF24L01.h	42;"	d
+RX_DR	SocketController/libraries/RF24/nRF24L01.h	80;"	d
+RX_EMPTY	SocketController/libraries/RF24/nRF24L01.h	91;"	d
+RX_FULL	SocketController/libraries/RF24/nRF24L01.h	90;"	d
+RX_PW_P0	SocketController/libraries/RF24/nRF24L01.h	44;"	d
+RX_PW_P1	SocketController/libraries/RF24/nRF24L01.h	45;"	d
+RX_PW_P2	SocketController/libraries/RF24/nRF24L01.h	46;"	d
+RX_PW_P3	SocketController/libraries/RF24/nRF24L01.h	47;"	d
+RX_PW_P4	SocketController/libraries/RF24/nRF24L01.h	48;"	d
+RX_PW_P5	SocketController/libraries/RF24/nRF24L01.h	49;"	d
+RX_P_NO	SocketController/libraries/RF24/nRF24L01.h	83;"	d
+R_REGISTER	SocketController/libraries/RF24/nRF24L01.h	103;"	d
+R_RX_PAYLOAD	SocketController/libraries/RF24/nRF24L01.h	108;"	d
+R_RX_PL_WID	SocketController/libraries/RF24/nRF24L01.h	107;"	d
+RaspberryPi	SocketController/libraries/RCSwitch/RCSwitch.h	38;"	d
+SERIAL_DEBUG	SocketController/libraries/RF24/utility/Template/RF24_arch_config.h	44;"	d
+SETUP_AW	SocketController/libraries/RF24/nRF24L01.h	30;"	d
+SETUP_RETR	SocketController/libraries/RF24/nRF24L01.h	31;"	d
+SHARED_LINKER_FLAGS	SocketController/libraries/RF24/Makefile	/^SHARED_LINKER_FLAGS=-shared -Wl,-soname,$@.so.1$/;"	m
+SOFT_SPI_MISO_PIN	SocketController/libraries/RF24/RF24_config.h	/^      const uint8_t SOFT_SPI_MISO_PIN = 16; $/;"	v
+SOFT_SPI_MOSI_PIN	SocketController/libraries/RF24/RF24_config.h	/^      const uint8_t SOFT_SPI_MOSI_PIN = 15; $/;"	v
+SOFT_SPI_SCK_PIN	SocketController/libraries/RF24/RF24_config.h	/^      const uint8_t SOFT_SPI_SCK_PIN = 14;  $/;"	v
+SOURCES	SocketController/libraries/RF24/examples_RPi/Makefile	/^SOURCES = ${PROGRAMS:=.cpp}$/;"	m
+SOURCES	SocketController/libraries/RF24/examples_RPi/extra/Makefile	/^SOURCES = ${PROGRAMS:=.cpp}$/;"	m
+SOURCES	SocketController/libraries/RF24/examples_RPi/interrupts/Makefile	/^SOURCES = ${PROGRAMS:=.cpp}$/;"	m
+SPI	SocketController/libraries/RF24/utility/BBB/spi.cpp	/^SPI::SPI() {$/;"	f	class:SPI
+SPI	SocketController/libraries/RF24/utility/BBB/spi.h	/^class SPI {$/;"	c
+SPI	SocketController/libraries/RF24/utility/MRAA/spi.cpp	/^SPI::SPI() {$/;"	f	class:SPI
+SPI	SocketController/libraries/RF24/utility/MRAA/spi.h	/^class SPI {$/;"	c
+SPI	SocketController/libraries/RF24/utility/RPi/spi.cpp	/^SPI::SPI() {$/;"	f	class:SPI
+SPI	SocketController/libraries/RF24/utility/RPi/spi.h	/^class SPI {$/;"	c
+SPIClass	SocketController/libraries/RF24/utility/ATTiny/spi.h	/^class SPIClass {$/;"	c
+SPISettings	SocketController/libraries/RF24/utility/RPi/spi.h	/^	SPISettings(uint32_t clock, uint8_t bitOrder, uint8_t dataMode) {$/;"	f	class:SPISettings
+SPISettings	SocketController/libraries/RF24/utility/RPi/spi.h	/^    SPISettings() { init(RF24_SPI_SPEED, MSBFIRST, SPI_MODE0); }$/;"	f	class:SPISettings
+SPISettings	SocketController/libraries/RF24/utility/RPi/spi.h	/^class SPISettings {$/;"	c
+SPI_2XCLOCK_MASK	SocketController/libraries/RF24/utility/ATTiny/spi.h	29;"	d
+SPI_CLOCK_DIV128	SocketController/libraries/RF24/utility/ATTiny/spi.h	16;"	d
+SPI_CLOCK_DIV16	SocketController/libraries/RF24/utility/ATTiny/spi.h	14;"	d
+SPI_CLOCK_DIV2	SocketController/libraries/RF24/utility/ATTiny/spi.h	17;"	d
+SPI_CLOCK_DIV2	SocketController/libraries/RF24/utility/MRAA/RF24_arch_config.h	62;"	d
+SPI_CLOCK_DIV32	SocketController/libraries/RF24/utility/ATTiny/spi.h	19;"	d
+SPI_CLOCK_DIV4	SocketController/libraries/RF24/utility/ATTiny/spi.h	13;"	d
+SPI_CLOCK_DIV64	SocketController/libraries/RF24/utility/ATTiny/spi.h	15;"	d
+SPI_CLOCK_DIV8	SocketController/libraries/RF24/utility/ATTiny/spi.h	18;"	d
+SPI_CLOCK_MASK	SocketController/libraries/RF24/utility/ATTiny/spi.h	28;"	d
+SPI_H	SocketController/libraries/RF24/utility/BBB/spi.h	9;"	d
+SPI_HAS_TRANSACTION	SocketController/libraries/RF24/utility/RPi/spi.h	17;"	d
+SPI_MODE	SocketController/libraries/RF24/RF24_config.h	/^      const uint8_t SPI_MODE = 0;$/;"	v
+SPI_MODE0	SocketController/libraries/RF24/utility/ATTiny/spi.h	22;"	d
+SPI_MODE0	SocketController/libraries/RF24/utility/MRAA/RF24_arch_config.h	61;"	d
+SPI_MODE0	SocketController/libraries/RF24/utility/RPi/spi.h	19;"	d
+SPI_MODE1	SocketController/libraries/RF24/utility/ATTiny/spi.h	23;"	d
+SPI_MODE2	SocketController/libraries/RF24/utility/ATTiny/spi.h	24;"	d
+SPI_MODE3	SocketController/libraries/RF24/utility/ATTiny/spi.h	25;"	d
+SPI_MODE_MASK	SocketController/libraries/RF24/utility/ATTiny/spi.h	27;"	d
+SS	SocketController/libraries/RF24/RF24.cpp	1537;"	d	file:
+SS	SocketController/libraries/RF24/RF24.cpp	1544;"	d	file:
+SS	SocketController/libraries/RF24/RF24.cpp	1551;"	d	file:
+Serial	hauser/ardubro.py	/^from serial import Serial, SerialException$/;"	i
+SerialException	hauser/ardubro.py	/^from serial import Serial, SerialException$/;"	i
+Sockbro	hauser/hauser.py	/^from sockbro import Sockbro$/;"	i
+Sockbro	hauser/sockbro.py	/^class Sockbro:$/;"	c
+SocketsTalker	hauser/socketstalker.py	/^class SocketsTalker:$/;"	c
+SongNext	hauser/koditalker.py	/^    def SongNext(self):$/;"	m	class:KodiTalker
+SongNext	hauser/koditalker.py	/^    def SongNext(self):$/;"	m	class:KodiTalker2
+SongNext	hauser/koditalker2.py	/^    def SongNext(self):$/;"	m	class:KodiTalker2
+SongPrev	hauser/koditalker.py	/^    def SongPrev(self):$/;"	m	class:KodiTalker
+SongPrev	hauser/koditalker.py	/^    def SongPrev(self):$/;"	m	class:KodiTalker2
+SongPrev	hauser/koditalker2.py	/^    def SongPrev(self):$/;"	m	class:KodiTalker2
+SongSkip	hauser/koditalker.py	/^    def SongSkip(self, prev_or_next, times = 1):$/;"	m	class:KodiTalker
+SongSkip	hauser/koditalker.py	/^    def SongSkip(self, prev_or_next, times = 1):$/;"	m	class:KodiTalker2
+SongSkip	hauser/koditalker2.py	/^    def SongSkip(self, prev_or_next):$/;"	m	class:KodiTalker2
+TX_ADDR	SocketController/libraries/RF24/nRF24L01.h	43;"	d
+TX_DS	SocketController/libraries/RF24/nRF24L01.h	81;"	d
+TX_EMPTY	SocketController/libraries/RF24/nRF24L01.h	89;"	d
+TX_FULL	SocketController/libraries/RF24/nRF24L01.h	84;"	d
+TX_REUSE	SocketController/libraries/RF24/nRF24L01.h	87;"	d
+USCK	SocketController/libraries/RF24/RF24.cpp	1536;"	d	file:
+USCK	SocketController/libraries/RF24/RF24.cpp	1543;"	d	file:
+USCK	SocketController/libraries/RF24/RF24.cpp	1550;"	d	file:
+Volume	hauser/koditalker.py	/^    def Volume(self,amount, increment_or_decrement):$/;"	m	class:KodiTalker
+Volume	hauser/koditalker.py	/^    def Volume(self,amount, increment_or_decrement):$/;"	m	class:KodiTalker2
+Volume	hauser/koditalker2.py	/^    def Volume(self,amount, increment_or_decrement):$/;"	m	class:KodiTalker2
+VolumeDown	hauser/koditalker.py	/^    def VolumeDown(self, amount):$/;"	m	class:KodiTalker
+VolumeDown	hauser/koditalker.py	/^    def VolumeDown(self, amount):$/;"	m	class:KodiTalker2
+VolumeDown	hauser/koditalker2.py	/^    def VolumeDown(self, amount):$/;"	m	class:KodiTalker2
+VolumeUp	hauser/koditalker.py	/^    def VolumeUp(self, amount):$/;"	m	class:KodiTalker
+VolumeUp	hauser/koditalker.py	/^    def VolumeUp(self, amount):$/;"	m	class:KodiTalker2
+VolumeUp	hauser/koditalker2.py	/^    def VolumeUp(self, amount):$/;"	m	class:KodiTalker2
+W_ACK_PAYLOAD	SocketController/libraries/RF24/nRF24L01.h	110;"	d
+W_REGISTER	SocketController/libraries/RF24/nRF24L01.h	104;"	d
+W_TX_PAYLOAD	SocketController/libraries/RF24/nRF24L01.h	109;"	d
+W_TX_PAYLOAD_NO_ACK	SocketController/libraries/RF24/nRF24L01.h	121;"	d
+_BV	SocketController/libraries/RF24/RF24_config.h	112;"	d
+_BV	SocketController/libraries/RF24/RF24_config.h	92;"	d
+_BV	SocketController/libraries/RF24/utility/BBB/RF24_arch_config.h	25;"	d
+_BV	SocketController/libraries/RF24/utility/Due/RF24_arch_config.h	22;"	d
+_BV	SocketController/libraries/RF24/utility/LittleWire/RF24_arch_config.h	17;"	d
+_BV	SocketController/libraries/RF24/utility/MRAA/RF24_arch_config.h	24;"	d
+_BV	SocketController/libraries/RF24/utility/RPi/RF24_arch_config.h	22;"	d
+_BV	SocketController/libraries/RF24/utility/Template/RF24_arch_config.h	41;"	d
+_RCSwitch_h	SocketController/libraries/RCSwitch/RCSwitch.h	31;"	d
+_SKIP	NFCBro/gradlew.bat	/^set _SKIP=2$/;"	v
+_SPI	SocketController/libraries/RF24/RF24_config.h	66;"	d
+_SPI	SocketController/libraries/RF24/RF24_config.h	74;"	d
+_SPI	SocketController/libraries/RF24/RF24_config.h	78;"	d
+_SPI	SocketController/libraries/RF24/RF24_config.h	98;"	d
+_SPI	SocketController/libraries/RF24/utility/ATTiny/RF24_arch_config.h	30;"	d
+_SPI	SocketController/libraries/RF24/utility/BBB/RF24_arch_config.h	26;"	d
+_SPI	SocketController/libraries/RF24/utility/Due/RF24_arch_config.h	23;"	d
+_SPI	SocketController/libraries/RF24/utility/MRAA/RF24_arch_config.h	28;"	d
+_SPI	SocketController/libraries/RF24/utility/RPi/RF24_arch_config.h	16;"	d
+_SPI	SocketController/libraries/RF24/utility/Teensy/RF24_arch_config.h	16;"	d
+_SPI	SocketController/libraries/RF24/utility/Template/RF24_arch_config.h	42;"	d
+_SPI_H_INCLUDED	SocketController/libraries/RF24/utility/MRAA/spi.h	7;"	d
+_SPI_H_INCLUDED	SocketController/libraries/RF24/utility/RPi/spi.h	11;"	d
+__ARCH_CONFIG_H__	SocketController/libraries/RF24/utility/BBB/RF24_arch_config.h	11;"	d
+__ARCH_CONFIG_H__	SocketController/libraries/RF24/utility/LittleWire/RF24_arch_config.h	2;"	d
+__ARCH_CONFIG_H__	SocketController/libraries/RF24/utility/MRAA/RF24_arch_config.h	2;"	d
+__ARCH_CONFIG_H__	SocketController/libraries/RF24/utility/RPi/RF24_arch_config.h	3;"	d
+__ARCH_CONFIG_H__	SocketController/libraries/RF24/utility/Template/RF24_arch_config.h	27;"	d
+__PRINTF_H__	SocketController/libraries/RF24/printf.h	18;"	d
+__PRINTF_H__	SocketController/libraries/RF24/tests/native/printf.h	17;"	d
+__PRINTF_H__	SocketController/libraries/RF24/tests/pingpair_blocking/printf.h	17;"	d
+__PRINTF_H__	SocketController/libraries/RF24/tests/pingpair_test/printf.h	17;"	d
+__RF24_ARCH_CONFIG_H__	SocketController/libraries/RF24/utility/ATTiny/RF24_arch_config.h	8;"	d
+__RF24_ARCH_CONFIG_H__	SocketController/libraries/RF24/utility/Due/RF24_arch_config.h	9;"	d
+__RF24_CONFIG_H__	SocketController/libraries/RF24/RF24_config.h	15;"	d
+__RF24_H__	SocketController/libraries/RF24/RF24.h	16;"	d
+__RF24_INCLUDES_H__	SocketController/libraries/RF24/utility/BBB/includes.h	3;"	d
+__RF24_INCLUDES_H__	SocketController/libraries/RF24/utility/MRAA/includes.h	3;"	d
+__RF24_INCLUDES_H__	SocketController/libraries/RF24/utility/RPi/includes.h	3;"	d
+__RF24_INCLUDES_H__	SocketController/libraries/RF24/utility/Template/includes.h	17;"	d
+__init__	hauser/amiibro.py	/^    def __init__(self):$/;"	m	class:Amiibro
+__init__	hauser/ardubro.py	/^    def __init__(self, relays= 2, setDebug=True, port='\/dev\/ttyACM0', baudrate=9600, *args, **kwargs):$/;"	m	class:Ardubro
+__init__	hauser/hauser.py	/^    def __init__(self):$/;"	m	class:Hauser
+__init__	hauser/koditalker.py	/^    def __init__(self):$/;"	m	class:KodiTalker
+__init__	hauser/koditalker.py	/^    def __init__(self):$/;"	m	class:KodiTalker2
+__init__	hauser/koditalker2.py	/^    def __init__(self):$/;"	m	class:KodiTalker2
+__init__	hauser/sockbro.py	/^    def __init__(self):$/;"	m	class:Sockbro
+__init__	hauser/socketstalker.py	/^    def __init__(self, homePin, *sockets):$/;"	m	class:SocketsTalker
+__millis	SocketController/libraries/RF24/utility/BBB/compatibility.c	/^long __millis()$/;"	f
+__millis	SocketController/libraries/RF24/utility/MRAA/compatibility.c	/^long __millis()$/;"	f
+__msleep	SocketController/libraries/RF24/utility/BBB/compatibility.c	/^void __msleep(int milisec)$/;"	f
+__msleep	SocketController/libraries/RF24/utility/MRAA/compatibility.c	/^void __msleep(int milisec)$/;"	f
+__start_timer	SocketController/libraries/RF24/utility/BBB/compatibility.c	/^void __start_timer()$/;"	f
+__start_timer	SocketController/libraries/RF24/utility/MRAA/compatibility.c	/^void __start_timer()$/;"	f
+__usleep	SocketController/libraries/RF24/utility/BBB/compatibility.c	/^void __usleep(int milisec)$/;"	f
+__usleep	SocketController/libraries/RF24/utility/MRAA/compatibility.c	/^void __usleep(int milisec)$/;"	f
+_write	SocketController/libraries/RF24/examples/Usage/pingpair_maple/main.cpp	/^extern "C" int _write (int file, char * ptr, int len)$/;"	f
+_write_r	SocketController/libraries/RF24/examples/Usage/pingpair_maple/main.cpp	/^extern "C" int _write_r (void*, int file, char * ptr, int len)$/;"	f
+addition_isCorrect	NFCBro/app/src/test/java/killme/nfcbro/ExampleUnitTest.java	/^    public void addition_isCorrect() throws Exception {$/;"	m	class:ExampleUnitTest
+addr_width	SocketController/libraries/RF24/RF24.h	/^  uint8_t addr_width; \/**< The address width to use - 3,4 or 5 bytes. *\/$/;"	m	class:RF24
+addresses	SocketController/libraries/RF24/examples_RPi/gettingstarted_call_response.cpp	/^const uint8_t addresses[][6] = {"1Node","2Node"};$/;"	v
+addresses	SocketController/libraries/RF24/examples_RPi/interrupts/gettingstarted_call_response_int.cpp	/^const uint8_t addresses[][6] = {"1Node","2Node"};$/;"	v
+addresses	SocketController/libraries/RF24/examples_RPi/interrupts/gettingstarted_call_response_int2.cpp	/^const uint8_t addresses[][6] = {"1Node","2Node"};$/;"	v
+addresses	SocketController/libraries/RF24/examples_RPi/interrupts/transfer_interrupt.cpp	/^const uint64_t addresses[2] = { 0xABCDABCD71LL, 0x544d52687CLL };$/;"	v
+addresses	SocketController/libraries/RF24/examples_RPi/transfer.cpp	/^const uint64_t addresses[2] = { 0xABCDABCD71LL, 0x544d52687CLL };$/;"	v
+amiiboControl	hauser/hauser.py	/^    def amiiboControl(self, tag=None):$/;"	m	class:Hauser
+amiiboNfcTagRequest	hauser/hauser_web.py	/^def amiiboNfcTagRequest(tag=None):$/;"	f
+attachInterrupt	SocketController/libraries/RF24/utility/RPi/interrupt.c	/^int attachInterrupt (int pin, int mode, void (*function)(void))$/;"	f
+available	SocketController/libraries/RCSwitch/RCSwitch.cpp	/^bool RCSwitch::available() {$/;"	f	class:RCSwitch
+available	SocketController/libraries/RF24/RF24.cpp	/^bool RF24::available(uint8_t* pipe_num)$/;"	f	class:RF24
+available	SocketController/libraries/RF24/RF24.cpp	/^bool RF24::available(void)$/;"	f	class:RF24
+available_wrap	SocketController/libraries/RF24/RPi/pyRF24/pyRF24.cpp	/^bp::tuple available_wrap(RF24& ref)$/;"	f
+base64	hauser/koditalker.py	/^import urllib, base64$/;"	i
+base64	hauser/koditalker2.py	/^import base64$/;"	i
+bcm2835FunctionSelect	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^} bcm2835FunctionSelect;$/;"	t	typeref:enum:__anon2
+bcm2835I2CClockDivider	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^} bcm2835I2CClockDivider;$/;"	t	typeref:enum:__anon10
+bcm2835I2CReasonCodes	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^} bcm2835I2CReasonCodes;$/;"	t	typeref:enum:__anon11
+bcm2835PUDControl	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^} bcm2835PUDControl;$/;"	t	typeref:enum:__anon3
+bcm2835PWMClockDivider	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^} bcm2835PWMClockDivider;$/;"	t	typeref:enum:__anon12
+bcm2835PadGroup	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^} bcm2835PadGroup;$/;"	t	typeref:enum:__anon4
+bcm2835RegisterBase	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^} bcm2835RegisterBase;$/;"	t	typeref:enum:__anon1
+bcm2835SPIBitOrder	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^}bcm2835SPIBitOrder;$/;"	t	typeref:enum:__anon6
+bcm2835SPIChipSelect	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^} bcm2835SPIChipSelect;$/;"	t	typeref:enum:__anon8
+bcm2835SPIClockDivider	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^} bcm2835SPIClockDivider;$/;"	t	typeref:enum:__anon9
+bcm2835SPIMode	SocketController/libraries/RF24/utility/RPi/bcm2835.h	/^}bcm2835SPIMode;$/;"	t	typeref:enum:__anon7
+bcm2835_bsc0	SocketController/libraries/RF24/utility/RPi/bcm2835.c	/^volatile uint32_t *bcm2835_bsc0        = (uint32_t *)MAP_FAILED;$/;"	v
+bcm2835_bsc1	SocketController/libraries/RF24/utility/RPi/bcm2835.c	/^volatile uint32_t *bcm2835_bsc1        = (uint32_t *)MAP_FAILED;$/;"	v
+bcm2835_clk	SocketController/libraries/RF24/utility/RPi/bcm2835.c	/^volatile uint32_t *bcm2835_clk         = (uint32_t *)MAP_FAILED;$/;"	v
+bcm2835_close	SocketController/libraries/RF24/utility/RPi/bcm2835.c	/^int bcm2835_close(void)$/;"	f
+bcm2835_delay	SocketController/libraries/RF24/utility/RPi/bcm2835.c	/^void bcm2835_delay(unsigned int millis)$/;"	f
+bcm2835_delayMicroseconds	SocketController/libraries/RF24/utility/RPi/bcm2835.c	/^void bcm2835_delayMicroseconds(uint64_t micros)$/;"	f
+bcm2835_gpio	SocketController/libraries/RF24/utility/RPi/bcm2835.c	/^volatile uint32_t *bcm2835_gpio        = (uint32_t *)MAP_FAILED;$/;"	v
+bcm2835_gpio_afen	SocketController/libraries/RF24/utility/RPi/bcm2835.c	/^void bcm2835_gpio_afen(uint8_t pin)$/;"	f
+bcm2835_gpio_aren	SocketController/libraries/RF24/utility/RPi/bcm2835.c	/^void bcm2835_gpio_aren(uint8_t pin)$/;"	f
+bcm2835_gpio_clr	SocketController/libraries/RF24/utility/RPi/bcm2835.c	/^void bcm2835_gpio_clr(uint8_t pin)$/;"	f
+bcm2835_gpio_clr_afen	SocketController/libraries/RF24/utility/RPi/bcm2835.c	/^void bcm2835_gpio_clr_afen(uint8_t pin)$/;"	f
+bcm2835_gpio_clr_aren	SocketController/libraries/RF24/utility/RPi/bcm2835.c	/^void bcm2835_gpio_clr_aren(uint8_t pin)$/;"	f
+bcm2835_gpio_clr_fen	SocketController/libraries/RF24/utility/RPi/bcm2835.c	/^void bcm2835_gpio_clr_fen(uint8_t pin)$/;"	f
+bcm2835_gpio_clr_hen	SocketController/libraries/RF24/utility/RPi/bcm2835.c	/^void bcm2835_gpio_clr_hen(uint8_t pin)$/;"	f
+bcm2835_gpio_clr_len	SocketController/libraries/RF24/utility/RPi/bcm2835.c	/^void bcm2835_gpio_clr_len(uint8_t pin)$/;"	f
+bcm2835_gpio_clr_multi	SocketController/libraries/RF24/utility/RPi/bcm2835.c	/^void bcm2835_gpio_clr_multi(uint32_t mask)$/;"	f
+bcm2835_gpio_clr_ren	SocketController/libraries/RF24/utility/RPi/bcm2835.c	/^void bcm2835_gpio_clr_ren(uint8_t pin)$/;"	f
+bcm2835_gpio_eds	SocketController/libraries/RF24/utility/RPi/bcm2835.c	/^uint8_t bcm2835_gpio_eds(uint8_t pin)$/;"	f
+bcm2835_gpio_fen	SocketController/libraries/RF24/utility/RPi/bcm2835.c	/^void bcm2835_gpio_fen(uint8_t pin)$/;"	f
+bcm2835_gpio_fsel	SocketController/libraries/RF24/utility/RPi/bcm2835.c	/^void bcm2835_gpio_fsel(uint8_t pin, uint8_t mode)$/;"	f
+bcm2835_gpio_hen	SocketController/libraries/RF24/utility/RPi/bcm2835.c	/^void bcm2835_gpio_hen(uint8_t pin)$/;"	f
+bcm2835_gpio_len	SocketController/libraries/RF24/utility/RPi/bcm2835.c	/^void bcm2835_gpio_len(uint8_t pin)$/;"	f
+bcm2835_gpio_lev	SocketController/libraries/RF24/utility/RPi/bcm2835.c	/^uint8_t bcm2835_gpio_lev(uint8_t pin)$/;"	f
+bcm2835_gpio_pad	SocketController/libraries/RF24/utility/RPi/bcm2835.c	/^uint32_t bcm2835_gpio_pad(uint8_t group)$/;"	f
+bcm2835_gpio_pud	SocketController/libraries/RF24/utility/RPi/bcm2835.c	/^void bcm2835_gpio_pud(uint8_t pud)$/;"	f
+bcm2835_gpio_pudclk	SocketController/libraries/RF24/utility/RPi/bcm2835.c	/^void bcm2835_gpio_pudclk(uint8_t pin, uint8_t on)$/;"	f
+bcm2835_gpio_ren	SocketController/libraries/RF24/utility/RPi/bcm2835.c	/^void bcm2835_gpio_ren(uint8_t pin)$/;"	f
+bcm2835_gpio_set	SocketController/libraries/RF24/utility/RPi/bcm2835.c	/^void bcm2835_gpio_set(uint8_t pin)$/;"	f
+bcm2835_gpio_set_eds	SocketController/libraries/RF24/utility/RPi/bcm2835.c	/^void bcm2835_gpio_set_eds(uint8_t pin)$/;"	f
+bcm2835_gpio_set_multi	SocketController/libraries/RF24/utility/RPi/bcm2835.c	/^void bcm2835_gpio_set_multi(uint32_t mask)$/;"	f
+bcm2835_gpio_set_pad	SocketController/libraries/RF24/utility/RPi/bcm2835.c	/^void bcm2835_gpio_set_pad(uint8_t group, uint32_t control)$/;"	f
+bcm2835_gpio_set_pud	SocketController/libraries/RF24/utility/RPi/bcm2835.c	/^void bcm2835_gpio_set_pud(uint8_t pin, uint8_t pud)$/;"	f
+bcm2835_gpio_write	SocketController/libraries/RF24/utility/RPi/bcm2835.c	/^void bcm2835_gpio_write(uint8_t pin, uint8_t on)$/;"	f
+bcm2835_gpio_write_mask	SocketController/libraries/RF24/utility/RPi/bcm2835.c	/^void bcm2835_gpio_write_mask(uint32_t value, uint32_t mask)$/;"	f
+bcm2835_gpio_write_multi	SocketController/libraries/RF24/utility/RPi/bcm2835.c	/^void bcm2835_gpio_write_multi(uint32_t mask, uint8_t on)$/;"	f
+bcm2835_i2c_begin	SocketController/libraries/RF24/utility/RPi/bcm2835.c	/^void bcm2835_i2c_begin(void)$/;"	f
+bcm2835_i2c_end	SocketController/libraries/RF24/utility/RPi/bcm2835.c	/^void bcm2835_i2c_end(void)$/;"	f
+bcm2835_i2c_read	SocketController/libraries/RF24/utility/RPi/bcm2835.c	/^uint8_t bcm2835_i2c_read(char* buf, uint32_t len)$/;"	f
+bcm2835_i2c_read_register_rs	SocketController/libraries/RF24/utility/RPi/bcm2835.c	/^uint8_t bcm2835_i2c_read_register_rs(char* regaddr, char* buf, uint32_t len)$/;"	f
+bcm2835_i2c_setClockDivider	SocketController/libraries/RF24/utility/RPi/bcm2835.c	/^void bcm2835_i2c_setClockDivider(uint16_t divider)$/;"	f
+bcm2835_i2c_setSlaveAddress	SocketController/libraries/RF24/utility/RPi/bcm2835.c	/^void bcm2835_i2c_setSlaveAddress(uint8_t addr)$/;"	f
+bcm2835_i2c_set_baudrate	SocketController/libraries/RF24/utility/RPi/bcm2835.c	/^void bcm2835_i2c_set_baudrate(uint32_t baudrate)$/;"	f
+bcm2835_i2c_write	SocketController/libraries/RF24/utility/RPi/bcm2835.c	/^uint8_t bcm2835_i2c_write(const char * buf, uint32_t len)$/;"	f
+bcm2835_i2c_write_read_rs	SocketController/libraries/RF24/utility/RPi/bcm2835.c	/^uint8_t bcm2835_i2c_write_read_rs(char* cmds, uint32_t cmds_len, char* buf, uint32_t buf_len)$/;"	f
+bcm2835_init	SocketController/libraries/RF24/utility/RPi/bcm2835.c	/^int bcm2835_init(void)$/;"	f
+bcm2835_millis	SocketController/libraries/RF24/utility/RPi/bcm2835.c	/^unsigned int bcm2835_millis(void)$/;"	f
+bcm2835_pads	SocketController/libraries/RF24/utility/RPi/bcm2835.c	/^volatile uint32_t *bcm2835_pads        = (uint32_t *)MAP_FAILED;$/;"	v
+bcm2835_peri_read	SocketController/libraries/RF24/utility/RPi/bcm2835.c	/^uint32_t bcm2835_peri_read(volatile uint32_t* paddr)$/;"	f
+bcm2835_peri_read_nb	SocketController/libraries/RF24/utility/RPi/bcm2835.c	/^uint32_t bcm2835_peri_read_nb(volatile uint32_t* paddr)$/;"	f
+bcm2835_peri_set_bits	SocketController/libraries/RF24/utility/RPi/bcm2835.c	/^void bcm2835_peri_set_bits(volatile uint32_t* paddr, uint32_t value, uint32_t mask)$/;"	f
+bcm2835_peri_write	SocketController/libraries/RF24/utility/RPi/bcm2835.c	/^void bcm2835_peri_write(volatile uint32_t* paddr, uint32_t value)$/;"	f
+bcm2835_peri_write_nb	SocketController/libraries/RF24/utility/RPi/bcm2835.c	/^void bcm2835_peri_write_nb(volatile uint32_t* paddr, uint32_t value)$/;"	f
+bcm2835_peripherals	SocketController/libraries/RF24/utility/RPi/bcm2835.c	/^uint32_t *bcm2835_peripherals = (uint32_t *)MAP_FAILED;$/;"	v
+bcm2835_peripherals_base	SocketController/libraries/RF24/utility/RPi/bcm2835.c	/^uint32_t *bcm2835_peripherals_base = (uint32_t *)BCM2835_PERI_BASE;$/;"	v
+bcm2835_peripherals_size	SocketController/libraries/RF24/utility/RPi/bcm2835.c	/^uint32_t bcm2835_peripherals_size = BCM2835_PERI_SIZE;$/;"	v
+bcm2835_pwm	SocketController/libraries/RF24/utility/RPi/bcm2835.c	/^volatile uint32_t *bcm2835_pwm         = (uint32_t *)MAP_FAILED;$/;"	v
+bcm2835_pwm_set_clock	SocketController/libraries/RF24/utility/RPi/bcm2835.c	/^void bcm2835_pwm_set_clock(uint32_t divisor)$/;"	f
+bcm2835_pwm_set_data	SocketController/libraries/RF24/utility/RPi/bcm2835.c	/^void bcm2835_pwm_set_data(uint8_t channel, uint32_t data)$/;"	f
+bcm2835_pwm_set_mode	SocketController/libraries/RF24/utility/RPi/bcm2835.c	/^void bcm2835_pwm_set_mode(uint8_t channel, uint8_t markspace, uint8_t enabled)$/;"	f
+bcm2835_pwm_set_range	SocketController/libraries/RF24/utility/RPi/bcm2835.c	/^void bcm2835_pwm_set_range(uint8_t channel, uint32_t range)$/;"	f
+bcm2835_regbase	SocketController/libraries/RF24/utility/RPi/bcm2835.c	/^uint32_t* bcm2835_regbase(uint8_t regbase)$/;"	f
+bcm2835_set_debug	SocketController/libraries/RF24/utility/RPi/bcm2835.c	/^void  bcm2835_set_debug(uint8_t d)$/;"	f
+bcm2835_spi0	SocketController/libraries/RF24/utility/RPi/bcm2835.c	/^volatile uint32_t *bcm2835_spi0        = (uint32_t *)MAP_FAILED;$/;"	v
+bcm2835_spi_begin	SocketController/libraries/RF24/utility/RPi/bcm2835.c	/^void bcm2835_spi_begin(void)$/;"	f
+bcm2835_spi_chipSelect	SocketController/libraries/RF24/utility/RPi/bcm2835.c	/^void bcm2835_spi_chipSelect(uint8_t cs)$/;"	f
+bcm2835_spi_end	SocketController/libraries/RF24/utility/RPi/bcm2835.c	/^void bcm2835_spi_end(void)$/;"	f
+bcm2835_spi_setBitOrder	SocketController/libraries/RF24/utility/RPi/bcm2835.c	/^void bcm2835_spi_setBitOrder(uint8_t __attribute__((unused)) order)$/;"	f
+bcm2835_spi_setChipSelectPolarity	SocketController/libraries/RF24/utility/RPi/bcm2835.c	/^void bcm2835_spi_setChipSelectPolarity(uint8_t cs, uint8_t active)$/;"	f
+bcm2835_spi_setClockDivider	SocketController/libraries/RF24/utility/RPi/bcm2835.c	/^void bcm2835_spi_setClockDivider(uint16_t divider)$/;"	f
+bcm2835_spi_setDataMode	SocketController/libraries/RF24/utility/RPi/bcm2835.c	/^void bcm2835_spi_setDataMode(uint8_t mode)$/;"	f
+bcm2835_spi_transfer	SocketController/libraries/RF24/utility/RPi/bcm2835.c	/^uint8_t bcm2835_spi_transfer(uint8_t value)$/;"	f
+bcm2835_spi_transfern	SocketController/libraries/RF24/utility/RPi/bcm2835.c	/^void bcm2835_spi_transfern(char* buf, uint32_t len)$/;"	f
+bcm2835_spi_transfernb	SocketController/libraries/RF24/utility/RPi/bcm2835.c	/^void bcm2835_spi_transfernb(char* tbuf, char* rbuf, uint32_t len)$/;"	f
+bcm2835_spi_writenb	SocketController/libraries/RF24/utility/RPi/bcm2835.c	/^void bcm2835_spi_writenb(char* tbuf, uint32_t len)$/;"	f
+bcm2835_st	SocketController/libraries/RF24/utility/RPi/bcm2835.c	/^volatile uint32_t *bcm2835_st	       = (uint32_t *)MAP_FAILED;$/;"	v
+bcm2835_st_delay	SocketController/libraries/RF24/utility/RPi/bcm2835.c	/^void bcm2835_st_delay(uint64_t offset_micros, uint64_t micros)$/;"	f
+bcm2835_st_read	SocketController/libraries/RF24/utility/RPi/bcm2835.c	/^uint64_t bcm2835_st_read(void)$/;"	f
+bcm2835_version	SocketController/libraries/RF24/utility/RPi/bcm2835.c	/^unsigned int bcm2835_version(void) $/;"	f
+begin	SocketController/libraries/RF24/RF24.cpp	/^bool RF24::begin(void)$/;"	f	class:RF24
+begin	SocketController/libraries/RF24/RF24.cpp	/^void SPIClass::begin() {$/;"	f	class:SPIClass
+begin	SocketController/libraries/RF24/utility/BBB/spi.cpp	/^void SPI::begin(int busNo){$/;"	f	class:SPI
+begin	SocketController/libraries/RF24/utility/MRAA/gpio.cpp	/^void GPIO::begin(uint8_t ce_pin, uint8_t cs_pin)$/;"	f	class:GPIO
+begin	SocketController/libraries/RF24/utility/MRAA/spi.cpp	/^void SPI::begin(int busNo) {$/;"	f	class:SPI
+begin	SocketController/libraries/RF24/utility/RPi/spi.cpp	/^void SPI::begin( int busNo ) {$/;"	f	class:SPI
+beginTransaction	SocketController/libraries/RF24/RF24.cpp	/^  inline void RF24::beginTransaction() {$/;"	f	class:RF24
+beginTransaction	SocketController/libraries/RF24/utility/RPi/spi.cpp	/^void SPI::beginTransaction(SPISettings settings){$/;"	f	class:SPI
+bits	SocketController/libraries/RF24/utility/BBB/spi.h	/^	uint8_t bits;$/;"	m	class:SPI
+bits	SocketController/libraries/RF24/utility/Template/spi.h	/^	uint8_t bits;$/;"	v
+board_start	SocketController/libraries/RF24/examples/Usage/pingpair_maple/main.cpp	/^void board_start(const char* program_name)$/;"	f
+boolean	SocketController/libraries/RCSwitch/RCSwitch.h	/^        typedef uint8_t boolean;$/;"	t
+border	SocketController/libraries/RF24/utility/RPi/spi.h	/^    uint8_t border;$/;"	m	class:SPISettings
+byte	SocketController/libraries/RCSwitch/RCSwitch.h	/^        typedef uint8_t byte;$/;"	t
+ce	SocketController/libraries/RF24/RF24.cpp	/^void RF24::ce(bool level)$/;"	f	class:RF24
+ce_pin	SocketController/libraries/RF24/RF24.h	/^  uint8_t ce_pin; \/**< "Chip Enable" pin, activates the RX or TX role *\/$/;"	m	class:RF24
+chipSelect	SocketController/libraries/RF24/utility/MRAA/spi.cpp	/^void SPI::chipSelect(int csn_pin){$/;"	f	class:SPI
+chipSelect	SocketController/libraries/RF24/utility/RPi/spi.cpp	/^void SPI::chipSelect(int csn_pin){$/;"	f	class:SPI
+clck	SocketController/libraries/RF24/utility/RPi/spi.h	/^    uint32_t clck;$/;"	m	class:SPISettings
+close	SocketController/libraries/RF24/utility/BBB/gpio.cpp	/^void GPIO::close(int port)$/;"	f	class:GPIO
+close	SocketController/libraries/RF24/utility/MRAA/gpio.cpp	/^void GPIO::close(int port)$/;"	f	class:GPIO
+closeReadingPipe	SocketController/libraries/RF24/RF24.cpp	/^void RF24::closeReadingPipe( uint8_t pipe )$/;"	f	class:RF24
+counter	SocketController/libraries/RF24/examples_RPi/gettingstarted_call_response.cpp	/^uint8_t counter = 1;                                                          \/\/ A single byte to keep track of the data being sent back and forth$/;"	v
+counter	SocketController/libraries/RF24/examples_RPi/interrupts/gettingstarted_call_response_int.cpp	/^uint8_t counter = 1;                                                          \/\/ A single byte to keep track of the data being sent back and forth$/;"	v
+counter	SocketController/libraries/RF24/examples_RPi/interrupts/gettingstarted_call_response_int2.cpp	/^uint8_t counter = 1;                                                          \/\/ A single byte to keep track of the data being sent back and forth$/;"	v
+counter	SocketController/libraries/RF24/examples_RPi/interrupts/transfer_interrupt.cpp	/^unsigned long startTime, stopTime, counter, rxTimer=0;$/;"	v
+counter	SocketController/libraries/RF24/examples_RPi/transfer.cpp	/^unsigned long startTime, stopTime, counter, rxTimer=0;$/;"	v
+csn	SocketController/libraries/RF24/RF24.cpp	/^void RF24::csn(bool mode)$/;"	f	class:RF24
+csn_pin	SocketController/libraries/RF24/RF24.h	/^  uint8_t csn_pin; \/**< SPI Chip select *\/$/;"	m	class:RF24
+data	SocketController/libraries/RF24/examples_RPi/interrupts/transfer_interrupt.cpp	/^uint8_t data[32];$/;"	v
+data	SocketController/libraries/RF24/examples_RPi/transfer.cpp	/^uint8_t data[32];$/;"	v
+debug	SocketController/libraries/RF24/utility/RPi/bcm2835.c	/^static uint8_t debug = 0;$/;"	v	file:
+debug	hauser/hauser_web.py	/^from bottle import route, run, debug, template, view, static_file$/;"	i
+dec2binWcharfill	SocketController/libraries/RCSwitch/RCSwitch.cpp	/^char* RCSwitch::dec2binWcharfill(unsigned long dec, unsigned int bitLength, char fill) {$/;"	f	class:RCSwitch
+delay	SocketController/libraries/RF24/utility/BBB/RF24_arch_config.h	61;"	d
+delay	SocketController/libraries/RF24/utility/MRAA/RF24_arch_config.h	51;"	d
+delay	SocketController/libraries/RF24/utility/RPi/bcm2835.h	1004;"	d
+delay	SocketController/libraries/RF24/utility/RPi/interrupt.c	24;"	d	file:
+delay	SocketController/libraries/RF24/utility/Template/RF24_arch_config.h	77;"	d
+delayMicroseconds	SocketController/libraries/RF24/utility/BBB/RF24_arch_config.h	62;"	d
+delayMicroseconds	SocketController/libraries/RF24/utility/MRAA/RF24_arch_config.h	52;"	d
+delayMicroseconds	SocketController/libraries/RF24/utility/RPi/bcm2835.h	1005;"	d
+delayMicroseconds	SocketController/libraries/RF24/utility/Template/RF24_arch_config.h	78;"	d
+detachInterrupt	SocketController/libraries/RF24/utility/RPi/interrupt.c	/^int detachInterrupt (int pin)$/;"	f
+device	SocketController/libraries/RF24/utility/BBB/spi.h	/^	string device;$/;"	m	class:SPI
+device	SocketController/libraries/RF24/utility/Template/spi.h	/^	string device;$/;"	v
+deviceActionRequest	hauser/hauser_web.py	/^def deviceActionRequest(device=None, action=None, channel=None):$/;"	f
+die	NFCBro/gradlew	/^die ( ) {$/;"	f
+diff	SocketController/libraries/RCSwitch/RCSwitch.cpp	/^static inline unsigned int diff(int A, int B) {$/;"	f	file:
+digitalRead	SocketController/libraries/RF24/utility/MRAA/RF24_arch_config.h	46;"	d
+digitalWrite	SocketController/libraries/RF24/utility/BBB/RF24_arch_config.h	59;"	d
+digitalWrite	SocketController/libraries/RF24/utility/MRAA/RF24_arch_config.h	45;"	d
+digitalWrite	SocketController/libraries/RF24/utility/RPi/RF24_arch_config.h	39;"	d
+digitalWrite	SocketController/libraries/RF24/utility/Template/RF24_arch_config.h	75;"	d
+disableCRC	SocketController/libraries/RF24/RF24.cpp	/^void RF24::disableCRC( void )$/;"	f	class:RF24
+disableReceive	SocketController/libraries/RCSwitch/RCSwitch.cpp	/^void RCSwitch::disableReceive() {$/;"	f	class:RCSwitch
+disableTransmit	SocketController/libraries/RCSwitch/RCSwitch.cpp	/^void RCSwitch::disableTransmit() {$/;"	f	class:RCSwitch
+dmode	SocketController/libraries/RF24/utility/RPi/spi.h	/^    uint8_t dmode;$/;"	m	class:SPISettings
+dynamic_payloads_enabled	SocketController/libraries/RF24/RF24.h	/^  bool dynamic_payloads_enabled; \/**< Whether dynamic payloads are enabled. *\/$/;"	m	class:RF24
+enableAckPayload	SocketController/libraries/RF24/RF24.cpp	/^void RF24::enableAckPayload(void)$/;"	f	class:RF24
+enableDynamicAck	SocketController/libraries/RF24/RF24.cpp	/^void RF24::enableDynamicAck(void){$/;"	f	class:RF24
+enableDynamicPayloads	SocketController/libraries/RF24/RF24.cpp	/^void RF24::enableDynamicPayloads(void)$/;"	f	class:RF24
+enableReceive	SocketController/libraries/RCSwitch/RCSwitch.cpp	/^void RCSwitch::enableReceive() {$/;"	f	class:RCSwitch
+enableReceive	SocketController/libraries/RCSwitch/RCSwitch.cpp	/^void RCSwitch::enableReceive(int interrupt) {$/;"	f	class:RCSwitch
+enableTransmit	SocketController/libraries/RCSwitch/RCSwitch.cpp	/^void RCSwitch::enableTransmit(int nTransmitterPin) {$/;"	f	class:RCSwitch
+enableTransmit	hauser/socketstalker.py	/^            def enableTransmit(self, dummy):$/;"	m	class:SocketsTalker.__init__.RCSwitch
+encode_command	hauser/koditalker.py	/^    def encode_command(self, preparedJson):$/;"	m	class:KodiTalker
+encode_command	hauser/koditalker2.py	/^    def encode_command(self, preparedJson):$/;"	m	class:KodiTalker2
+end	NFCBro/gradlew.bat	/^:end$/;"	l
+end	SocketController/libraries/RF24/RF24.cpp	/^void SPIClass::end() {}$/;"	f	class:SPIClass
+end	SocketController/libraries/RF24/utility/BBB/compatibility.c	/^static struct timeval start, end;$/;"	v	typeref:struct:	file:
+end	SocketController/libraries/RF24/utility/MRAA/compatibility.c	/^static struct timeval start, end;$/;"	v	typeref:struct:	file:
+end	SocketController/libraries/RF24/utility/MRAA/spi.cpp	/^void SPI::end() {$/;"	f	class:SPI
+endTransaction	SocketController/libraries/RF24/RF24.cpp	/^  inline void RF24::endTransaction() {$/;"	f	class:RF24
+endTransaction	SocketController/libraries/RF24/utility/RPi/spi.cpp	/^void SPI::endTransaction() {$/;"	f	class:SPI
+epoch	SocketController/libraries/RF24/utility/RPi/bcm2835.c	/^static unsigned long long epoch ;$/;"	v	file:
+errNotify	SocketController/libraries/RF24/RF24.cpp	/^void RF24::errNotify(){$/;"	f	class:RF24
+execute	NFCBro/gradlew.bat	/^:execute$/;"	l
+ext_modules	SocketController/libraries/RF24/RPi/pyRF24/setup.py	/^    ext_modules=[module_RF24]$/;"	v
+fail	NFCBro/gradlew.bat	/^:fail$/;"	l
+failureDetected	SocketController/libraries/RF24/RF24.h	/^    bool failureDetected; $/;"	m	class:RF24
+fd	SocketController/libraries/RF24/utility/BBB/spi.h	/^	int fd;$/;"	m	class:SPI
+fd	SocketController/libraries/RF24/utility/Template/spi.h	/^	int fd;$/;"	v
+findJavaFromJavaHome	NFCBro/gradlew.bat	/^:findJavaFromJavaHome$/;"	l
+flush_rx	SocketController/libraries/RF24/RF24.cpp	/^uint8_t RF24::flush_rx(void)$/;"	f	class:RF24
+flush_tx	SocketController/libraries/RF24/RF24.cpp	/^uint8_t RF24::flush_tx(void)$/;"	f	class:RF24
+getCRCLength	SocketController/libraries/RF24/RF24.cpp	/^rf24_crclength_e RF24::getCRCLength(void)$/;"	f	class:RF24
+getChannel	SocketController/libraries/RF24/RF24.cpp	/^uint8_t RF24::getChannel()$/;"	f	class:RF24
+getCodeWordA	SocketController/libraries/RCSwitch/RCSwitch.cpp	/^char* RCSwitch::getCodeWordA(const char* sGroup, const char* sDevice, boolean bOn) {$/;"	f	class:RCSwitch
+getCodeWordB	SocketController/libraries/RCSwitch/RCSwitch.cpp	/^char* RCSwitch::getCodeWordB(int nAddressCode, int nChannelCode, boolean bStatus) {$/;"	f	class:RCSwitch
+getCodeWordC	SocketController/libraries/RCSwitch/RCSwitch.cpp	/^char* RCSwitch::getCodeWordC(char sFamily, int nGroup, int nDevice, boolean bStatus) {$/;"	f	class:RCSwitch
+getCodeWordD	SocketController/libraries/RCSwitch/RCSwitch.cpp	/^char* RCSwitch::getCodeWordD(char sGroup, int nDevice, boolean bStatus){$/;"	f	class:RCSwitch
+getDataRate	SocketController/libraries/RF24/RF24.cpp	/^rf24_datarate_e RF24::getDataRate( void )$/;"	f	class:RF24
+getDynamicPayloadSize	SocketController/libraries/RF24/RF24.cpp	/^uint8_t RF24::getDynamicPayloadSize(void)$/;"	f	class:RF24
+getPALevel	SocketController/libraries/RF24/RF24.cpp	/^uint8_t RF24::getPALevel(void)$/;"	f	class:RF24
+getPayloadSize	SocketController/libraries/RF24/RF24.cpp	/^uint8_t RF24::getPayloadSize(void)$/;"	f	class:RF24
+getReceivedBitlength	SocketController/libraries/RCSwitch/RCSwitch.cpp	/^unsigned int RCSwitch::getReceivedBitlength() {$/;"	f	class:RCSwitch
+getReceivedDelay	SocketController/libraries/RCSwitch/RCSwitch.cpp	/^unsigned int RCSwitch::getReceivedDelay() {$/;"	f	class:RCSwitch
+getReceivedProtocol	SocketController/libraries/RCSwitch/RCSwitch.cpp	/^unsigned int RCSwitch::getReceivedProtocol() {$/;"	f	class:RCSwitch
+getReceivedRawdata	SocketController/libraries/RCSwitch/RCSwitch.cpp	/^unsigned int* RCSwitch::getReceivedRawdata() {$/;"	f	class:RCSwitch
+getReceivedValue	SocketController/libraries/RCSwitch/RCSwitch.cpp	/^unsigned long RCSwitch::getReceivedValue() {$/;"	f	class:RCSwitch
+get_bytes_or_bytearray_ln	SocketController/libraries/RF24/RPi/pyRF24/pyRF24.cpp	/^int get_bytes_or_bytearray_ln(bp::object buf)$/;"	f
+get_bytes_or_bytearray_str	SocketController/libraries/RF24/RPi/pyRF24/pyRF24.cpp	/^char *get_bytes_or_bytearray_str(bp::object buf)$/;"	f
+get_status	SocketController/libraries/RF24/RF24.cpp	/^uint8_t RF24::get_status(void)$/;"	f	class:RF24
+gotResponse	SocketController/libraries/RF24/examples_RPi/interrupts/gettingstarted_call_response_int.cpp	/^volatile bool gotResponse = false;$/;"	v
+gpio	SocketController/libraries/RF24/RF24.h	/^  GPIO gpio;$/;"	m	class:RF24
+gpio_0	SocketController/libraries/RF24/utility/MRAA/gpio.h	/^	mraa::Gpio* gpio_0; \/** gpio object for ce_pin **\/$/;"	m	class:GPIO
+gpio_ce_pin	SocketController/libraries/RF24/utility/MRAA/gpio.h	/^	int gpio_ce_pin; \/** ce_pin value of the RF24 device **\/$/;"	m	class:GPIO
+handleInterrupt	SocketController/libraries/RCSwitch/RCSwitch.cpp	/^void RCSwitch::handleInterrupt() {$/;"	f	class:RCSwitch
+handleTag	hauser/amiibro.py	/^    def handleTag(self, hex=None):$/;"	m	class:Amiibro
+haus	hauser/hauser_web.py	/^haus = Hauser()$/;"	v
+high	SocketController/libraries/RCSwitch/RCSwitch.h	/^        byte high;$/;"	m	struct:RCSwitch::HighLow
+i2c_byte_wait_us	SocketController/libraries/RF24/utility/RPi/bcm2835.c	/^static int i2c_byte_wait_us = 0;$/;"	v	file:
+init	NFCBro/gradlew.bat	/^:init$/;"	l
+init	SocketController/libraries/RF24/utility/BBB/spi.cpp	/^void SPI::init()$/;"	f	class:SPI
+init	SocketController/libraries/RF24/utility/RPi/spi.h	/^	void init(uint32_t clock, uint8_t bitOrder, uint8_t dataMode) {$/;"	f	class:SPISettings
+inp_role	SocketController/libraries/RF24/examples_RPi/pingpair_dyn.py	/^    inp_role = str(input('Choose a role: Enter 0 for receiver, 1 for transmitter (CTRL+C to exit) '))$/;"	v
+inp_role	SocketController/libraries/RF24/examples_RPi/pingpair_dyn.py	/^inp_role = 'none'$/;"	v
+intHandler	SocketController/libraries/RF24/examples_RPi/interrupts/gettingstarted_call_response_int.cpp	/^void intHandler(){$/;"	f
+intHandler	SocketController/libraries/RF24/examples_RPi/interrupts/gettingstarted_call_response_int2.cpp	/^void intHandler(){$/;"	f
+intHandler	SocketController/libraries/RF24/examples_RPi/interrupts/pingpair_dyn_int.cpp	/^void intHandler(){$/;"	f
+intHandler	SocketController/libraries/RF24/examples_RPi/interrupts/transfer_interrupt.cpp	/^void intHandler()$/;"	f
+interruptHandler	SocketController/libraries/RF24/utility/RPi/interrupt.c	/^void *interruptHandler (void *arg)$/;"	f
+interruptPin	SocketController/libraries/RF24/examples_RPi/interrupts/gettingstarted_call_response_int.cpp	/^int interruptPin = 23;$/;"	v
+interruptPin	SocketController/libraries/RF24/examples_RPi/interrupts/gettingstarted_call_response_int2.cpp	/^int interruptPin = 23;$/;"	v
+interruptPin	SocketController/libraries/RF24/examples_RPi/interrupts/pingpair_dyn_int.cpp	/^int interruptPin = 23; \/\/ GPIO pin for interrupts$/;"	v
+irq_gpio_pin	SocketController/libraries/RF24/examples_RPi/pingpair_dyn.py	/^irq_gpio_pin = None$/;"	v
+isAckPayloadAvailable	SocketController/libraries/RF24/RF24.cpp	/^bool RF24::isAckPayloadAvailable(void)$/;"	f	class:RF24
+isPVariant	SocketController/libraries/RF24/RF24.cpp	/^bool RF24::isPVariant(void)$/;"	f	class:RF24
+isValid	SocketController/libraries/RF24/RF24.h	/^  bool isValid() { return ce_pin != 0xff && csn_pin != 0xff; }$/;"	f	class:RF24
+isrFunctions	SocketController/libraries/RF24/utility/RPi/interrupt.c	/^static void (*isrFunctions [64])(void) ;$/;"	v	file:
+json	hauser/koditalker.py	/^import simplejson as json$/;"	i
+json	hauser/koditalker2.py	/^import simplejson as json$/;"	i
+killme.nfcbro	NFCBro/app/src/androidTest/java/killme/nfcbro/ApplicationTest.java	/^package killme.nfcbro;$/;"	p
+killme.nfcbro	NFCBro/app/src/main/java/killme/nfcbro/MainActivity.java	/^package killme.nfcbro;$/;"	p
+killme.nfcbro	NFCBro/app/src/test/java/killme/nfcbro/ExampleUnitTest.java	/^package killme.nfcbro;$/;"	p
+len	SocketController/libraries/RF24/examples_RPi/pingpair_dyn.py	/^            len = radio.getDynamicPayloadSize()$/;"	v
+libraries	SocketController/libraries/RF24/RPi/pyRF24/setup.py	/^            libraries = ['rf24-bcm', BOOST_LIB],$/;"	v
+line	SocketController/libraries/RF24/tests/pingpair_blocking/runtest.py	/^line = read_until("+OK")$/;"	v
+line	SocketController/libraries/RF24/tests/pingpair_test/runtest.py	/^line = read_until("+OK")$/;"	v
+loop	SocketController/libraries/RF24/examples/Usage/pingpair_maple/main.cpp	/^__attribute__((weak)) void loop(void)$/;"	f
+loop	SocketController/libraries/RF24/examples/scanner/output/scanner.cpp	/^void loop(void)$/;"	f
+low	SocketController/libraries/RCSwitch/RCSwitch.h	/^        byte low;$/;"	m	struct:RCSwitch::HighLow
+main	SocketController/libraries/RF24/examples/Usage/pingpair_maple/main.cpp	/^__attribute__((weak)) int main(void)$/;"	f
+main	SocketController/libraries/RF24/examples_RPi/extra/rpi-hub.cpp	/^int main(int argc, char** argv) $/;"	f
+main	SocketController/libraries/RF24/examples_RPi/extra/scanner.cpp	/^int main(int argc, char** argv)$/;"	f
+main	SocketController/libraries/RF24/examples_RPi/gettingstarted.cpp	/^int main(int argc, char** argv){$/;"	f
+main	SocketController/libraries/RF24/examples_RPi/gettingstarted_call_response.cpp	/^int main(int argc, char** argv){$/;"	f
+main	SocketController/libraries/RF24/examples_RPi/interrupts/gettingstarted_call_response_int.cpp	/^int main(int argc, char** argv){$/;"	f
+main	SocketController/libraries/RF24/examples_RPi/interrupts/gettingstarted_call_response_int2.cpp	/^int main(int argc, char** argv){$/;"	f
+main	SocketController/libraries/RF24/examples_RPi/interrupts/pingpair_dyn_int.cpp	/^int main(int argc, char** argv){$/;"	f
+main	SocketController/libraries/RF24/examples_RPi/interrupts/transfer_interrupt.cpp	/^int main(int argc, char** argv){$/;"	f
+main	SocketController/libraries/RF24/examples_RPi/pingpair_dyn.cpp	/^int main(int argc, char** argv){$/;"	f
+main	SocketController/libraries/RF24/examples_RPi/transfer.cpp	/^int main(int argc, char** argv){$/;"	f
+main	SocketController/libraries/RF24/utility/RPi/bcm2835.c	/^int main(int argc, char **argv)$/;"	f
+mainEnd	NFCBro/gradlew.bat	/^:mainEnd$/;"	l
+makeDict	hauser/hauser_web.py	/^def makeDict(what, channel, action):$/;"	f
+malloc_aligned	SocketController/libraries/RF24/utility/RPi/bcm2835.c	/^void *malloc_aligned(size_t size)$/;"	f
+mapmem	SocketController/libraries/RF24/utility/RPi/bcm2835.c	/^static void *mapmem(const char *msg, size_t size, int fd, off_t off)$/;"	f	file:
+maskIRQ	SocketController/libraries/RF24/RF24.cpp	/^void RF24::maskIRQ(bool tx, bool fail, bool rx){$/;"	f	class:RF24
+max_payload_size	SocketController/libraries/RF24/examples_RPi/interrupts/pingpair_dyn_int.cpp	/^const int max_payload_size = 32;$/;"	v
+max_payload_size	SocketController/libraries/RF24/examples_RPi/pingpair_dyn.cpp	/^const int max_payload_size = 32;$/;"	v
+max_payload_size	SocketController/libraries/RF24/examples_RPi/pingpair_dyn.py	/^max_payload_size = 32$/;"	v
+memcpy_P	SocketController/libraries/RCSwitch/RCSwitch.h	42;"	d
+millis	SocketController/libraries/RF24/examples_RPi/pingpair_dyn.py	/^millis = lambda: int(round(time.time() * 1000))$/;"	v
+millis	SocketController/libraries/RF24/utility/BBB/RF24_arch_config.h	63;"	d
+millis	SocketController/libraries/RF24/utility/MRAA/RF24_arch_config.h	53;"	d
+millis	SocketController/libraries/RF24/utility/RPi/bcm2835.h	1006;"	d
+millis	SocketController/libraries/RF24/utility/Template/RF24_arch_config.h	79;"	d
+min_payload_size	SocketController/libraries/RF24/examples_RPi/interrupts/pingpair_dyn_int.cpp	/^const int min_payload_size = 4;$/;"	v
+min_payload_size	SocketController/libraries/RF24/examples_RPi/pingpair_dyn.cpp	/^const int min_payload_size = 4;$/;"	v
+min_payload_size	SocketController/libraries/RF24/examples_RPi/pingpair_dyn.py	/^min_payload_size = 4$/;"	v
+mode	SocketController/libraries/RF24/utility/BBB/spi.h	/^	uint8_t mode;$/;"	m	class:SPI
+mode	SocketController/libraries/RF24/utility/Template/spi.h	/^	uint8_t mode;$/;"	v
+module_RF24	SocketController/libraries/RF24/RPi/pyRF24/setup.py	/^module_RF24 = Extension('RF24',$/;"	v
+mspi	SocketController/libraries/RF24/utility/MRAA/spi.h	/^  mraa::Spi* mspi;$/;"	m	class:SPI
+mtime	SocketController/libraries/RF24/utility/BBB/compatibility.c	/^static long mtime, seconds, useconds;$/;"	v	file:
+nReceiveTolerance	SocketController/libraries/RCSwitch/RCSwitch.cpp	/^int RCSwitch::nReceiveTolerance = 60;$/;"	m	class:RCSwitch	file:
+nReceiveTolerance	SocketController/libraries/RCSwitch/RCSwitch.h	/^    static int nReceiveTolerance;$/;"	m	class:RCSwitch
+nReceivedBitlength	SocketController/libraries/RCSwitch/RCSwitch.cpp	/^unsigned int RCSwitch::nReceivedBitlength = 0;$/;"	m	class:RCSwitch	file:
+nReceivedBitlength	SocketController/libraries/RCSwitch/RCSwitch.h	/^    static unsigned int nReceivedBitlength;$/;"	m	class:RCSwitch
+nReceivedDelay	SocketController/libraries/RCSwitch/RCSwitch.cpp	/^unsigned int RCSwitch::nReceivedDelay = 0;$/;"	m	class:RCSwitch	file:
+nReceivedDelay	SocketController/libraries/RCSwitch/RCSwitch.h	/^    static unsigned int nReceivedDelay;$/;"	m	class:RCSwitch
+nReceivedProtocol	SocketController/libraries/RCSwitch/RCSwitch.cpp	/^unsigned int RCSwitch::nReceivedProtocol = 0;$/;"	m	class:RCSwitch	file:
+nReceivedProtocol	SocketController/libraries/RCSwitch/RCSwitch.h	/^    static unsigned int nReceivedProtocol;$/;"	m	class:RCSwitch
+nReceivedValue	SocketController/libraries/RCSwitch/RCSwitch.cpp	/^unsigned long RCSwitch::nReceivedValue = 0;$/;"	m	class:RCSwitch	file:
+nReceivedValue	SocketController/libraries/RCSwitch/RCSwitch.h	/^    static unsigned long nReceivedValue;$/;"	m	class:RCSwitch
+nReceiverInterrupt	SocketController/libraries/RCSwitch/RCSwitch.h	/^    int nReceiverInterrupt;$/;"	m	class:RCSwitch
+nRepeatTransmit	SocketController/libraries/RCSwitch/RCSwitch.h	/^    int nRepeatTransmit;$/;"	m	class:RCSwitch
+nSeparationLimit	SocketController/libraries/RCSwitch/RCSwitch.cpp	/^const unsigned int RCSwitch::nSeparationLimit = 4600;$/;"	m	class:RCSwitch	file:
+nSeparationLimit	SocketController/libraries/RCSwitch/RCSwitch.h	/^    const static unsigned int nSeparationLimit;$/;"	m	class:RCSwitch
+nTransmitterPin	SocketController/libraries/RCSwitch/RCSwitch.h	/^    int nTransmitterPin;$/;"	m	class:RCSwitch
+next_payload_size	SocketController/libraries/RF24/examples_RPi/interrupts/pingpair_dyn_int.cpp	/^int next_payload_size = min_payload_size;$/;"	v
+next_payload_size	SocketController/libraries/RF24/examples_RPi/pingpair_dyn.cpp	/^int next_payload_size = min_payload_size;$/;"	v
+next_payload_size	SocketController/libraries/RF24/examples_RPi/pingpair_dyn.py	/^            next_payload_size = min_payload_size$/;"	v
+next_payload_size	SocketController/libraries/RF24/examples_RPi/pingpair_dyn.py	/^next_payload_size = min_payload_size$/;"	v
+numProto	SocketController/libraries/RCSwitch/RCSwitch.cpp	/^static const int numProto = sizeof(proto) \/ sizeof(proto[0]);$/;"	v	file:
+num_channels	SocketController/libraries/RF24/examples/scanner/output/scanner.cpp	/^const short num_channels = 128;$/;"	v
+num_channels	SocketController/libraries/RF24/examples_RPi/extra/scanner.cpp	/^const uint8_t num_channels = 126;$/;"	v
+num_reps	SocketController/libraries/RF24/examples/scanner/output/scanner.cpp	/^const short num_reps = 100;$/;"	v
+num_reps	SocketController/libraries/RF24/examples_RPi/extra/scanner.cpp	/^const int num_reps = 100;$/;"	v
+omega	NFCBro/gradlew.bat	/^:omega$/;"	l
+onCreate	NFCBro/app/src/main/java/killme/nfcbro/MainActivity.java	/^    protected void onCreate(Bundle savedInstanceState) {$/;"	m	class:MainActivity
+onCreateOptionsMenu	NFCBro/app/src/main/java/killme/nfcbro/MainActivity.java	/^    public boolean onCreateOptionsMenu(Menu menu) {$/;"	m	class:MainActivity
+onNewIntent	NFCBro/app/src/main/java/killme/nfcbro/MainActivity.java	/^    protected void onNewIntent(Intent intent) {$/;"	m	class:MainActivity
+onOptionsItemSelected	NFCBro/app/src/main/java/killme/nfcbro/MainActivity.java	/^    public boolean onOptionsItemSelected(MenuItem item) {$/;"	m	class:MainActivity
+onPause	NFCBro/app/src/main/java/killme/nfcbro/MainActivity.java	/^    protected void onPause() {$/;"	m	class:MainActivity
+onResume	NFCBro/app/src/main/java/killme/nfcbro/MainActivity.java	/^    protected void onResume() {$/;"	m	class:MainActivity
+one	SocketController/libraries/RCSwitch/RCSwitch.h	/^        HighLow one;$/;"	m	struct:RCSwitch::Protocol
+open	SocketController/libraries/RF24/utility/BBB/gpio.cpp	/^void GPIO::open(int port, int DDR)$/;"	f	class:GPIO
+open	SocketController/libraries/RF24/utility/MRAA/gpio.cpp	/^void GPIO::open(int port, int DDR)$/;"	f	class:GPIO
+openReadingPipe	SocketController/libraries/RF24/RF24.cpp	/^void RF24::openReadingPipe(uint8_t child, const uint8_t *address)$/;"	f	class:RF24
+openReadingPipe	SocketController/libraries/RF24/RF24.cpp	/^void RF24::openReadingPipe(uint8_t child, uint64_t address)$/;"	f	class:RF24
+openReadingPipe_wrap	SocketController/libraries/RF24/RPi/pyRF24/pyRF24.cpp	/^void openReadingPipe_wrap(RF24& ref, uint8_t number, const bp::object address)$/;"	f
+openWritingPipe	SocketController/libraries/RF24/RF24.cpp	/^void RF24::openWritingPipe(const uint8_t *address)$/;"	f	class:RF24
+openWritingPipe	SocketController/libraries/RF24/RF24.cpp	/^void RF24::openWritingPipe(uint64_t value)$/;"	f	class:RF24
+openWritingPipe_wrap	SocketController/libraries/RF24/RPi/pyRF24/pyRF24.cpp	/^void openWritingPipe_wrap(RF24& ref, const bp::object address)$/;"	f
+p_variant	SocketController/libraries/RF24/RF24.h	/^  bool p_variant; \/* False for RF24L01 and true for RF24L01P *\/$/;"	m	class:RF24
+payload_size	SocketController/libraries/RF24/RF24.h	/^  uint8_t payload_size; \/**< Fixed size of payloads *\/$/;"	m	class:RF24
+payload_size_increments_by	SocketController/libraries/RF24/examples_RPi/interrupts/pingpair_dyn_int.cpp	/^const int payload_size_increments_by = 1;$/;"	v
+payload_size_increments_by	SocketController/libraries/RF24/examples_RPi/pingpair_dyn.cpp	/^const int payload_size_increments_by = 1;$/;"	v
+payload_size_increments_by	SocketController/libraries/RF24/examples_RPi/pingpair_dyn.py	/^payload_size_increments_by = 1$/;"	v
+pgm_read_byte	SocketController/libraries/RF24/RF24_config.h	125;"	d
+pgm_read_byte	SocketController/libraries/RF24/RF24_config.h	136;"	d
+pgm_read_byte	SocketController/libraries/RF24/utility/BBB/RF24_arch_config.h	52;"	d
+pgm_read_byte	SocketController/libraries/RF24/utility/LittleWire/RF24_arch_config.h	19;"	d
+pgm_read_byte	SocketController/libraries/RF24/utility/MRAA/RF24_arch_config.h	26;"	d
+pgm_read_byte	SocketController/libraries/RF24/utility/RPi/RF24_arch_config.h	24;"	d
+pgm_read_byte	SocketController/libraries/RF24/utility/Template/RF24_arch_config.h	68;"	d
+pgm_read_word	SocketController/libraries/RF24/RF24_config.h	126;"	d
+pgm_read_word	SocketController/libraries/RF24/RF24_config.h	145;"	d
+pgm_read_word	SocketController/libraries/RF24/utility/BBB/RF24_arch_config.h	50;"	d
+pgm_read_word	SocketController/libraries/RF24/utility/LittleWire/RF24_arch_config.h	18;"	d
+pgm_read_word	SocketController/libraries/RF24/utility/MRAA/RF24_arch_config.h	25;"	d
+pgm_read_word	SocketController/libraries/RF24/utility/RPi/RF24_arch_config.h	23;"	d
+pgm_read_word	SocketController/libraries/RF24/utility/Template/RF24_arch_config.h	66;"	d
+piHiPri	SocketController/libraries/RF24/utility/RPi/interrupt.c	/^int piHiPri (const int pri)$/;"	f
+pinMode	SocketController/libraries/RF24/utility/BBB/RF24_arch_config.h	60;"	d
+pinMode	SocketController/libraries/RF24/utility/MRAA/RF24_arch_config.h	47;"	d
+pinMode	SocketController/libraries/RF24/utility/RPi/RF24_arch_config.h	40;"	d
+pinMode	SocketController/libraries/RF24/utility/Template/RF24_arch_config.h	76;"	d
+pinMutex	SocketController/libraries/RF24/utility/RPi/interrupt.c	/^static pthread_mutex_t pinMutex ;$/;"	v	file:
+pinPass	SocketController/libraries/RF24/utility/RPi/interrupt.c	/^static volatile int    pinPass = -1 ;$/;"	v	file:
+pipe0_reading_address	SocketController/libraries/RF24/RF24.h	/^  uint8_t pipe0_reading_address[5]; \/**< Last address set on pipe 0 for reading. *\/$/;"	m	class:RF24
+pipes	SocketController/libraries/RF24/examples_RPi/extra/rpi-hub.cpp	/^const uint64_t pipes[6] = $/;"	v
+pipes	SocketController/libraries/RF24/examples_RPi/gettingstarted.cpp	/^const uint8_t pipes[][6] = {"1Node","2Node"};$/;"	v
+pipes	SocketController/libraries/RF24/examples_RPi/interrupts/pingpair_dyn_int.cpp	/^const uint64_t pipes[2] = { 0xF0F0F0F0E1LL, 0xF0F0F0F0D2LL };$/;"	v
+pipes	SocketController/libraries/RF24/examples_RPi/pingpair_dyn.cpp	/^const uint64_t pipes[2] = { 0xF0F0F0F0E1LL, 0xF0F0F0F0D2LL };$/;"	v
+pipes	SocketController/libraries/RF24/examples_RPi/pingpair_dyn.py	/^pipes = [0xF0F0F0F0E1, 0xF0F0F0F0D2]$/;"	v
+powerDown	SocketController/libraries/RF24/RF24.cpp	/^void RF24::powerDown(void)$/;"	f	class:RF24
+powerUp	SocketController/libraries/RF24/RF24.cpp	/^void RF24::powerUp(void)$/;"	f	class:RF24
+prefix	SocketController/libraries/RF24/examples_RPi/Makefile	/^prefix := \/usr\/local$/;"	m
+prefix	SocketController/libraries/RF24/examples_RPi/extra/Makefile	/^prefix := \/usr\/local$/;"	m
+prefix	SocketController/libraries/RF24/examples_RPi/interrupts/Makefile	/^prefix := \/usr\/local$/;"	m
+premain	SocketController/libraries/RF24/examples/Usage/pingpair_maple/main.cpp	/^__attribute__((constructor)) __attribute__ ((weak)) void premain()$/;"	f
+prepare_credentials	hauser/koditalker.py	/^    def prepare_credentials(self,credentials):$/;"	m	class:KodiTalker
+prepare_credentials	hauser/koditalker2.py	/^    def prepare_credentials(self,credentials):$/;"	m	class:KodiTalker2
+prepare_json	hauser/koditalker.py	/^    def prepare_json(self, method, params):$/;"	m	class:KodiTalker
+prepare_json	hauser/koditalker.py	/^    def prepare_json(self, method, params):$/;"	m	class:KodiTalker2
+prepare_json	hauser/koditalker2.py	/^    def prepare_json(self, method, params):$/;"	m	class:KodiTalker2
+printDetails	SocketController/libraries/RF24/RF24.cpp	/^void RF24::printDetails(void)$/;"	f	class:RF24
+print_address_register	SocketController/libraries/RF24/RF24.cpp	/^void RF24::print_address_register(const char* name, uint8_t reg, uint8_t qty)$/;"	f	class:RF24
+print_byte_register	SocketController/libraries/RF24/RF24.cpp	/^void RF24::print_byte_register(const char* name, uint8_t reg, uint8_t qty)$/;"	f	class:RF24
+print_function	SocketController/libraries/RF24/examples_RPi/pingpair_dyn.py	/^from __future__ import print_function$/;"	i
+print_observe_tx	SocketController/libraries/RF24/RF24.cpp	/^void RF24::print_observe_tx(uint8_t value)$/;"	f	class:RF24
+print_status	SocketController/libraries/RF24/RF24.cpp	/^void RF24::print_status(uint8_t status)$/;"	f	class:RF24
+printf	SocketController/libraries/RF24/RF24_config.h	120;"	d
+printf	SocketController/libraries/RF24/utility/Teensy/RF24_arch_config.h	18;"	d
+printf_P	SocketController/libraries/RF24/RF24_config.h	106;"	d
+printf_P	SocketController/libraries/RF24/RF24_config.h	111;"	d
+printf_P	SocketController/libraries/RF24/RF24_config.h	122;"	d
+printf_P	SocketController/libraries/RF24/RF24_config.h	142;"	d
+printf_P	SocketController/libraries/RF24/utility/ATTiny/RF24_arch_config.h	37;"	d
+printf_P	SocketController/libraries/RF24/utility/BBB/RF24_arch_config.h	47;"	d
+printf_P	SocketController/libraries/RF24/utility/Due/RF24_arch_config.h	31;"	d
+printf_P	SocketController/libraries/RF24/utility/LittleWire/RF24_arch_config.h	23;"	d
+printf_P	SocketController/libraries/RF24/utility/LittleWire/RF24_arch_config.h	33;"	d
+printf_P	SocketController/libraries/RF24/utility/MRAA/RF24_arch_config.h	33;"	d
+printf_P	SocketController/libraries/RF24/utility/RPi/RF24_arch_config.h	28;"	d
+printf_P	SocketController/libraries/RF24/utility/Template/RF24_arch_config.h	63;"	d
+printf_begin	SocketController/libraries/RF24/printf.h	/^void printf_begin(void)$/;"	f
+printf_begin	SocketController/libraries/RF24/printf.h	/^void printf_begin(void){}$/;"	f
+printf_begin	SocketController/libraries/RF24/tests/native/printf.h	/^void printf_begin(void)$/;"	f
+printf_begin	SocketController/libraries/RF24/tests/pingpair_blocking/printf.h	/^void printf_begin(void)$/;"	f
+printf_begin	SocketController/libraries/RF24/tests/pingpair_test/printf.h	/^void printf_begin(void)$/;"	f
+prog_uint16_t	SocketController/libraries/RF24/RF24_config.h	/^  typedef uint16_t prog_uint16_t;$/;"	t
+prog_uint16_t	SocketController/libraries/RF24/utility/BBB/RF24_arch_config.h	/^typedef uint16_t prog_uint16_t;$/;"	t
+prog_uint16_t	SocketController/libraries/RF24/utility/Template/RF24_arch_config.h	/^typedef uint16_t prog_uint16_t;$/;"	t
+proto	SocketController/libraries/RCSwitch/RCSwitch.cpp	/^static const RCSwitch::Protocol PROGMEM proto[] = {$/;"	v	file:
+protocol	SocketController/libraries/RCSwitch/RCSwitch.h	/^    Protocol protocol;$/;"	m	class:RCSwitch
+pulseLength	SocketController/libraries/RCSwitch/RCSwitch.h	/^        int pulseLength;$/;"	m	struct:RCSwitch::Protocol
+radio	SocketController/libraries/RF24/examples_RPi/pingpair_dyn.py	/^radio = RF24(22, 0);$/;"	v
+radioNumber	SocketController/libraries/RF24/examples_RPi/gettingstarted.cpp	/^bool radioNumber = 1;$/;"	v
+radioNumber	SocketController/libraries/RF24/examples_RPi/gettingstarted_call_response.cpp	/^bool radioNumber = 1;$/;"	v
+radioNumber	SocketController/libraries/RF24/examples_RPi/interrupts/gettingstarted_call_response_int.cpp	/^bool radioNumber = 1;$/;"	v
+radioNumber	SocketController/libraries/RF24/examples_RPi/interrupts/gettingstarted_call_response_int2.cpp	/^bool radioNumber = 1;$/;"	v
+reUseTX	SocketController/libraries/RF24/RF24.cpp	/^void RF24::reUseTX(){$/;"	f	class:RF24
+read	SocketController/libraries/RF24/RF24.cpp	/^void RF24::read( void* buf, uint8_t len ){$/;"	f	class:RF24
+read	SocketController/libraries/RF24/utility/BBB/gpio.cpp	/^int GPIO::read(int port)$/;"	f	class:GPIO
+read	SocketController/libraries/RF24/utility/MRAA/gpio.cpp	/^int GPIO::read(int port)$/;"	f	class:GPIO
+read_payload	SocketController/libraries/RF24/RF24.cpp	/^uint8_t RF24::read_payload(void* buf, uint8_t data_len)$/;"	f	class:RF24
+read_register	SocketController/libraries/RF24/RF24.cpp	/^uint8_t RF24::read_register(uint8_t reg)$/;"	f	class:RF24
+read_register	SocketController/libraries/RF24/RF24.cpp	/^uint8_t RF24::read_register(uint8_t reg, uint8_t* buf, uint8_t len)$/;"	f	class:RF24
+read_until	SocketController/libraries/RF24/tests/pingpair_blocking/runtest.py	/^def read_until(token):$/;"	f
+read_until	SocketController/libraries/RF24/tests/pingpair_test/runtest.py	/^def read_until(token):$/;"	f
+read_wrap	SocketController/libraries/RF24/RPi/pyRF24/pyRF24.cpp	/^bp::object read_wrap(RF24& ref, int maxlen)$/;"	f
+receiveProtocol	SocketController/libraries/RCSwitch/RCSwitch.cpp	/^bool RCSwitch::receiveProtocol(const int p, unsigned int changeCount) {$/;"	f	class:RCSwitch
+receive_payload	SocketController/libraries/RF24/examples_RPi/interrupts/pingpair_dyn_int.cpp	/^char receive_payload[max_payload_size+1]; \/\/ +1 to allow room for a terminating NULL char$/;"	v
+receive_payload	SocketController/libraries/RF24/examples_RPi/pingpair_dyn.cpp	/^char receive_payload[max_payload_size+1]; \/\/ +1 to allow room for a terminating NULL char$/;"	v
+receive_payload	SocketController/libraries/RF24/examples_RPi/pingpair_dyn.py	/^            receive_payload = radio.read(len)$/;"	v
+request	hauser/koditalker.py	/^except: import urllib.request$/;"	i
+requestActionOnDevice	hauser/hauser.py	/^    def requestActionOnDevice(self, device, action, channel):$/;"	m	class:Hauser
+requests	hauser/koditalker.py	/^import requests$/;"	i
+requests	hauser/koditalker2.py	/^import requests$/;"	i
+resetAvailable	SocketController/libraries/RCSwitch/RCSwitch.cpp	/^void RCSwitch::resetAvailable() {$/;"	f	class:RCSwitch
+reset_array	SocketController/libraries/RF24/examples_RPi/extra/scanner.cpp	/^int reset_array=0;$/;"	v
+rf24_crclength_e	SocketController/libraries/RF24/RF24.h	/^typedef enum { RF24_CRC_DISABLED = 0, RF24_CRC_8, RF24_CRC_16 } rf24_crclength_e;$/;"	t	typeref:enum:__anon15
+rf24_csn_e_str_0	SocketController/libraries/RF24/RF24.cpp	/^static const char rf24_csn_e_str_0[] = "CE0 (PI Hardware Driven)";$/;"	v	file:
+rf24_csn_e_str_1	SocketController/libraries/RF24/RF24.cpp	/^static const char rf24_csn_e_str_1[] = "CE1 (PI Hardware Driven)";$/;"	v	file:
+rf24_csn_e_str_2	SocketController/libraries/RF24/RF24.cpp	/^static const char rf24_csn_e_str_2[] = "CE2 (PI Hardware Driven)";$/;"	v	file:
+rf24_csn_e_str_3	SocketController/libraries/RF24/RF24.cpp	/^static const char rf24_csn_e_str_3[] = "Custom GPIO Software Driven";$/;"	v	file:
+rf24_csn_e_str_P	SocketController/libraries/RF24/RF24.cpp	/^static const char * const rf24_csn_e_str_P[] = {$/;"	v	file:
+rf24_datarate_e	SocketController/libraries/RF24/RF24.h	/^typedef enum { RF24_1MBPS = 0, RF24_2MBPS, RF24_250KBPS } rf24_datarate_e;$/;"	t	typeref:enum:__anon14
+rf24_max	SocketController/libraries/RF24/RF24_config.h	25;"	d
+rf24_max	SocketController/libraries/RF24/utility/ATTiny/RF24_arch_config.h	15;"	d
+rf24_max	SocketController/libraries/RF24/utility/Due/RF24_arch_config.h	16;"	d
+rf24_min	SocketController/libraries/RF24/RF24_config.h	26;"	d
+rf24_min	SocketController/libraries/RF24/utility/ATTiny/RF24_arch_config.h	16;"	d
+rf24_min	SocketController/libraries/RF24/utility/Due/RF24_arch_config.h	17;"	d
+rf24_pa_dbm_e	SocketController/libraries/RF24/RF24.h	/^typedef enum { RF24_PA_MIN = 0,RF24_PA_LOW, RF24_PA_HIGH, RF24_PA_MAX, RF24_PA_ERROR } rf24_pa_dbm_e ;$/;"	t	typeref:enum:__anon13
+rfInterrupts	SocketController/libraries/RF24/utility/RPi/interrupt.c	/^void rfInterrupts(){$/;"	f
+rfNoInterrupts	SocketController/libraries/RF24/utility/RPi/interrupt.c	/^void rfNoInterrupts(){$/;"	f
+role	SocketController/libraries/RF24/examples_RPi/gettingstarted_call_response.cpp	/^bool role_ping_out = 1, role_pong_back = 0, role = 0;$/;"	v
+role	SocketController/libraries/RF24/examples_RPi/interrupts/gettingstarted_call_response_int.cpp	/^volatile bool role_ping_out = 1, role_pong_back = 0, role = 0;$/;"	v
+role	SocketController/libraries/RF24/examples_RPi/interrupts/gettingstarted_call_response_int2.cpp	/^bool role_ping_out = 1, role_pong_back = 0, role = 0;$/;"	v
+role	SocketController/libraries/RF24/examples_RPi/interrupts/pingpair_dyn_int.cpp	/^bool role = 0;$/;"	v
+role_ping_out	SocketController/libraries/RF24/examples_RPi/gettingstarted_call_response.cpp	/^bool role_ping_out = 1, role_pong_back = 0, role = 0;$/;"	v
+role_ping_out	SocketController/libraries/RF24/examples_RPi/interrupts/gettingstarted_call_response_int.cpp	/^volatile bool role_ping_out = 1, role_pong_back = 0, role = 0;$/;"	v
+role_ping_out	SocketController/libraries/RF24/examples_RPi/interrupts/gettingstarted_call_response_int2.cpp	/^bool role_ping_out = 1, role_pong_back = 0, role = 0;$/;"	v
+role_ping_out	SocketController/libraries/RF24/examples_RPi/interrupts/pingpair_dyn_int.cpp	/^bool role_ping_out = 1, role_pong_back = 0;$/;"	v
+role_pong_back	SocketController/libraries/RF24/examples_RPi/gettingstarted_call_response.cpp	/^bool role_ping_out = 1, role_pong_back = 0, role = 0;$/;"	v
+role_pong_back	SocketController/libraries/RF24/examples_RPi/interrupts/gettingstarted_call_response_int.cpp	/^volatile bool role_ping_out = 1, role_pong_back = 0, role = 0;$/;"	v
+role_pong_back	SocketController/libraries/RF24/examples_RPi/interrupts/gettingstarted_call_response_int2.cpp	/^bool role_ping_out = 1, role_pong_back = 0, role = 0;$/;"	v
+role_pong_back	SocketController/libraries/RF24/examples_RPi/interrupts/pingpair_dyn_int.cpp	/^bool role_ping_out = 1, role_pong_back = 0;$/;"	v
+route	hauser/hauser_web.py	/^from bottle import route, run, debug, template, view, static_file$/;"	i
+run	hauser/hauser_web.py	/^from bottle import route, run, debug, template, view, static_file$/;"	i
+rxFifoFull	SocketController/libraries/RF24/RF24.cpp	/^bool RF24::rxFifoFull(){$/;"	f	class:RF24
+rxTimer	SocketController/libraries/RF24/examples_RPi/interrupts/transfer_interrupt.cpp	/^unsigned long startTime, stopTime, counter, rxTimer=0;$/;"	v
+rxTimer	SocketController/libraries/RF24/examples_RPi/transfer.cpp	/^unsigned long startTime, stopTime, counter, rxTimer=0;$/;"	v
+seconds	SocketController/libraries/RF24/utility/BBB/compatibility.c	/^static long mtime, seconds, useconds;$/;"	v	file:
+send	SocketController/libraries/RCSwitch/RCSwitch.cpp	/^void RCSwitch::send(const char* sCodeWord) {$/;"	f	class:RCSwitch
+send	SocketController/libraries/RCSwitch/RCSwitch.cpp	/^void RCSwitch::send(unsigned long code, unsigned int length) {$/;"	f	class:RCSwitch
+send0	SocketController/libraries/RCSwitch/RCSwitch.cpp	/^void RCSwitch::send0() {$/;"	f	class:RCSwitch
+send1	SocketController/libraries/RCSwitch/RCSwitch.cpp	/^void RCSwitch::send1() {$/;"	f	class:RCSwitch
+sendCommand	hauser/ardubro.py	/^    def sendCommand(self, command):$/;"	m	class:Ardubro
+sendSync	SocketController/libraries/RCSwitch/RCSwitch.cpp	/^void RCSwitch::sendSync() {$/;"	f	class:RCSwitch
+sendT0	SocketController/libraries/RCSwitch/RCSwitch.cpp	/^void RCSwitch::sendT0() {$/;"	f	class:RCSwitch
+sendT1	SocketController/libraries/RCSwitch/RCSwitch.cpp	/^void RCSwitch::sendT1() {$/;"	f	class:RCSwitch
+sendTF	SocketController/libraries/RCSwitch/RCSwitch.cpp	/^void RCSwitch::sendTF() {$/;"	f	class:RCSwitch
+sendTriState	SocketController/libraries/RCSwitch/RCSwitch.cpp	/^void RCSwitch::sendTriState(const char* sCodeWord) {$/;"	f	class:RCSwitch
+send_command	hauser/koditalker.py	/^    def send_command(self,command, times=1):$/;"	m	class:KodiTalker
+send_command	hauser/koditalker.py	/^    def send_command(self,command, times=1):$/;"	m	class:KodiTalker2
+send_command	hauser/koditalker2.py	/^    def send_command(self,command):$/;"	m	class:KodiTalker2
+send_payload	SocketController/libraries/RF24/examples_RPi/pingpair_dyn.py	/^send_payload = b'ABCDEFGHIJKLMNOPQRSTUVWXYZ789012'$/;"	v
+ser	SocketController/libraries/RF24/tests/pingpair_blocking/runtest.py	/^ser = serial.Serial(sys.argv[1], 57600, timeout=5, dsrdtr=False, rtscts=False)$/;"	v
+ser	SocketController/libraries/RF24/tests/pingpair_test/runtest.py	/^ser = serial.Serial(sys.argv[1], 57600, timeout=5, dsrdtr=False, rtscts=False)$/;"	v
+serial	SocketController/libraries/RF24/tests/pingpair_blocking/runtest.py	/^import sys,serial$/;"	i
+serial	SocketController/libraries/RF24/tests/pingpair_test/runtest.py	/^import sys,serial$/;"	i
+serial_putc	SocketController/libraries/RF24/printf.h	/^int serial_putc( char c, FILE * )$/;"	f
+serial_putc	SocketController/libraries/RF24/tests/native/printf.h	/^int serial_putc( char c, FILE * ) $/;"	f
+serial_putc	SocketController/libraries/RF24/tests/pingpair_blocking/printf.h	/^int serial_putc( char c, FILE * ) $/;"	f
+serial_putc	SocketController/libraries/RF24/tests/pingpair_test/printf.h	/^int serial_putc( char c, FILE * ) $/;"	f
+server_static	hauser/hauser_web.py	/^def server_static(filename):$/;"	f
+setAddressWidth	SocketController/libraries/RF24/RF24.cpp	/^void RF24::setAddressWidth(uint8_t a_width){$/;"	f	class:RF24
+setAutoAck	SocketController/libraries/RF24/RF24.cpp	/^void RF24::setAutoAck( uint8_t pipe, bool enable )$/;"	f	class:RF24
+setAutoAck	SocketController/libraries/RF24/RF24.cpp	/^void RF24::setAutoAck(bool enable)$/;"	f	class:RF24
+setBitOrder	SocketController/libraries/RF24/RF24.cpp	/^void SPIClass::setBitOrder(uint8_t bitOrder){}$/;"	f	class:SPIClass
+setBitOrder	SocketController/libraries/RF24/utility/MRAA/spi.cpp	/^void SPI::setBitOrder(uint8_t bit_order) {$/;"	f	class:SPI
+setBitOrder	SocketController/libraries/RF24/utility/RPi/spi.cpp	/^void SPI::setBitOrder(uint8_t bit_order) {$/;"	f	class:SPI
+setCRCLength	SocketController/libraries/RF24/RF24.cpp	/^void RF24::setCRCLength(rf24_crclength_e length)$/;"	f	class:RF24
+setChannel	SocketController/libraries/RF24/RF24.cpp	/^void RF24::setChannel(uint8_t channel)$/;"	f	class:RF24
+setClockDivider	SocketController/libraries/RF24/RF24.cpp	/^void SPIClass::setClockDivider(uint8_t rate){}$/;"	f	class:SPIClass
+setClockDivider	SocketController/libraries/RF24/utility/MRAA/spi.cpp	/^void SPI::setClockDivider(uint32_t spi_speed) {$/;"	f	class:SPI
+setClockDivider	SocketController/libraries/RF24/utility/RPi/spi.cpp	/^void SPI::setClockDivider(uint16_t spi_speed) {$/;"	f	class:SPI
+setDataMode	SocketController/libraries/RF24/RF24.cpp	/^void SPIClass::setDataMode(uint8_t mode){}$/;"	f	class:SPIClass
+setDataMode	SocketController/libraries/RF24/utility/MRAA/spi.cpp	/^void SPI::setDataMode(uint8_t data_mode) {$/;"	f	class:SPI
+setDataMode	SocketController/libraries/RF24/utility/RPi/spi.cpp	/^void SPI::setDataMode(uint8_t data_mode) {$/;"	f	class:SPI
+setDataRate	SocketController/libraries/RF24/RF24.cpp	/^bool RF24::setDataRate(rf24_datarate_e speed)$/;"	f	class:RF24
+setPALevel	SocketController/libraries/RF24/RF24.cpp	/^void RF24::setPALevel(uint8_t level)$/;"	f	class:RF24
+setPayloadSize	SocketController/libraries/RF24/RF24.cpp	/^void RF24::setPayloadSize(uint8_t size)$/;"	f	class:RF24
+setProtocol	SocketController/libraries/RCSwitch/RCSwitch.cpp	/^void RCSwitch::setProtocol(Protocol protocol) {$/;"	f	class:RCSwitch
+setProtocol	SocketController/libraries/RCSwitch/RCSwitch.cpp	/^void RCSwitch::setProtocol(int nProtocol) {$/;"	f	class:RCSwitch
+setProtocol	SocketController/libraries/RCSwitch/RCSwitch.cpp	/^void RCSwitch::setProtocol(int nProtocol, int nPulseLength) {$/;"	f	class:RCSwitch
+setPulseLength	SocketController/libraries/RCSwitch/RCSwitch.cpp	/^void RCSwitch::setPulseLength(int nPulseLength) {$/;"	f	class:RCSwitch
+setReceiveTolerance	SocketController/libraries/RCSwitch/RCSwitch.cpp	/^void RCSwitch::setReceiveTolerance(int nPercent) {$/;"	f	class:RCSwitch
+setRepeatTransmit	SocketController/libraries/RCSwitch/RCSwitch.cpp	/^void RCSwitch::setRepeatTransmit(int nRepeatTransmit) {$/;"	f	class:RCSwitch
+setRetries	SocketController/libraries/RF24/RF24.cpp	/^void RF24::setRetries(uint8_t delay, uint8_t count)$/;"	f	class:RF24
+setup	SocketController/libraries/RF24/RPi/pyRF24/setup.py	/^from distutils.core import setup, Extension$/;"	i
+setup	SocketController/libraries/RF24/examples/Usage/pingpair_maple/main.cpp	/^__attribute__((weak)) void setup(void)$/;"	f
+setup	SocketController/libraries/RF24/examples/scanner/output/scanner.cpp	/^void setup(void)$/;"	f
+sleep	hauser/ardubro.py	/^from time import sleep$/;"	i
+sources	SocketController/libraries/RF24/RPi/pyRF24/setup.py	/^            sources = ['pyRF24.cpp'])$/;"	v
+speed	SocketController/libraries/RF24/utility/BBB/spi.h	/^	uint32_t speed;$/;"	m	class:SPI
+speed	SocketController/libraries/RF24/utility/Template/spi.h	/^	uint32_t speed;$/;"	v
+spi	SocketController/libraries/RF24/RF24.h	/^  SPI spi;$/;"	m	class:RF24
+spi	SocketController/libraries/RF24/RF24.h	/^  SoftSPI<SOFT_SPI_MISO_PIN, SOFT_SPI_MOSI_PIN, SOFT_SPI_SCK_PIN, SPI_MODE> spi;$/;"	m	class:RF24
+spiMutex	SocketController/libraries/RF24/utility/RPi/spi.cpp	/^static pthread_mutex_t spiMutex;$/;"	v	file:
+spiTrans	SocketController/libraries/RF24/RF24.cpp	/^uint8_t RF24::spiTrans(uint8_t cmd){$/;"	f	class:RF24
+spi_rxbuff	SocketController/libraries/RF24/RF24.h	/^  uint8_t spi_rxbuff[32+1] ; \/\/SPI receive buffer (payload max 32 bytes)$/;"	m	class:RF24
+spi_speed	SocketController/libraries/RF24/RF24.h	/^  uint16_t spi_speed; \/**< SPI Bus Speed *\/$/;"	m	class:RF24
+spi_txbuff	SocketController/libraries/RF24/RF24.h	/^  uint8_t spi_txbuff[32+1] ; \/\/SPI transmit buffer (payload max 32 bytes + 1 byte for the command)$/;"	m	class:RF24
+splitJvmOpts	NFCBro/gradlew	/^function splitJvmOpts() {$/;"	f
+sprintf	SocketController/libraries/RF24/RF24_config.h	121;"	d
+sprintf_P	SocketController/libraries/RF24/utility/MRAA/RF24_arch_config.h	34;"	d
+start	SocketController/libraries/RF24/utility/BBB/compatibility.c	/^static struct timeval start, end;$/;"	v	typeref:struct:timeval	file:
+start	SocketController/libraries/RF24/utility/MRAA/compatibility.c	/^static struct timeval start, end;$/;"	v	typeref:struct:timeval	file:
+startFastWrite	SocketController/libraries/RF24/RF24.cpp	/^void RF24::startFastWrite( const void* buf, uint8_t len, const bool multicast, bool startTx){ \/\/TMRh20$/;"	f	class:RF24
+startFastWrite_wrap1	SocketController/libraries/RF24/RPi/pyRF24/pyRF24.cpp	/^void startFastWrite_wrap1(RF24& ref, bp::object buf, const bool multicast)$/;"	f
+startFastWrite_wrap2	SocketController/libraries/RF24/RPi/pyRF24/pyRF24.cpp	/^void startFastWrite_wrap2(RF24& ref, bp::object buf, const bool multicast, bool startTx)$/;"	f
+startListening	SocketController/libraries/RF24/RF24.cpp	/^void RF24::startListening(void)$/;"	f	class:RF24
+startTime	SocketController/libraries/RF24/examples_RPi/interrupts/transfer_interrupt.cpp	/^unsigned long startTime, stopTime, counter, rxTimer=0;$/;"	v
+startTime	SocketController/libraries/RF24/examples_RPi/transfer.cpp	/^unsigned long startTime, stopTime, counter, rxTimer=0;$/;"	v
+startWrite	SocketController/libraries/RF24/RF24.cpp	/^void RF24::startWrite( const void* buf, uint8_t len, const bool multicast ){$/;"	f	class:RF24
+startWrite_wrap	SocketController/libraries/RF24/RPi/pyRF24/pyRF24.cpp	/^void startWrite_wrap(RF24& ref, bp::object buf, const bool multicast)$/;"	f
+started_waiting_at	SocketController/libraries/RF24/examples_RPi/pingpair_dyn.py	/^        started_waiting_at = millis()$/;"	v
+static_file	hauser/hauser_web.py	/^from bottle import route, run, debug, template, view, static_file$/;"	i
+status	hauser/hauser.py	/^    def status(self):$/;"	m	class:Hauser
+status	hauser/hauser_web.py	/^def status():$/;"	f
+stopListening	SocketController/libraries/RF24/RF24.cpp	/^void RF24::stopListening(void)$/;"	f	class:RF24
+stopTime	SocketController/libraries/RF24/examples_RPi/interrupts/transfer_interrupt.cpp	/^unsigned long startTime, stopTime, counter, rxTimer=0;$/;"	v
+stopTime	SocketController/libraries/RF24/examples_RPi/transfer.cpp	/^unsigned long startTime, stopTime, counter, rxTimer=0;$/;"	v
+strlen_P	SocketController/libraries/RF24/RF24_config.h	123;"	d
+strlen_P	SocketController/libraries/RF24/RF24_config.h	143;"	d
+strlen_P	SocketController/libraries/RF24/utility/BBB/RF24_arch_config.h	48;"	d
+strlen_P	SocketController/libraries/RF24/utility/Due/RF24_arch_config.h	32;"	d
+strlen_P	SocketController/libraries/RF24/utility/LittleWire/RF24_arch_config.h	24;"	d
+strlen_P	SocketController/libraries/RF24/utility/MRAA/RF24_arch_config.h	35;"	d
+strlen_P	SocketController/libraries/RF24/utility/RPi/RF24_arch_config.h	29;"	d
+strlen_P	SocketController/libraries/RF24/utility/Template/RF24_arch_config.h	64;"	d
+switchOff	SocketController/libraries/RCSwitch/RCSwitch.cpp	/^void RCSwitch::switchOff(char sFamily, int nGroup, int nDevice) {$/;"	f	class:RCSwitch
+switchOff	SocketController/libraries/RCSwitch/RCSwitch.cpp	/^void RCSwitch::switchOff(char sGroup, int nDevice) {$/;"	f	class:RCSwitch
+switchOff	SocketController/libraries/RCSwitch/RCSwitch.cpp	/^void RCSwitch::switchOff(const char* sGroup, const char* sDevice) {$/;"	f	class:RCSwitch
+switchOff	SocketController/libraries/RCSwitch/RCSwitch.cpp	/^void RCSwitch::switchOff(const char* sGroup, int nChannel) {$/;"	f	class:RCSwitch
+switchOff	SocketController/libraries/RCSwitch/RCSwitch.cpp	/^void RCSwitch::switchOff(int nAddressCode, int nChannelCode) {$/;"	f	class:RCSwitch
+switchOff	hauser/ardubro.py	/^    def switchOff(self, relay):$/;"	m	class:Ardubro
+switchOff	hauser/sockbro.py	/^    def switchOff(self, channel):$/;"	m	class:Sockbro
+switchOff	hauser/socketstalker.py	/^            def switchOff(self, dummy1, dummy2):$/;"	m	class:SocketsTalker.__init__.RCSwitch
+switchOn	SocketController/libraries/RCSwitch/RCSwitch.cpp	/^void RCSwitch::switchOn(char sFamily, int nGroup, int nDevice) {$/;"	f	class:RCSwitch
+switchOn	SocketController/libraries/RCSwitch/RCSwitch.cpp	/^void RCSwitch::switchOn(char sGroup, int nDevice) {$/;"	f	class:RCSwitch
+switchOn	SocketController/libraries/RCSwitch/RCSwitch.cpp	/^void RCSwitch::switchOn(const char* sGroup, const char* sDevice) {$/;"	f	class:RCSwitch
+switchOn	SocketController/libraries/RCSwitch/RCSwitch.cpp	/^void RCSwitch::switchOn(const char* sGroup, int nChannel) {$/;"	f	class:RCSwitch
+switchOn	SocketController/libraries/RCSwitch/RCSwitch.cpp	/^void RCSwitch::switchOn(int nAddressCode, int nChannelCode) {$/;"	f	class:RCSwitch
+switchOn	hauser/ardubro.py	/^    def switchOn(self, relay):$/;"	m	class:Ardubro
+switchOn	hauser/sockbro.py	/^    def switchOn(self, channel):$/;"	m	class:Sockbro
+switchOn	hauser/socketstalker.py	/^            def switchOn(self, dummy1, dummy2):$/;"	m	class:SocketsTalker.__init__.RCSwitch
+switchRelay	hauser/ardubro.py	/^    def switchRelay(self, relay, state, On_or_Off):$/;"	m	class:Ardubro
+syncFactor	SocketController/libraries/RCSwitch/RCSwitch.h	/^        HighLow syncFactor;$/;"	m	struct:RCSwitch::Protocol
+sys	SocketController/libraries/RF24/RPi/pyRF24/setup.py	/^import sys$/;"	i
+sys	SocketController/libraries/RF24/tests/pingpair_blocking/runtest.py	/^import sys,serial$/;"	i
+sys	SocketController/libraries/RF24/tests/pingpair_test/runtest.py	/^import sys,serial$/;"	i
+sysFds	SocketController/libraries/RF24/utility/RPi/interrupt.c	/^static int sysFds [64] =$/;"	v	file:
+techList	NFCBro/app/src/main/java/killme/nfcbro/MainActivity.java	/^    private final String[][] techList = new String[][]{$/;"	f	class:MainActivity	file:
+template	hauser/hauser_web.py	/^from bottle import route, run, debug, template, view, static_file$/;"	i
+testCarrier	SocketController/libraries/RF24/RF24.cpp	/^bool RF24::testCarrier(void)$/;"	f	class:RF24
+testRPD	SocketController/libraries/RF24/RF24.cpp	/^bool RF24::testRPD(void)$/;"	f	class:RF24
+threadId	SocketController/libraries/RF24/utility/RPi/interrupt.c	/^pthread_t threadId [64];$/;"	v
+throw_ba_exception	SocketController/libraries/RF24/RPi/pyRF24/pyRF24.cpp	/^void throw_ba_exception(void)$/;"	f
+time	SocketController/libraries/RF24/examples_RPi/pingpair_dyn.py	/^import time$/;"	i
+timeout	SocketController/libraries/RF24/examples_RPi/pingpair_dyn.py	/^                timeout = True$/;"	v
+timeout	SocketController/libraries/RF24/examples_RPi/pingpair_dyn.py	/^        timeout = False$/;"	v
+timer	SocketController/libraries/RF24/examples_RPi/interrupts/gettingstarted_call_response_int2.cpp	/^uint32_t timer = 0;$/;"	v
+timings	SocketController/libraries/RCSwitch/RCSwitch.cpp	/^unsigned int RCSwitch::timings[RCSWITCH_MAX_CHANGES];$/;"	m	class:RCSwitch	file:
+timings	SocketController/libraries/RCSwitch/RCSwitch.h	/^    static unsigned int timings[RCSWITCH_MAX_CHANGES];$/;"	m	class:RCSwitch
+toggle_features	SocketController/libraries/RF24/RF24.cpp	/^void RF24::toggle_features(void)$/;"	f	class:RF24
+transfer	SocketController/libraries/RF24/RF24.cpp	/^byte SPIClass::transfer(byte b) {$/;"	f	class:SPIClass
+transfer	SocketController/libraries/RF24/utility/BBB/spi.cpp	/^uint8_t SPI::transfer(uint8_t tx_)$/;"	f	class:SPI
+transfer	SocketController/libraries/RF24/utility/MRAA/spi.h	/^uint8_t SPI::transfer(uint8_t _data)$/;"	f	class:SPI
+transfer	SocketController/libraries/RF24/utility/RPi/spi.h	/^uint8_t SPI::transfer(uint8_t _data) {$/;"	f	class:SPI
+transfern	SocketController/libraries/RF24/utility/BBB/spi.cpp	/^void SPI::transfern(char* buf, uint32_t len)$/;"	f	class:SPI
+transfern	SocketController/libraries/RF24/utility/MRAA/spi.h	/^void SPI::transfern(char* buf, uint32_t len)$/;"	f	class:SPI
+transfern	SocketController/libraries/RF24/utility/RPi/spi.h	/^void SPI::transfern(char* buf, uint32_t len)$/;"	f	class:SPI
+transfernb	SocketController/libraries/RF24/utility/BBB/spi.cpp	/^void SPI::transfernb(char* tbuf, char* rbuf, uint32_t len)$/;"	f	class:SPI
+transfernb	SocketController/libraries/RF24/utility/MRAA/spi.h	/^void SPI::transfernb(char* tbuf, char* rbuf, uint32_t len){$/;"	f	class:SPI
+transfernb	SocketController/libraries/RF24/utility/RPi/spi.h	/^void SPI::transfernb(char* tbuf, char* rbuf, uint32_t len){$/;"	f	class:SPI
+transmit	SocketController/libraries/RCSwitch/RCSwitch.cpp	/^void RCSwitch::transmit(HighLow pulses) {$/;"	f	class:RCSwitch
+transmit	SocketController/libraries/RCSwitch/RCSwitch.cpp	/^void RCSwitch::transmit(int nHighPulses, int nLowPulses) {$/;"	f	class:RCSwitch
+try_read_data	SocketController/libraries/RF24/examples_RPi/pingpair_dyn.py	/^def try_read_data(channel=0):$/;"	f
+turnOff	hauser/socketstalker.py	/^    def turnOff(self,socket):$/;"	m	class:SocketsTalker
+turnOn	hauser/socketstalker.py	/^    def turnOn(self,socket):$/;"	m	class:SocketsTalker
+txRxDelay	SocketController/libraries/RF24/RF24.h	/^  uint32_t txRxDelay; \/**< Var for adjusting delays depending on datarate *\/$/;"	m	class:RF24
+txStandBy	SocketController/libraries/RF24/RF24.cpp	/^bool RF24::txStandBy(){$/;"	f	class:RF24
+txStandBy	SocketController/libraries/RF24/RF24.cpp	/^bool RF24::txStandBy(uint32_t timeout, bool startTx){$/;"	f	class:RF24
+unmapmem	SocketController/libraries/RF24/utility/RPi/bcm2835.c	/^static void unmapmem(void **pmem, size_t size)$/;"	f	file:
+urllib	hauser/koditalker.py	/^except: import urllib.request$/;"	i
+urllib	hauser/koditalker.py	/^import urllib, base64$/;"	i
+urllib2	hauser/koditalker.py	/^try : import urllib2$/;"	i
+useconds	SocketController/libraries/RF24/utility/BBB/compatibility.c	/^static long mtime, seconds, useconds;$/;"	v	file:
+values	SocketController/libraries/RF24/examples/scanner/output/scanner.cpp	/^short values[num_channels];$/;"	v
+values	SocketController/libraries/RF24/examples_RPi/extra/scanner.cpp	/^uint8_t values[num_channels];$/;"	v
+version	SocketController/libraries/RF24/RPi/pyRF24/setup.py	/^    version='1.1',$/;"	v
+view	hauser/hauser_web.py	/^from bottle import route, run, debug, template, view, static_file$/;"	i
+waitForInterrupt	SocketController/libraries/RF24/utility/RPi/interrupt.c	/^int waitForInterrupt (int pin, int mS)$/;"	f
+warn	NFCBro/gradlew	/^warn ( ) {$/;"	f
+whatHappened	SocketController/libraries/RF24/RF24.cpp	/^void RF24::whatHappened(bool& tx_ok,bool& tx_fail,bool& rx_ready)$/;"	f	class:RF24
+whatHappened_wrap	SocketController/libraries/RF24/RPi/pyRF24/pyRF24.cpp	/^bp::tuple whatHappened_wrap(RF24& ref)$/;"	f
+win9xME_args	NFCBro/gradlew.bat	/^:win9xME_args$/;"	l
+win9xME_args_slurp	NFCBro/gradlew.bat	/^:win9xME_args_slurp$/;"	l
+write	SocketController/libraries/RF24/RF24.cpp	/^bool RF24::write( const void* buf, uint8_t len ){$/;"	f	class:RF24
+write	SocketController/libraries/RF24/RF24.cpp	/^bool RF24::write( const void* buf, uint8_t len, const bool multicast )$/;"	f	class:RF24
+write	SocketController/libraries/RF24/utility/BBB/gpio.cpp	/^void GPIO::write(int port, int value){$/;"	f	class:GPIO
+write	SocketController/libraries/RF24/utility/MRAA/gpio.cpp	/^void GPIO::write(int port, int value){$/;"	f	class:GPIO
+writeAckPayload	SocketController/libraries/RF24/RF24.cpp	/^void RF24::writeAckPayload(uint8_t pipe, const void* buf, uint8_t len)$/;"	f	class:RF24
+writeAckPayload_wrap	SocketController/libraries/RF24/RPi/pyRF24/pyRF24.cpp	/^void writeAckPayload_wrap(RF24& ref, uint8_t pipe, bp::object buf)$/;"	f
+writeBlocking	SocketController/libraries/RF24/RF24.cpp	/^bool RF24::writeBlocking( const void* buf, uint8_t len, uint32_t timeout )$/;"	f	class:RF24
+writeBlocking_wrap	SocketController/libraries/RF24/RPi/pyRF24/pyRF24.cpp	/^bool writeBlocking_wrap(RF24& ref, bp::object buf, uint32_t timeout)$/;"	f
+writeFast	SocketController/libraries/RF24/RF24.cpp	/^bool RF24::writeFast( const void* buf, uint8_t len ){$/;"	f	class:RF24
+writeFast	SocketController/libraries/RF24/RF24.cpp	/^bool RF24::writeFast( const void* buf, uint8_t len, const bool multicast )$/;"	f	class:RF24
+writeFast_wrap1	SocketController/libraries/RF24/RPi/pyRF24/pyRF24.cpp	/^bool writeFast_wrap1(RF24& ref, bp::object buf)$/;"	f
+writeFast_wrap2	SocketController/libraries/RF24/RPi/pyRF24/pyRF24.cpp	/^bool writeFast_wrap2(RF24& ref, bp::object buf, const bool multicast)$/;"	f
+write_payload	SocketController/libraries/RF24/RF24.cpp	/^uint8_t RF24::write_payload(const void* buf, uint8_t data_len, const uint8_t writeType)$/;"	f	class:RF24
+write_register	SocketController/libraries/RF24/RF24.cpp	/^uint8_t RF24::write_register(uint8_t reg, const uint8_t* buf, uint8_t len)$/;"	f	class:RF24
+write_register	SocketController/libraries/RF24/RF24.cpp	/^uint8_t RF24::write_register(uint8_t reg, uint8_t value)$/;"	f	class:RF24
+write_wrap1	SocketController/libraries/RF24/RPi/pyRF24/pyRF24.cpp	/^bool write_wrap1(RF24& ref, bp::object buf)$/;"	f
+write_wrap2	SocketController/libraries/RF24/RPi/pyRF24/pyRF24.cpp	/^bool write_wrap2(RF24& ref, bp::object buf, const bool multicast)$/;"	f
+zero	SocketController/libraries/RCSwitch/RCSwitch.h	/^        HighLow zero;$/;"	m	struct:RCSwitch::Protocol
+~GPIO	SocketController/libraries/RF24/utility/BBB/gpio.cpp	/^GPIO::~GPIO() {$/;"	f	class:GPIO
+~GPIO	SocketController/libraries/RF24/utility/MRAA/gpio.cpp	/^GPIO::~GPIO() {$/;"	f	class:GPIO
+~RF24	SocketController/libraries/RF24/RF24.h	/^  virtual ~RF24() {};$/;"	f	class:RF24
+~SPI	SocketController/libraries/RF24/utility/BBB/spi.cpp	/^SPI::~SPI() {$/;"	f	class:SPI
+~SPI	SocketController/libraries/RF24/utility/MRAA/spi.cpp	/^SPI::~SPI() {$/;"	f	class:SPI
+~SPI	SocketController/libraries/RF24/utility/RPi/spi.cpp	/^SPI::~SPI() {$/;"	f	class:SPI
