@@ -31,7 +31,7 @@ void setup(){
   radio.begin();
   radio.setPALevel(RF24_PA_LOW); //potem do wywalenia jak beda daleko od siebie
   radio.openWritingPipe(arduino_address);
-  //radio.openReadingPipe(rpi_address);
+  radio.openReadingPipe(0, rpi_address);
 
   radio.startListening();
 }

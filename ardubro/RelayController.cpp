@@ -1,31 +1,6 @@
 #include "RelayController.h"
-#include <Arduino.h>
 
-void RelayPin::setPhysicalPin(int physicalPin){
-  pin = physicalPin;
-}
-bool RelayPin::turnOn(){
-  status=true;
-  digitalWrite(pin, LOW);
-  return status;
-}
-bool RelayPin::turnOff(){
-  status=false;
-  digitalWrite(pin, HIGH);
-  return status;
-}
-bool RelayPin::toggle(){
-  if(status){turnOff();}
-  else{turnOn();}
-  return status;
-}
-void RelayPin::initRelayPin(){
-  pinMode(pin, OUTPUT);
-  turnOff();
-}
-bool RelayPin::getStatus(){
-  return status;
-}
+#include <Arduino.h>
 template<int N>
 void RelayController<N>::turnOn(short int input){
   relayChannel[input].turnOn();
