@@ -10,3 +10,6 @@
 [submodule "lightino/libraries/RF24"]
 	path = lightino/libraries/RF24
 	url = gh:TMRh20/RF24
+[submodule "ardubro/libraries/RF24"]
+	path = ardubro/libraries/RF24
+	url = gh:TMRh20/RF24
