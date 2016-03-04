@@ -9,18 +9,20 @@ class Ardubro(Serial):
         self.relayStatus= [True for relay in range(relays)]
         self.established=False
         try:
-            Serial.__init__(self, port=port, baudrate=baudrate, *args, **kwargs)
-            self.established=True
+            #Serial.__init__(self, port=port, baudrate=baudrate, *args, **kwargs)
+            #self.established=True
+            pass
         except SerialException:
             pass
 
-    def switchRelayOn(self, relay):
+    def switchOn(self, relay):
         self.switchRelay(relay,True,"On")
 
-    def switchRelayOff(self, relay):
+    def switchOff(self, relay):
         self.switchRelay(relay,False,"Off")
 
     def switchRelay(self, relay, state, On_or_Off):
+        print("switchRelay: %s, to state %s" % (relay, On_or_Off))
         if not self.established: return
         self.relayStatus[relay]=state
         self.sendCommand("r%s%s;" %(On_or_Off[-1], relay))
