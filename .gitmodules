@@ -4,12 +4,6 @@
 [submodule "SocketController/libraries/RCSwitch"]
 	path = SocketController/libraries/RCSwitch
 	url = gh:sui77/rc-switch
-[submodule "lightino/libraries/RCSwitch"]
-	path = lightino/libraries/RCSwitch
-	url = gh:sui77/rc-switch
-[submodule "lightino/libraries/RF24"]
-	path = lightino/libraries/RF24
-	url = gh:TMRh20/RF24
 [submodule "ardubro/libraries/RF24"]
 	path = ardubro/libraries/RF24
 	url = gh:TMRh20/RF24
