@@ -2,17 +2,14 @@
 #include <SPI.h>
 #include <RF24.h>
 
-
-/*
-template<int N>
-String RelayController::convertedStatusToString(){
-  bool s = getStatus();
-  for(int i= 0; i< N; ++i){
-    if(status[i]){ reti += "n"; }
-    else{ reti+= "f"; }
+String convertedStatusToString(bool statusArray[], short num){
+  String reti;
+  for(int i= 0; i< num; ++i)
+    if(statusArray[i]) reti += "n";
+    else reti+= "f";
+  return reti;
   }
 
-*/
 RelayController<2> relay;
 int lightSwitchPin = 11;
 bool lightSwitchState=false;
@@ -39,9 +36,9 @@ void setup(){
 void loop() {
   char receivedCommandBuffor[5];
   if(radio.available()){
-    while(radio.available()){
+    while(radio.available())
       radio.read( receivedCommandBuffor, sizeof(receivedCommandBuffor));
-    }
+    
   if(receivedCommandBuffor[0] == 'r'){
     int channel= (int)receivedCommandBuffor[1] - 48;
     bool toState= receivedCommandBuffor[2] == 'n' ? true : false;
@@ -49,9 +46,8 @@ void loop() {
   }
   bool lastState= lightSwitchState;
   lightSwitchState= digitalRead(lightSwitchPin);
-  if(lastState != lightSwitchState){
+  if(lastState != lightSwitchState)
     relay.setRelayToBe(0,lightSwitchState);
-  }
   relay.update();
 }
 }
