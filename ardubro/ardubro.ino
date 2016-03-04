@@ -1,7 +1,7 @@
-
+#include "RelayController.h"
 #include <SPI.h>
 #include <RF24.h>
-#include "RelayController.h"
+
 
 /*
 template<int N>
