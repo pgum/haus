@@ -36,7 +36,7 @@ void setup(){
 void loop() {
   char receivedCommandBuffor[5];
   if(radio.available()){
-    while(radio.available()
+    while(radio.available())
       radio.read(receivedCommandBuffor, sizeof(receivedCommandBuffor));
     if(receivedCommandBuffor[0] == 'r'){
       int channel= (int)receivedCommandBuffor[1] - 48;
