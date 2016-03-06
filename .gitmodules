@@ -1,9 +1,9 @@
-[submodule "SocketController/libraries/RF24"]
-	path = SocketController/libraries/RF24
-	url = gh:TMRh20/RF24
 [submodule "SocketController/libraries/RCSwitch"]
 	path = SocketController/libraries/RCSwitch
 	url = gh:sui77/rc-switch
 [submodule "ardubro/libraries/RF24"]
 	path = ardubro/libraries/RF24
 	url = gh:TMRh20/RF24
+[submodule "RaspberryRF24"]
+	path = raspberryRF24/
+	url = https://github.com/stanleyseow/RF24
