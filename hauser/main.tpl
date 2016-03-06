@@ -10,7 +10,7 @@
 <div class="gray container">
 <div class="panel">
 <h2>Sockets</h2>
-% for (i,name) in ((0,'A'),(1,'B'),(3,'D')):
+% for (i,name) in ((2,'A'),(4,'B'),(5,'D')):
 <a href="/light/switchOn/{{i}}" class="box clickable big on">Light {{name}} - ON</a><a href="/light/switchOff/{{i}}" class="box clickable big off">Light {{name}} - OFF</a></br>
 % end
 <h2>Relays</h2>
