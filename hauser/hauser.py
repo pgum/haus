@@ -19,7 +19,6 @@ class Hauser:
             result= self.devices[device][channel].action()
             return result
 
-
     def amiiboControl(self, tag=None):
         if tag: response= self.devices['amiibo'].handleTag(tag)
         self.responses.append(response)
