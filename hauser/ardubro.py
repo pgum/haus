@@ -16,9 +16,11 @@ class Ardubro(Serial):
             pass
 
     def switchOn(self, relay):
+        print("RELAY turn ON #%" %(relay))
         self.switchRelay(relay,True,"On")
 
     def switchOff(self, relay):
+        print("RELAY turn OFF #%" %(relay))
         self.switchRelay(relay,False,"Off")
 
     def switchRelay(self, relay, state, On_or_Off):

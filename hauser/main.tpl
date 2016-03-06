@@ -11,11 +11,11 @@
 <div class="panel">
 <h2>Sockets</h2>
 % for (i,name) in ((2,'A'),(4,'B'),(5,'D')):
-<a href="/light/switchOn/{{i}}" class="box clickable big on">Light {{name}} - ON</a><a href="/light/switchOff/{{i}}" class="box clickable big off">Light {{name}} - OFF</a></br>
+<a href="/sockets/switchOn/{{i}}" class="box clickable big on">Light {{name}} - ON</a><a href="/sockets/switchOff/{{i}}" class="box clickable big off">Light {{name}} - OFF</a></br>
 % end
 <h2>Relays</h2>
 % for (i,name) in ((0,'1'),(1,'2')):
-<a href="/relay/switchOn/{{i}}" class="box clickable big on">Relay {{name}} - ON</a><a href="/relay/switchOff/{{i}}" class="box clickable big off">Relay {{name}} - OFF</a></br>
+<a href="/relays/switchOn/{{i}}" class="box clickable big on">Relay {{name}} - ON</a><a href="/relays/switchOff/{{i}}" class="box clickable big off">Relay {{name}} - OFF</a></br>
 % end
 </div>
 % if defined('status'):

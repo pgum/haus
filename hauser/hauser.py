@@ -6,7 +6,7 @@ class Hauser:
     def __init__(self):
         self.responses=[]
         self.devices={
-                'relays': Ardubro(),
+                'relays' : Ardubro(),
                 'amiibo' : Amiibro(),
                 'sockets': Sockbro()
                 }
@@ -15,8 +15,8 @@ class Hauser:
         return dict(msg = "", responses= self.responses)
 
     def requestActionOnDevice(self, device, action, channel):
-        if device in self.devices and self.devices[device][channel]:
-            result= self.devices[device][channel].action()
+        if device in self.devices:
+            result= getattr(self.devices[device], action)(channel)
             return result
 
     def amiiboControl(self, tag=None):

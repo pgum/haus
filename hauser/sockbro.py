@@ -8,8 +8,10 @@ class Sockbro:
 
     def switchOn(self, channel):
         self.sockets[channel]['state']=True;
+        print("LIGHT switchOn %s" % (channel) )
         rfSend(self.sockets[channel]['channel'], 1)
 
     def switchOff(self, channel):
         self.sockets[channel]['state']=False;
+        print("LIGHT switchOn %s" % (channel) )
         rfSend(self.sockets[channel]['channel'], 0)
