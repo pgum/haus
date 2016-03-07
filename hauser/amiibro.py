@@ -11,5 +11,5 @@ class Amiibro:
                 self.amiibos[hex]['method'](self.amiibos[hex]['params'])
             else:
                 self.amiibos[hex]['method']()
-            return dict(msg= self.amiibos[hex]['name'])
+            return self.amiibos[hex]['name']
 
