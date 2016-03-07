@@ -15,3 +15,8 @@ class Sockbro:
         self.sockets[channel]['state']=False;
         print("LIGHT switchOff %s" % (channel) )
         rfSend(self.sockets[channel]['channel'], 0)
+
+    def switchToggle(self, channel):
+        print("LIGHT switchToggle %s" % (channel) )
+        if self.sockets[channel]['state']: self.switchOff(channel)
+        else: self.switchOn(channel)
