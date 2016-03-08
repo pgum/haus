@@ -29,4 +29,4 @@ def server_static(filename):
   return static_file(filename, root='./static/')
 
 debug(True)
-run(host='0.0.0.0', port=8070, reloader=True)
+run(host='0.0.0.0', port=80, reloader=True)
