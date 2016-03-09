@@ -1,40 +1,29 @@
-from serial import Serial, SerialException
-from time import sleep
+from nfr24 import NRF24
+import time
 
 
-class Ardubro(Serial):
-    def __init__(self, relays= 2, setDebug=True, port='/dev/ttyACM0', baudrate=9600, *args, **kwargs):
-        self.established=False
-        self.debug= setDebug
-        self.relayStatus= [True for relay in range(relays)]
-        self.established=False
-        try:
-            #Serial.__init__(self, port=port, baudrate=baudrate, *args, **kwargs)
-            #self.established=True
-            pass
-        except SerialException:
-            pass
+
+
+class Ardubro():
+    def __init__(self, Aaddress="ardu1", Raddress="rasp1", relays= 2):
+        self.arduinoAddress= Aaddress
+        self.raspberryAddress= Raddress
+        self.relays= [True for relay in range(relays)]
+        self.radio = NRF24()
 
     def switchOn(self, relay):
-        print("RELAY turn ON #%" %(relay))
-        self.switchRelay(relay,True,"On")
+        self._switchRelay(relay, True)
 
     def switchOff(self, relay):
-        print("RELAY turn OFF #%" %(relay))
-        self.switchRelay(relay,False,"Off")
+        self._switchRelay(relay, False)
 
-    def switchRelay(self, relay, state, On_or_Off):
-        print("switchRelay: %s, to state %s" % (relay, On_or_Off))
-        if not self.established: return
-        self.relayStatus[relay]=state
-        self.sendCommand("r%s%s;" %(On_or_Off[-1], relay))
+    def switchToggle(self, relay):
+        self._switchRelay(relay, not self.relays[relay])
 
-    def sendCommand(self, command):
-        if self.debug: print("Ardubro: sending: %s" % command)
-        sleep(0.3)
-        self.write(command)
-        out=""
-        while self.inWaiting() > 0:
-            out = self.read(1)
-        if self.debug: print("Ardubro: recieved: %s" % out)
-        return out
+    def _switchRelay(self, relay, state):
+        self.relays[relay]= state
+        self._sendCommand("")
+
+    def _sendCommand(self, command):
+        pass
+
