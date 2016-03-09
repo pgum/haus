@@ -7,3 +7,6 @@
 [submodule "RaspberryRF24"]
 	path = raspberryRF24/
 	url = https://github.com/stanleyseow/RF24
+[submodule "pynrf24"]
+	path = pynrf24
+	url = https://github.com/jpbarraca/pynrf24.git
