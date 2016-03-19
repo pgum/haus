@@ -3,6 +3,7 @@
 <head>
  <head>
  <link type="text/css" rel="stylesheet" href="/static/main.css" />
+ <link rel="shortcut icon" href="/static/favicon.ico" />
  </head>
 </head>
 <body>
