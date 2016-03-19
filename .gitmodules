@@ -10,3 +10,6 @@
 [submodule "pynrf24"]
 	path = pynrf24
 	url = https://github.com/jpbarraca/pynrf24.git
+[submodule "kodi-cli"]
+	path = kodi-cli
+	url = https://github.com/nawar/kodi-cli
