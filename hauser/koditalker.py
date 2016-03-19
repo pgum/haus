@@ -1,3 +1,4 @@
+from sh import kodi_cli as kodi
 import simplejson as json
 import requests
 class KodiTalker:
@@ -7,7 +8,7 @@ class KodiTalker:
         self.playerId= 1
 
     def PlayPause(self):
-        self._sendCommand('Player.PlayPause', {'playerid': self.playerId})
+        kodi('-p')
 
     def VolumeUp(self, amount):
         self._volume(amount,'increment')
@@ -15,20 +16,8 @@ class KodiTalker:
     def VolumeDown(self, amount):
         self._volume(amount,'decrement')
 
-    def SongNext(self):
-        self._songSkip('next')
-
-    def SongPrev(self):
-        self._songSkip('prev')
-
     def PlayYoutubeSong(self, videoId):
-        self._sendCommand('Player.Open',
-                {'item': {'file': 'plugin://plugin.video.youtube/?action=play_video&videoid='+ str(videoId)}})
-
-    def _songSkip(self, prev_or_next, times = 1):
-        for i in range(times):
-            self._sendCommand('Player.GoTo', {'playerid': self.playerId, 'to': prev_or_next})
-
+        kodi('-y',videoId)
     def _volume(self, amount, increment_or_decrement):
         for i in range(amount):
             self._sendCommand('Application.SetVolume', {'volume': increment_or_decrement})
@@ -43,3 +32,4 @@ class KodiTalker:
 
     def _sendCommand(self, method, params):
         r= requests.get(url= self._prepareUrl(method, params), auth= self.auth)
+        print(r.text)
