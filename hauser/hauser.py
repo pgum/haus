@@ -18,14 +18,17 @@ class Hauser:
                 '040C9A0AFE3D81': {'name': 'Kirby', 'method': self.devices['kodi'].VolumeDown, 'params': 20},
                 '041C9982034980': {'name': 'DuckHunt', 'method': self.devices['sockets'].switchToggle, 'params': 'Salon'},
                 '049F1122704080': {'name': 'Mario', 'method': self.devices['sockets'].switchToggle, 'params': 'Nieuzywane'}}
-
+        self.devices['sockets'].sockets={
+                                       'Nieuzywane': {'channel':5, 'state': False},
+                                       'Lampka': {'channel': 2, 'state': False},
+                                       'Salon': {'channel': 4, 'state': False}}
     def budzik(self, videoID):
         print("budzik youtube: %s" % videoID)
         KodiTalker().PlayYoutubeSong(videoID)
 
     def requestActionOnDevice(self, device, action, *args):
         if device in self.devices:
-            return getattr(self.devices[device], action)(*args)
+            return {'type':'ok', 'msg': getattr(self.devices[device], action)(*args)}
         else:
             return {'type':'error','msg':'device %s not found' % device }
 

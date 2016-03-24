@@ -26,8 +26,7 @@ def playMusic(vid=None):
 @route('/<device>/<action>')
 @route('/<device>/<action>/<channel>')
 def deviceActionRequest(device=None, action=None, channel=None):
-    haus.requestActionOnDevice(device, action, channel)
-    return makeDict(device, channel, action)
+    return haus.requestActionOnDevice(device, action, channel)
 
 
 debug(True)
