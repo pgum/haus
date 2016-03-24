@@ -5,25 +5,27 @@ from koditalker import KodiTalker
 
 class Hauser:
     def __init__(self):
-        self.responses=[]
         self.devices={
                 'relays' : Ardubro(),
                 'amiibo' : Amiibro(),
-                'sockets': Sockbro()
-                }
+                'sockets': Sockbro(),
+                'kodi'   : KodiTalker(),
+                'self'   : self}
         self.devices['amiibo'].amiibos={
-                '04625FAA554980': {'name': 'Mewtwo' , 'method': KodiTalker().PlayPause , 'params': None},
-                '0457ABE29A3D80': {'name': 'Pikachu', 'method': KodiTalker().VolumeUp  , 'params': 20},
-                '040C9A0AFE3D81': {'name': 'Kirby'  , 'method': KodiTalker().VolumeDown, 'params': 20},
-                #'043BAE92BF4881': {'name': 'Mario'  , 'method': KodiTalker().PlayPause, 'params': None},
-                '041C9982034980': {'name': 'DuckHunt', 'method': self.devices['sockets'].switchToggle, 'params': 4}
-                }
+                #'043BAE92BF4881': {'name': 'PixelMario'  , 'method': KodiTalker().PlayPause, 'params': None},
+                '04625FAA554980': {'name': 'Mewtwo', 'method': self.devices['kodi'].PlayPause, 'params': None},
+                '0457ABE29A3D80': {'name': 'Pikachu', 'method': self.devices['kodi'].VolumeUp, 'params': 20},
+                '040C9A0AFE3D81': {'name': 'Kirby', 'method': self.devices['kodi'].VolumeDown, 'params': 20},
+                '041C9982034980': {'name': 'DuckHunt', 'method': self.devices['sockets'].switchToggle, 'params': 'Nieuzywane'},
+                '049F1122704080': {'name': 'Mario', 'method': self.devices['sockets'].switchToggle, 'params': 'Lampa'}}
 
-    def requestActionOnDevice(self, device, action, channel):
+    def budzik(self, videoID):
+        print("budzik youtube: %s" % videoID)
+        KodiTalker().PlayYoutubeSong(videoID)
+
+    def requestActionOnDevice(self, device, action, *args):
         if device in self.devices:
-            result= getattr(self.devices[device], action)(channel)
-            return result
+            return getattr(self.devices[device], action)(*args)
+        else:
+            return {'type':'error','msg':'device %s not found' % device }
 
-    def amiiboControl(self, tag=None):
-        if tag: response= self.devices['amiibo'].handleTag(tag)
-        self.responses.append(response)

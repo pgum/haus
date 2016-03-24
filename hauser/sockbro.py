@@ -2,21 +2,22 @@ from sh import rpiRFsend as rfSend
 
 class Sockbro:
     def __init__(self):
-        self.sockets= {2: {'name': 'ladowarka w sypialni', 'channel':2, 'state': False},
-                       4: {'name': 'Reflektor w salonie', 'channel':4, 'state': False},
-                       5: {'name': 'Lampka w magazynie', 'channel':5, 'state': False}}
+        self.sockets= {
+                       'Nieuzywane': {'channel':5, 'state': False},
+                       'Ładowarki': {'channel': 2, 'state': False},
+                       'Lampa': {'channel': 4, 'state': False}}
 
-    def switchOn(self, channel):
-        self.sockets[channel]['state']=True;
-        print("LIGHT switchOn %s" % (channel) )
-        rfSend(self.sockets[channel]['channel'], 1)
+    def switchOn(self, name):
+        self.sockets[name]['state']=True;
+        print("Turned on socket %s" % (name) )
+        rfSend(self.sockets[name]['channel'], 1)
 
-    def switchOff(self, channel):
-        self.sockets[channel]['state']=False;
-        print("LIGHT switchOff %s" % (channel) )
-        rfSend(self.sockets[channel]['channel'], 0)
+    def switchOff(self, name):
+        self.sockets[name]['state']=False;
+        print("Turned off socket %s" % (name) )
+        rfSend(self.sockets[name]['channel'], 0)
 
-    def switchToggle(self, channel):
-        print("LIGHT switchToggle %s" % (channel) )
+    def switchToggle(self, name):
         if self.sockets[channel]['state']: self.switchOff(channel)
         else: self.switchOn(channel)
+        print("Toggled socket %s to %s" % (name, self.sockets[name]['state']))
