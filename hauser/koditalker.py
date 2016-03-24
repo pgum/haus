@@ -18,8 +18,9 @@ class KodiTalker:
 
     def PlayYoutubeSong(self, videoId):
         kodi('-y',videoId)
-    def _volume(self, amount, increment_or_decrement):
-        for i in range(amount):
+
+    def _volume(self, amount=20, increment_or_decrement='increment'):
+        for i in range(int(amount)):
             self._sendCommand('Application.SetVolume', {'volume': increment_or_decrement})
 
     def _prepareUrl(self, method, params):

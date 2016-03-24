@@ -3,30 +3,32 @@ from hauser import Hauser
 
 haus = Hauser()
 
-def makeDict(what, channel, action):
-    return dict(msg = "%s action: Turn %s %s" % (what, channel, action))
+@route('/static/<filename>')
+def server_static(filename):
+  return static_file(filename, root='./static/')
 
 @route('/')
 @view('main.tpl')
-def nop():
-    return dict(msg = "")
+def main_page():
+    pass
 
-@route('/<device>/<action>/<channel:int>')
-@view('main.tpl')
+@route('/devices/')
+def get_devices():
+    available_devices=[]
+    for dev in haus.devices:
+        available_devices.append(dev)
+    return {'device_list': available_devices}
+
+@route('/budzik/<vid>')
+def playMusic(vid=None):
+    haus.budzik(vid)
+
+@route('/<device>/<action>')
+@route('/<device>/<action>/<channel>')
 def deviceActionRequest(device=None, action=None, channel=None):
     haus.requestActionOnDevice(device, action, channel)
     return makeDict(device, channel, action)
 
-@route('/amigo/<tag>')
-@route('/amiicode/<tag>')
-def amiiboNfcTagRequest(tag=None):
-    msg= "Not my Amiboo"
-    if tag: msg= haus.amiiboControl(tag)
-    return dict(msg=msg)
-
-@route('/static/<filename>')
-def server_static(filename):
-  return static_file(filename, root='./static/')
 
 debug(True)
 run(host='0.0.0.0', port=80, reloader=True)
