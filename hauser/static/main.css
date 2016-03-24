@@ -43,6 +43,12 @@ body {
     height: 55px;
     margin: 3px;
 }
+.twice-big{
+    display: inline-block;
+    width: 300px;
+    height: 50px;
+    margin: 3px 5px;
+}
 .big{
     display: inline-block;
     width: 150px;
