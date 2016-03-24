@@ -4,8 +4,8 @@ class Sockbro:
     def __init__(self):
         self.sockets= {
                        'Nieuzywane': {'channel':5, 'state': False},
-                       'Ładowarki': {'channel': 2, 'state': False},
-                       'Lampa': {'channel': 4, 'state': False}}
+                       'Lampka': {'channel': 2, 'state': False},
+                       'Salon': {'channel': 4, 'state': False}}
 
     def switchOn(self, name):
         self.sockets[name]['state']=True;
