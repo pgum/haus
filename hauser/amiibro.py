@@ -1,7 +1,7 @@
 class Amiibro:
     def __init__(self):
         self.amiibos={
-                #"hex": {'name': name, 'method': method, 'params': params
+                #'hex': {'name': 'Noname', 'method': methodObject, 'params': params }
                 }
 
     def handleTag(self, hex=None):
