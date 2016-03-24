@@ -37,22 +37,21 @@
 </div>
 
 <div class="gray container">
-%if defined('msg'):
 <div class="panel">
-<h2>Last command to uC</h2>
-<h3>{{msg}}</h3>
-</div>
+<h2>Kodi</h2>
+% for (action, command) in (('Play/Pause','PlayPause'), ('Vol+','VolumeUp'),('Vol-','VolumeDown')):
+<a href="/kodi/{{command}}" class="box clickable twice-big on gray">{{action}}</a>
 %end
 %if defined('responses'):
-<div class="panel">
-<h2>Responses from uC</h2>
-% for response in responses:
-<h3>{{response}}</h3>
-% end
 </div>
-%end
 </div>
 
+<div class="gray container">
+<div class="panel">
+<h2>Kodi</h2>
+<h3>{{msg}}</h3>
+</div>
+</div>
 </body>
 </html>
 
