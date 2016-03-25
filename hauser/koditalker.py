@@ -3,9 +3,9 @@ import simplejson as json
 import requests
 class KodiTalker:
     def __init__(self):
-        self.url= 'http://nest:8090'
-        self.auth= (b'kodi', b'kodi')
-        self.playerId= 1
+        self._url= 'http://nest:8090'
+        self._auth= (b'kodi', b'kodi')
+        self._playerId= 1
 
     def PlayPause(self):
         kodi('-p')
@@ -27,10 +27,10 @@ class KodiTalker:
         request_raw= {'jsonrpc': '2.0',
                      'method' : method,
                      'params' : params,
-                     'id'     : self.playerId}
+                     'id'     : self._playerId}
         request_data = json.dumps(request_raw).encode('utf-8')
-        return requests.Request('GET', self.url + '/jsonrpc?request=' + request_data).prepare().url
+        return requests.Request('GET', self._url + '/jsonrpc?request=' + request_data).prepare().url
 
     def _sendCommand(self, method, params):
-        r= requests.get(url= self._prepareUrl(method, params), auth= self.auth)
+        r= requests.get(url= self._prepareUrl(method, params), auth= self._auth)
         print(r.text)

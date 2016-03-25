@@ -1,14 +1,14 @@
 class Amiibro:
     def __init__(self):
-        self.amiibos={#'hex': {'name': 'Noname', 'method': methodObject, 'params': params}
+        self._amiibos={#'hex': {'name': 'Noname', 'method': methodObject, 'params': params}
                      }
 
     def handleTag(self, hex=None):
-        if hex in self.amiibos:
-            print(self.amiibos[hex]['name'])
-            if self.amiibos[hex]['params']:
-                self.amiibos[hex]['method'](self.amiibos[hex]['params'])
+        if hex in self._amiibos:
+            print(self._amiibos[hex]['name'])
+            if self._amiibos[hex]['params']:
+                self._amiibos[hex]['method'](self._amiibos[hex]['params'])
             else:
-                self.amiibos[hex]['method']()
-            return self.amiibos[hex]['name']
+                self._amiibos[hex]['method']()
+            return self._amiibos[hex]['name']
 
