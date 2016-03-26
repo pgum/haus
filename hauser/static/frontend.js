@@ -1,6 +1,6 @@
-var backend_url="/devices"
+var backend_url="/self/getAvailableCommands"
 $(document).ready(function() {
   $.ajax({ url: backend_url}).then(function(data){
-    $('.panel').append(data.device_list);
+    $('.panel').append(data.message);
   });
 });
