@@ -1,27 +1,32 @@
 from sh import kodi_cli as kodi
 import simplejson as json
 import requests
+
 class KodiTalker:
     def __init__(self):
         self._url= 'http://nest:8090'
         self._auth= (b'kodi', b'kodi')
         self._playerId= 1
 
+    def Stop(self):
+        return kodi('-s').splitlines()
+
     def PlayPause(self):
-        kodi('-p')
+        return kodi('-p').splitlines()
 
-    def VolumeUp(self, amount):
-        self._volume(amount,'increment')
+    def PlayYoutube(self, videoId):
+        return kodi('-y',videoId).splitlines()
 
-    def VolumeDown(self, amount):
-        self._volume(amount,'decrement')
+    def VolumeUp(self, amount=20):
+        return self._volume(amount,'increment')
 
-    def PlayYoutubeSong(self, videoId):
-        kodi('-y',videoId)
+    def VolumeDown(self, amount=20):
+        return self._volume(amount,'decrement')
 
-    def _volume(self, amount=20, increment_or_decrement='increment'):
-        for i in range(int(amount)):
-            self._sendCommand('Application.SetVolume', {'volume': increment_or_decrement})
+    def _volume(self, amount, direction):
+        for i in range(amount):
+            last= self._sendCommand('Application.SetVolume', {'volume': direction})
+        return last
 
     def _prepareUrl(self, method, params):
         request_raw= {'jsonrpc': '2.0',
@@ -34,3 +39,4 @@ class KodiTalker:
     def _sendCommand(self, method, params):
         r= requests.get(url= self._prepareUrl(method, params), auth= self._auth)
         print(r.text)
+        return r.text
