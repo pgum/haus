@@ -2,7 +2,7 @@ from ardubro import Ardubro
 from amiibro import Amiibro
 from sockbro import Sockbro
 from koditalker import KodiTalker
-from sys import exc_info as exceptionInfo
+from sys import exc_info as exceptionDetails
 
 class Hauser:
     def __init__(self):
@@ -25,12 +25,10 @@ class Hauser:
            'Salon': {'channel': 4, 'state': False}}
 
     def requestActionOnDevice(self, device, action, *args):
-        if device not in self._devices:
-            return ('error','device %s not found' % device)
         try:
             return ('ok', getattr(self._devices[device], action)(*args))
         except:
-            return ('error', str(exceptionInfo()[1]))
+            return ('error', str(exceptionDetails()[1]))
 
     def getAvailableCommands(self):
         available_commands={}
