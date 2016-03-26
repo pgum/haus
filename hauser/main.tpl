@@ -20,16 +20,10 @@
   </div>
   <div class="panel">
     <h2> Status </h2>
-    %  import simplejson as json
-    %  status= json.loads(get('status'))
-    %  for dev in status.keys():
-    <div class="box {{dev}}">
-      <h3> {{dev.title()}}s </h3>
-      %   for channel_status in status[dev]:
-      <div class= "box small {{channel_status}}"></div>
-      %   end
+    <div class="box ">
+      <h3> s </h3>
+      <div class= "box small "></div>
     </div>
-    %  end
   </div>
 </div>
 
