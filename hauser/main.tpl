@@ -12,6 +12,27 @@
 </head>
 <body>
 
+% for device in ('sockets'):
+  <div class="panel">
+    <h2>{{device}}</h2>
+    % for action in ('switchOn', 'switchOff'):
+    <div class="action-wrapper">
+      % for name in ('Salon', 'Lampka', 'Nieuzywany'):
+      <button id="{{device}}-{{action}}-{{name}}" class="button">{{device}}-{{action}}-{{name}}</button>
+      % end
+    </div>
+    % end
+    </div>
+% end
+
+  <div class="panel ajaks">
+    <h2> Status </h2>
+    <div class="box ">
+      <h3> s </h3>
+      <div class= "box small "></div>
+    </div>
+  </div>
+
 <div class="gray container">
   <div class="panel">
     <h2>Sockets</h2>
