@@ -12,21 +12,15 @@ def server_static(filename):
 def main_page():
     pass
 
-@route('/devices')
-def get_devices():
-    available_devices={}
-    for dev in haus._devices:
-        available_devices[dev]=[x for x in dir(haus._devices[dev]) if not x.startswith('_')]
-    return {'device_list': available_devices}
-
-@route('/budzik/<vid>')
-def playMusic(vid=None):
-    haus.budzik(vid)
-
 @route('/<device>/<action>')
-@route('/<device>/<action>/<args>')
-def deviceActionRequest(device, action, *args):
-    return haus.requestActionOnDevice(device, action, *args)
+def deviceActionRequest(device, action):
+    result, message = haus.requestActionOnDevice(device, action)
+    return {'result': result, 'message': message, 'params': {'device': device, 'action': action}}
+
+@route('/<device>/<action>/<opcode>')
+def deviceActionRequest(device, action, opcode):
+    result, message = haus.requestActionOnDevice(device, action, opcode)
+    return {'result': result, 'message': message, 'params': {'device': device, 'action': action, 'opcode': opcode}}
 
 debug(True)
 run(host='0.0.0.0', port=80, reloader=True)
