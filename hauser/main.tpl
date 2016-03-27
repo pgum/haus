@@ -31,7 +31,7 @@
   % for command in ('PlayPause', 'Stop', 'VolumeDown','VolumeUp'):
   <button id="kodi-{{command}}" href="#/kodi/{{command}}" class="box device twice-big gray">{{command}}</button>
   %end
-  <input class="yturl"/><button id="kodi-playYTurl">Play</button><br/>
+  <input class="yturl"/><button id="kodi-playYTurl">Play</button><br/><br/>
   <div id="slider"></div>
 </div>
 

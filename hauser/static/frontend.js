@@ -3,8 +3,8 @@ var backend_url="self/getAvailableCommands"
 function genEventResponse(data, hreflink){
 var d = new Date();
 var godzina= d.toTimeString().substring(0,8);
-  return "<h4>"+godzina+" "+hreflink +" "+ data.result+"</h4>" +
-         "<pre>"+ JSON.stringify(data, undefined, 2) + "</pre>"
+  return "<h4 style=\"font-size:14px\">"+godzina+" "+hreflink +" "+ data.result+"</h4>" +
+         "<pre style=\"font-size:12px\">"+ JSON.stringify(data, undefined, 2) + "</pre>"
 }
 function YouTubeGetID(url){
   var ID = '';
