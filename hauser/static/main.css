@@ -1,12 +1,12 @@
 .on {
-    color: white;
     background: #4CAF50 !important;
     background-color: #4CAF50 !important;
+    margin: 3px 5px;
 }
 .off {
-    color: white;
     background: #f44336 !important;
     background-color: #f44336 !important;
+    margin: 3px 5px;
 }
 .gray {
     text-color: Green;
@@ -16,40 +16,28 @@
     cursor: pointer;
 
 }
-body {
-
+.yturl{ width:110px;
+margin: 5px;
 }
 .box{
+    color: white;
+    width: 194px;
     color: white;
     border: none;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+    height: 50px;
     margin: 4px 2px;
 }
 .panel{
-    background-color: #666666;
+    background-color: rgb(51, 51, 51);
     color: white;
     padding: 5px 10px;
-    width: 340px;
+    width: 400px;
     display: inline-table;
     }
-.small{
-    display: inline-block;
-    width: 55px;
-    height: 55px;
-    margin: 3px;
-}
-.twice-big{
-    display: inline-block;
-    width: 300px;
-    height: 50px;
-    margin: 3px 5px;
-}
-.big{
-    display: inline-block;
-    width: 150px;
-    height: 50px;
-    margin: 3px 5px;
+#slider{
+margin: 10px;
 }

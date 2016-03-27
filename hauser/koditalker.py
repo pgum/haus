@@ -27,16 +27,15 @@ class KodiTalker:
         for i in range(amount):
             last= self._sendCommand('Application.SetVolume', {'volume': direction})
         return last
-
-    def _prepareUrl(self, method, params):
+    def VolumeTo(self,amount):
+        return self._sendCommand('Application.SetVolume', {'volume': int(amount)})
+    def _sendCommand(self, method, params):
         request_raw= {'jsonrpc': '2.0',
                      'method' : method,
                      'params' : params,
                      'id'     : self._playerId}
         request_data = json.dumps(request_raw).encode('utf-8')
-        return requests.Request('GET', self._url + '/jsonrpc?request=' + request_data).prepare().url
-
-    def _sendCommand(self, method, params):
-        r= requests.get(url= self._prepareUrl(method, params), auth= self._auth)
+        prepared_url= requests.Request('GET', self._url + '/jsonrpc?request=' + request_data).prepare().url
+        r= requests.get(url= prepared_url, auth= self._auth)
         print(r.text)
-        return r.text
+        return {"request_raw": request_raw, "response": r.text}

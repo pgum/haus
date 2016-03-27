@@ -18,7 +18,7 @@
   % for name in ('Salon', 'Lampka'):
   <div class="action-wrapper">
     % for action, text in (('switchOn', 'on'), ('switchOff', 'off')):
-    <button href="#/{{device}}/{{action}}/{{name}}" class="big clickable {{text}}">{{name}} {{text}}</button>
+    <button href="#/{{device}}/{{action}}/{{name}}" class="box clickable device {{text}}">{{name}} {{text}}</button>
     % end
     </br>
   </div>
@@ -28,14 +28,16 @@
 
 <div class="panel">
   <h2>Kodi</h2>
-  % for (action, command) in (('Play/Pause','PlayPause'), ('Stop','Stop'), ('Vol-','VolumeDown'),('Vol+','VolumeUp')):
-  <button id="kodi-{{command}}" href="#/kodi/{{command}}" class="box clickable twice-big gray">{{action}}</button>
+  % for command in ('PlayPause', 'Stop', 'VolumeDown','VolumeUp'):
+  <button id="kodi-{{command}}" href="#/kodi/{{command}}" class="box device twice-big gray">{{command}}</button>
   %end
-<input>
+  <input class="yturl"/><button id="kodi-playYTurl">Play</button><br/>
+  <div id="slider"></div>
 </div>
-<div class="panel ajaks">
-  <h2> Status </h2>
-    <div class= "box small"></div>
+
+<div class="panel">
+  <h2> Messages </h2>
+    <div id="msgs" style="width:400px;"></div>
 </div>
 
 </body>

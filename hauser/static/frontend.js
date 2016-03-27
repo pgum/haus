@@ -1,7 +1,10 @@
 var backend_url="self/getAvailableCommands"
 
-function genEventResponse(data){
-  return "<div class=\"event\"><div class=\"event-result\">"+ data.result +"</div><div class=\"event-message\">"+ JSON.stringify(data.message) +"</div><div class=\"event-params\">"+ JSON.stringify(data.params) +"</div></div>"
+function genEventResponse(data, hreflink){
+var d = new Date();
+var godzina= d.toTimeString().substring(0,8);
+  return "<h4>"+godzina+" "+hreflink +" "+ data.result+"</h4>" +
+         "<pre>"+ JSON.stringify(data, undefined, 2) + "</pre>"
 }
 function YouTubeGetID(url){
   var ID = '';
@@ -18,28 +21,45 @@ function YouTubeGetID(url){
 
 $(document).ready(function() {
   $(function () {
-    //$(".panel").draggable();
+    $("#msgs").accordion();
+    $("#spinner").spinner();
+    $( "#slider" ).slider({
+      stop: function( event, ui ) {
+      hreflink= "kodi/VolumeTo/"+ ui.value;
+      $.ajax({ url: hreflink,
+               type: 'GET',
+               success: function(data){ console.log('success',data); appendMsg(data, hreflink); },
+               error: function(exception){alert('Exception: ' + exception);}
+      });
+}
+    });
+//$(".panel").draggable();
     $(".clickable").button({icons: {primary: 'ui-icon-gear'}});
+    $( "#kodi-playYTurl" ).button({text: true, icons: {primary: "ui-icon-play"}});
     $( "#kodi-PlayPause" ).button({text: false, icons: {primary: "ui-icon-play"}});
     $( "#kodi-Stop" ).button({text: false, icons: {primary: "ui-icon-stop"}});
     $( "#kodi-VolumeUp" ).button({text: false, icons: {primary: "ui-icon-volume-on"}});
     $( "#kodi-VolumeDown" ).button({text: false, icons: {primary: "ui-icon-volume-off"}});
-
-  $("input").change(function(){
-    $.ajax({ url: "kodi/PlayYoutube/"+ YouTubeGetID($(this).val()),
-             type: 'GET',
-             success: function(data){ console.log('success',data); $('.ajaks').append(genEventResponse(data));},
-             error: function(exception){alert('Exception: ' + exception);}
+    $("#kodi-playYTurl").click(function(){
+      hreflink= "kodi/PlayYoutube/"+ YouTubeGetID($(".yturl").val());
+      $.ajax({ url: hreflink,
+               type: 'GET',
+               success: function(data){ console.log('success',data); appendMsg(data, hreflink); },
+               error: function(exception){alert('Exception: ' + exception);}
+      });
     });
-  $(this).val("")
-});
-  $("button").click(function(){
-    $.ajax({ url: $(this).attr('href').substring(1),
-             type: 'GET',
-             success: function(data){ console.log('success',data); $('.ajaks').append(genEventResponse(data));},
-             error: function(exception){alert('Exception: ' + exception);}
+      function appendMsg(data, hreflink){
+      $('#msgs').append(genEventResponse(data, hreflink));
+      $("#msgs").accordion( "refresh" );
+      $("#msgs").accordion( "option", "active", -1);
+}
+    $(".device").click(function(){
+      hreflink= $(this).attr('href').substring(1);
+      $.ajax({ url: hreflink,
+               type: 'GET',
+               success: function(data){ console.log('success',data); appendMsg(data, hreflink);},
+               error: function(exception){alert('Exception: ' + exception);}
+      });
     });
   });
-
-});
 });
