@@ -6,6 +6,9 @@ haus = Hauser()
 @route('/static/<filename>')
 def server_static(filename):
   return static_file(filename, root='./static/')
+@route('/static/images/<filename>')
+def server_static(filename):
+  return static_file(filename, root='./static/images/')
 
 @route('/')
 @view('main.tpl')

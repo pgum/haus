@@ -12,61 +12,32 @@
 </head>
 <body>
 
-% for device in ('sockets'):
-  <div class="panel">
-    <h2>{{device}}</h2>
-    % for action in ('switchOn', 'switchOff'):
-    <div class="action-wrapper">
-      % for name in ('Salon', 'Lampka', 'Nieuzywany'):
-      <button id="{{device}}-{{action}}-{{name}}" class="button">{{device}}-{{action}}-{{name}}</button>
-      % end
-    </div>
+% for device in ('sockets',):
+<div class="panel">
+  <h2>{{device}}</h2>
+  % for name in ('Salon', 'Lampka'):
+  <div class="action-wrapper">
+    % for action, text in (('switchOn', 'on'), ('switchOff', 'off')):
+    <button href="#/{{device}}/{{action}}/{{name}}" class="big clickable {{text}}">{{name}} {{text}}</button>
     % end
-    </div>
+    </br>
+  </div>
+  % end
+</div>
 % end
 
-  <div class="panel ajaks">
-    <h2> Status </h2>
-    <div class="box ">
-      <h3> s </h3>
-      <div class= "box small "></div>
-    </div>
-  </div>
-
-<div class="gray container">
-  <div class="panel">
-    <h2>Sockets</h2>
-    % for name in ('Salon', 'Lampka', 'Nieuzywany'):
-    <a href="#/sockets/switchOn/{{name}}" class="box clickable big on">{{name}} - ON</a>
-    <a href="#/sockets/switchOff/{{name}}" class="box clickable big off">{{name}} - OFF</a></br>
-    % end
-  </div>
-  <div class="panel ajaks">
-    <h2> Status </h2>
-    <div class="box ">
-      <h3> s </h3>
-      <div class= "box small "></div>
-    </div>
-  </div>
+<div class="panel">
+  <h2>Kodi</h2>
+  % for (action, command) in (('Play/Pause','PlayPause'), ('Stop','Stop'), ('Vol-','VolumeDown'),('Vol+','VolumeUp')):
+  <button id="kodi-{{command}}" href="#/kodi/{{command}}" class="box clickable twice-big gray">{{action}}</button>
+  %end
+<input>
 </div>
-
-<div class="gray container">
-  <div class="panel">
-    <h2>Kodi</h2>
-    % for (action, command) in (('Play/Pause','PlayPause'), ('Vol+','VolumeUp'),('Vol-','VolumeDown')):
-    <a href="#/kodi/{{command}}" class="box clickable twice-big on gray">{{action}}</a>
-    %end
-  </div>
-</div>
-
-<div class="gray container testowy">
-  <div class="panel" id="ajaxtest1">
-  <h2>Ajaxtest1</h2>
-  <h3>tekst</h3>
-  </div>
+<div class="panel ajaks">
+  <h2> Status </h2>
+    <div class= "box small"></div>
 </div>
 
 </body>
 </html>
-
 
