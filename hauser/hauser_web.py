@@ -18,16 +18,19 @@ def main_page():
 
 @route('/meta/rmLog')
 def rmLog():
-    with open('static/log.json','w') as f: f.write("")
-    return getLog()
+    with open('static/log.json','w') as f: f.write('')
+    return { "result": "ok" }
 
 @route('/meta/getLog')
 def getLog():
     ret="["
     with open('static/log.json', 'r') as f:
         for line in f: ret=ret+ line
-    message= json.loads(ret[:-1]+ "]")
-    msg= {'result': 'ok', 'message': message, 'params': {'device': 'meta', 'action': 'getLog'}}
+    if len(ret) > len("["):
+        message= json.loads(ret[:-1]+ "]")
+        msg= {'result': 'ok', 'message': message, 'params': {'device': 'meta', 'action': 'getLog'}}
+    else:
+        msg= {'result': 'error', 'message': {}, 'params': {'device': 'meta', 'action': 'getLog'}}
     return msg
 
 @route('/<device>/<action>')

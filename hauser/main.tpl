@@ -25,7 +25,6 @@
   % end
 </div>
 % end
-
 <div class="panel">
   <h2>Kodi</h2>
   % for command in ('PlayPause', 'Stop', 'VolumeDown','VolumeUp'):
@@ -36,18 +35,22 @@
   <ul id="lastPlayed"></ul>
 </div>
 </div>
+
 <div class="controls">
 <div class="panel">
   <h2> Dev input</h2>
     <input type="text" class="command" placeholder="<device>/<action>/<channel>"/><button id="send-cmd" class="clickable ">Send</button>
-  <h2> Log management</h2>
-  <button href="#/meta/getLog" class="clickable box device twice-big gray">getLog</button>
-  <button href="#/meta/rmLog" class="clickable box device twice-big gray">rmLog</button>
   <h2> All available commands</h2>
     <ul id="allAvailableCommands"></ul>
 </div>
 </div>
+
 <div class="controls">
+<div class="panel">
+  <h2> Log management</h2>
+  <button href="#/meta/getLog" class="clickable box device twice-big gray">getLog</button>
+  <button href="#/meta/rmLog" class="clickable box device twice-big gray">rmLog</button>
+</div>
 <div class="panel">
   <h2> Messages </h2>
     <div id="msgs" style="width:400px;"></div>
