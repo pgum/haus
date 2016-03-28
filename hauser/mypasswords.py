@@ -1,0 +1,3 @@
+def getDittoBorgMailPasswd():
+    return "###"
+

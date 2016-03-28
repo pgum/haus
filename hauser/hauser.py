@@ -1,6 +1,7 @@
 from ardubro import Ardubro
 from amiibro import Amiibro
 from sockbro import Sockbro
+from gmailtalker import GmailTalker
 from koditalker import KodiTalker
 from sys import exc_info as exceptionDetails
 
@@ -10,6 +11,7 @@ class Hauser:
                 'relays' : Ardubro(),
                 'amiibo' : Amiibro(),
                 'sockets': Sockbro(),
+                'gmail'   : GmailTalker(),
                 'kodi'   : KodiTalker(),
                 'self'   : self}
         self._devices['amiibo']._amiibos={
