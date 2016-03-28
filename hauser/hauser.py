@@ -26,7 +26,7 @@ class Hauser:
            'Lampka': {'channel': 2, 'state': False},
            'Salon': {'channel': 4, 'state': False}}
 
-    def requestActionOnDevice(self, device, action, *args):
+    def _requestActionOnDevice(self, device, action, *args):
         try:
             return ('ok', getattr(self._devices[device], action)(*args))
         except:
