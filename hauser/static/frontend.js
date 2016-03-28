@@ -18,10 +18,26 @@ function YouTubeGetID(url){
   }
     return ID;
 }
+      function appendMsg(data, hreflink){
+      $('#msgs').append(genEventResponse(data, hreflink));
+      $("#msgs").accordion( "refresh" );
+      $("#msgs").accordion( "option", "active", -1);
+      }
 
 $(document).ready(function() {
   $(function () {
     $("#msgs").accordion();
+    console.log('przed getLog');
+    $.ajax({ url: "meta/getLog",
+             type: "GET",
+             success: function(data){
+                  $.each(data.message, function(i, el){
+                    appendMsg(el,"history");
+                    console.log('success appending from log:',data);
+                  });
+           }});
+    console.log('po getLog');
+
     $("#spinner").spinner();
     $( "#slider" ).slider({
       stop: function( event, ui ) {
@@ -46,7 +62,7 @@ $(document).ready(function() {
                                   methods=methods+"<li class=\"devac\" href=\""+k+"/"+v[index]+"\">"+v[index]+"</li>"
                                 }
                                 $("#allAvailableCommands").append("<li class=\""+k+"\">"+k+"<ul>"+methods+"</ul></li>").on('click','.devac',function(){
-$(".command").val($(this).attr('href'));
+$(".command").val($(this).attr('href')+"/");
 });
                               });
                },
@@ -107,11 +123,6 @@ $(".command").val($(this).attr('href'));
         });
       }
     });
-      function appendMsg(data, hreflink){
-      $('#msgs').append(genEventResponse(data, hreflink));
-      $("#msgs").accordion( "refresh" );
-      $("#msgs").accordion( "option", "active", -1);
-      }
     $("#send-cmd").click(function(){
       console.log('sending command');
       hreflink= $('.command').val();
