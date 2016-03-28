@@ -8,16 +8,32 @@
     background-color: #f44336 !important;
     margin: 3px 5px;
 }
+.controls {
+width: 420px;
+margin: 5px;
+padding: 2px;
+    display: inline-table;
+}
 .gray {
     text-color: Green;
     background-color: #454545;
 }
 .clickable {
     cursor: pointer;
+height: 50px;
 
 }
-.yturl{ width:110px;
+.yturl{ width:200px;
+}
+input{
+height: 50px;
 margin: 5px;
+}
+.command{
+width: 270px;
+}
+body{
+    background: rgb(21, 21, 21);
 }
 .box{
     color: white;

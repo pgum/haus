@@ -11,13 +11,13 @@
  </head>
 </head>
 <body>
-
-% for device in ('sockets',):
+<div class="controls">
+% for (title,device,channel,actions) in (('Sockets','sockets',('Salon','Lampka'),(('switchOn','on'),('switchOff','off'))),):
 <div class="panel">
-  <h2>{{device}}</h2>
-  % for name in ('Salon', 'Lampka'):
+  <h2>{{title}}</h2>
+  % for name in channel:
   <div class="action-wrapper">
-    % for action, text in (('switchOn', 'on'), ('switchOff', 'off')):
+    % for action, text in actions:
     <button href="#/{{device}}/{{action}}/{{name}}" class="box clickable device {{text}}">{{name}} {{text}}</button>
     % end
     </br>
@@ -31,13 +31,23 @@
   % for command in ('PlayPause', 'Stop', 'VolumeDown','VolumeUp'):
   <button id="kodi-{{command}}" href="#/kodi/{{command}}" class="box device twice-big gray">{{command}}</button>
   %end
-  <input class="yturl"/><button id="kodi-playYTurl">Play</button><br/><br/>
-  <div id="slider"></div>
+  <input type="text" placeholder="Paste youtube url here" class="yturl"/><br/><br/>
+  <div id="slider"></div><br/><br/>
+  <ul id="lastPlayed"></ul>
 </div>
-
+</div>
+<div class="controls">
+<div class="panel">
+  <h2> Dev input</h2>
+    <input type="text" class="command" placeholder="<device>/<action>/<channel>"/><button id="send-cmd" class="clickable ">Send</button>
+    <ul id="allAvailableCommands"></ul>
+</div>
+</div>
+<div class="controls">
 <div class="panel">
   <h2> Messages </h2>
     <div id="msgs" style="width:400px;"></div>
+</div>
 </div>
 
 </body>

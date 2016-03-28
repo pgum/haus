@@ -15,7 +15,13 @@ class KodiTalker:
         return kodi('-p').splitlines()
 
     def PlayYoutube(self, videoId):
+        with open('.videos_list', 'a') as f:
+            f.write(videoId + "\n")
         return kodi('-y',videoId).splitlines()
+
+    def getLastPlayed(self):
+        lastPlayed= tuple(open(".videos_list", "r"))
+        return {'lastPlayed': lastPlayed}
 
     def VolumeUp(self, amount=20):
         return self._volume(amount,'increment')
