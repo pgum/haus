@@ -26,7 +26,7 @@ def getLog():
     ret="["
     with open('static/log.json', 'r') as f:
         for line in f: ret=ret+ line
-    message= json.loads(ret+ "]")
+    message= json.loads(ret[:-1]+ "]")
     msg= {'result': 'ok', 'message': message, 'params': {'device': 'meta', 'action': 'getLog'}}
     return msg
 
