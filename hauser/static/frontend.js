@@ -1,5 +1,6 @@
 var backend_url="self/getAvailableCommands"
 
+
 function genEventResponse(data, hreflink){
 var d = new Date();
 var godzina= d.toTimeString().substring(0,8);
@@ -26,8 +27,18 @@ function YouTubeGetID(url){
 
 $(document).ready(function() {
   $(function () {
-    $("#msgs").accordion();
-    console.log('przed getLog');
+    
+var $loading = $('#ajaxIndicator');
+$(document)
+    .ajaxStart(function () {
+          $loading.addClass("ajaxWorking").text("WORKING...").removeClass("ajaxReady");
+            })
+  .ajaxStop(function () {
+        $loading.removeClass("ajaxWorking").text("READY").addClass("ajaxReady");
+ });
+    $("#reloadLog").button();
+    $("#reloadLog").on("click",function(){
+    $("#msgs").empty();
     $.ajax({ url: "meta/getLog",
              type: "GET",
              success: function(data){
@@ -36,7 +47,18 @@ $(document).ready(function() {
                     console.log('success appending from log:',data);
                   });
            }});
-    console.log('po getLog');
+});
+    $("#msgs").accordion({
+            collapsible: true
+                  });
+    $.ajax({ url: "meta/getLog",
+             type: "GET",
+             success: function(data){
+                  $.each(data.message, function(i, el){
+                    appendMsg(el,"history");
+                    console.log('success appending from log:',data);
+                  });
+           }});
 
     $("#spinner").spinner();
     $( "#slider" ).slider({
