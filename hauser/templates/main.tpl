@@ -1,4 +1,4 @@
-% include('header.tpl')
+% include('templates/header.tpl')
 
 <div class="controls">
   <div class="panel">
@@ -54,4 +54,4 @@
   </div>
 </div>
 
-% include('footer.tpl')
+% include('templates/footer.tpl')

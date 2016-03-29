@@ -12,7 +12,7 @@ def server_static(filename):
   return static_file(filename, root='./static/images/')
 
 @route('/')
-@view('main.tpl')
+@view('templates/main.tpl')
 def main_page():
     pass
 
