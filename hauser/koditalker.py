@@ -1,12 +1,14 @@
 from sh import kodi_cli as kodi
 import simplejson as json
 import requests
+from youtubeTalker import YoutubeTalker
 
 class KodiTalker:
     def __init__(self):
         self._url= 'http://nest:8090'
         self._auth= (b'kodi', b'kodi')
         self._playerId= 1
+        self._yt=YoutubeTalker()
 
     def Stop(self):
         return kodi('-s').splitlines()
@@ -15,13 +17,11 @@ class KodiTalker:
         return kodi('-p').splitlines()
 
     def PlayYoutube(self, videoId):
-        with open('.videos_list', 'a') as f:
-            f.write(videoId + "\n")
-        return kodi('-y',videoId).splitlines()
+        ytResult= self._yt.SaveInformationAboutVideo(videoId)
+        return {'KodiTalker': kodi('-y',videoId).splitlines(), 'YoutubeTalker': ytResult}
 
     def getLastPlayed(self):
-        lastPlayed= tuple(open(".videos_list", "r"))
-        return {'lastPlayed': lastPlayed}
+        return self._yt.LoadVideosInfoFromFile()
 
     def VolumeUp(self, amount=20):
         return self._volume(amount,'increment')

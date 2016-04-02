@@ -1,0 +1,3 @@
+#!/bin/bash
+api_key=$(cat secret_file)
+curl "https://www.googleapis.com/youtube/v3/videos?part=snippet&id=$(echo $@)&fields=items(id,snippet(title,thumbnails(default(url))))&key=${api_key}"
