@@ -1,3 +1,12 @@
+.ajaxWorking{
+    background: #f44336 !important;
+    background-color: #f44336 !important;
+
+  }
+.ajaxReady{
+    background: #4CAF50 !important;
+    background-color: #4CAF50 !important;
+}
 .on {
     background: #4CAF50 !important;
     background-color: #4CAF50 !important;
@@ -7,6 +16,19 @@
     background: #f44336 !important;
     background-color: #f44336 !important;
     margin: 3px 5px;
+}
+.devac{
+  height: 30px;
+  list-style-type: square;
+}
+.one-third{
+width: 32%;
+}
+#ajaxIndicator{
+  margin-bottom: 10px;
+  font-size: 24pt;
+  font-family: monospace;
+  text-align: center;
 }
 .controls {
 width: 420px;
@@ -35,9 +57,12 @@ width: 270px;
 body{
     background: rgb(21, 21, 21);
 }
+.half{
+    width: 48%;
+}
+
 .box{
     color: white;
-    width: 48%;
     color: white;
     border: none;
     text-align: center;

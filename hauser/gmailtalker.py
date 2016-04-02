@@ -5,8 +5,7 @@ import xmltodict
 
 class GmailTalker():
     def __init__(self):
-        self._user='borg.borg112358'
-        self._passwd= mp.getBorgBorg112358MailPasswd()
+        self._user, self._passwd= mp.getDittoBorgMail()
 
     def getMails(self):
         auth_handler = urllib2.HTTPBasicAuthHandler()

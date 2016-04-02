@@ -1,5 +1,6 @@
-def getDittoBorgMailPasswd():
-    return "###"
+def getDittoBorgMail():
+    return ("ditto.borg", "###")
+
 def getBorgBorg112358MailPasswd():
-    return "###"
+    return ("borg.borg112358", "###")
 
