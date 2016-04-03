@@ -24,6 +24,7 @@ function YouTubeGetID(url){
       $("#msgs").accordion( "refresh" );
       $("#msgs").accordion( "option", "active", -1);
       }
+var volumeOnStartup=0;
 
 $(document).ready(function() {
   $(function () {
@@ -44,7 +45,6 @@ $(document)
              success: function(data){
                   $.each(data.message, function(i, el){
                     appendMsg(el,"history");
-                    console.log('success appending from log:',data);
                   });
            }});
 });
@@ -56,7 +56,6 @@ $(document)
              success: function(data){
                   $.each(data.message, function(i, el){
                     appendMsg(el,"history");
-                    console.log('success appending from log:',data);
                   });
            }});
 
@@ -66,18 +65,23 @@ $(document)
       hreflink= "kodi/VolumeTo/"+ ui.value;
       $.ajax({ url: hreflink,
                type: 'GET',
-               success: function(data){ console.log('success',data); appendMsg(data, hreflink); },
+               success: function(data){ appendMsg(data, hreflink); },
                error: function(exception){alert('Exception: ' + exception);}
       });
 }
     });
+    $.ajax({ url: "kodi/getVolume",
+             type: "GET",
+             success: function(data){ volumeOnStartup= data.message.response.result.volume;$( "#slider" ).slider('value',volumeOnStartup);},
+             error: function(exception){alert('Exception: ' + exception); }
+    });
+
 //$(".panel").draggable();
   $(function() {
     $( "#allAvailableComamnds" ).menu();
       $.ajax({ url: "self/getAvailableCommands",
                type: 'GET',
                success: function(data){
-                              console.log('success',data);
                               $.each(data.message, function(k,v){
                                 var methods="";
                                 for (index = 0; index < v.length; ++index) {
@@ -93,7 +97,6 @@ $(".command").val($(this).attr('href')+"/");
   });
     $( "#lastPlayed" ).menu();
     $( "#lastPlayed" ).on('click', "li",function(){
-      console.log('li clicked');
       hreflink= $(this).attr('href').substring(1);
       $.ajax({ url: hreflink,
                type: 'GET',
@@ -105,19 +108,8 @@ $(".command").val($(this).attr('href')+"/");
     $.ajax({ url: "kodi/getLastPlayed",
              type: 'GET',
              success: function(data){
-                                      console.log('success',data);
-                                      var index;
-                                      var a = data.message.lastPlayed;
-                                      var uniqIds = [];
-                                      $.each(a, function(i, el){
-                                        if($.inArray(el,uniqIds) === -1) uniqIds.push(el);
-                                      });
-                                      for (index = 0; index < uniqIds.length; ++index) {
-                                        console.log(uniqIds[index]);
-                                        $('#lastPlayed').append("<li href=\"#/kodi/PlayYoutube/"+uniqIds[index]+"\">"+uniqIds[index]+"</li>");
-                                      }
-                                      $("#lastPlayed").menu( "refresh" );
-                                    },
+                                      //console.log('success',data);
+                                    populateYoutubeMenu(data);},
              error: function(exception){alert('Exception: ' + exception);}
     });
     $( ".clickable").button({icons: {primary: 'ui-icon-gear'}});
@@ -126,9 +118,25 @@ $(".command").val($(this).attr('href')+"/");
     $( "#kodi-Stop" ).button({text: false, icons: {primary: "ui-icon-stop"}});
     $( "#kodi-VolumeUp" ).button({text: false, icons: {primary: "ui-icon-volume-on"}});
     $( "#kodi-VolumeDown" ).button({text: false, icons: {primary: "ui-icon-volume-off"}});
-    function updatePlayedList(){
+    function populateYoutubeMenu(data){
 
+                                      var index;
+                                      var a = data.message.lastPlayed;
+                                      var uniqIds = [];
+                                      $("#lastPlayed").empty()
+                                      $.each(a, function(i, el){
+                                        if($.inArray(el,uniqIds) === -1) uniqIds.push([el.id, el.thumbnail, el.title]);
+                                      });
+                                      for (index = 0; index < uniqIds.length; ++index) {
+                                        //console.log(uniqIds[index]);
+                                        appendToYoutubeMenu(uniqIds[index])
+                                      }
+                                      $("#lastPlayed").menu( "refresh" );
 }
+    function appendToYoutubeMenu(videoId){
+      $('#lastPlayed').append("<li href=\"#/kodi/PlayYoutube/"+videoId[0]+"\"><img src=\""+videoId[1]+"\"/>"+videoId[2]+"</li>");
+      $("#lastPlayed").menu( "refresh" );
+    }
     $( '.yturl').bind('input',function(){
       var maybeId= YouTubeGetID($(this).val());
       if(maybeId.length==11){
@@ -139,7 +147,14 @@ $(".command").val($(this).attr('href')+"/");
                                           console.log('success',data);
                                           appendMsg(data, hreflink);
                                           $('.yturl').val("");
-                                         $('#lastPlayed').append("<li href=\"#/kodi/PlayYoutube/"+maybeId+"\">"+maybeId+"</li>");
+
+    $.ajax({ url: "kodi/getLastPlayed",
+             type: 'GET',
+             success: function(data){
+                                      console.log('success',data);
+                                    populateYoutubeMenu(data);},
+             error: function(exception){alert('Exception: ' + exception);}
+    });
                                         },
                  error: function(exception){alert('Exception: ' + exception);}
         });
@@ -150,7 +165,7 @@ $(".command").val($(this).attr('href')+"/");
       hreflink= $('.command').val();
       $.ajax({ url: hreflink,
                type: 'GET',
-               success: function(data){ console.log('success',data); appendMsg(data, hreflink);},
+               success: function(data){ /*console.log('success',data);*/ appendMsg(data, hreflink);},
                error: function(exception){alert('Exception: ' + exception);}
       });
     });
@@ -159,7 +174,7 @@ $(".command").val($(this).attr('href')+"/");
       hreflink= $(this).attr('href').substring(1);
       $.ajax({ url: hreflink,
                type: 'GET',
-               success: function(data){ console.log('success',data); appendMsg(data, hreflink);},
+               success: function(data){ /*console.log('success',data);*/ appendMsg(data, hreflink);},
                error: function(exception){alert('Exception: ' + exception);}
       });
     });

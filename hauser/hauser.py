@@ -11,14 +11,14 @@ class Hauser:
                 'relays' : Ardubro(),
                 'amiibo' : Amiibro(),
                 'sockets': Sockbro(),
-                'gmail'   : GmailTalker(),
+                'gmail'  : GmailTalker(),
                 'kodi'   : KodiTalker(),
                 'self'   : self}
         self._devices['amiibo']._amiibos={
            #'043BAE92BF4881': {'name': 'PixelMario'  , 'method': KodiTalker().PlayPause, 'params': None},
            '04625FAA554980': {'name': 'Mewtwo', 'method': self._devices['kodi'].PlayPause, 'params': None},
-           '0457ABE29A3D80': {'name': 'Pikachu', 'method': self._devices['kodi'].VolumeUp, 'params': 20},
-           '040C9A0AFE3D81': {'name': 'Kirby', 'method': self._devices['kodi'].VolumeDown, 'params': 20},
+           '0457ABE29A3D80': {'name': 'Pikachu', 'method': self._devices['kodi'].VolumeTo, 'params': 85},
+           '040C9A0AFE3D81': {'name': 'Kirby', 'method': self._devices['kodi'].VolumeTo, 'params': 25},
            '041C9982034980': {'name': 'DuckHunt', 'method': self._devices['sockets'].switchToggle, 'params': 'Salon'},
            '049F1122704080': {'name': 'Mario', 'method': self._devices['sockets'].switchToggle, 'params': 'Nieuzywane'}}
         self._devices['sockets']._sockets={
