@@ -28,6 +28,10 @@ class KodiTalker:
 
     def VolumeTo(self,amount):
         return self._sendCommand('Application.SetVolume', {'volume': int(amount)})
+    def VolumeRelative(self, amount):
+        volumeNow= self.getVolume()["response"]["result"]["volume"]
+        volumeToSet= volumeNow+ int(amount)
+        return self.VolumeTo(volumeToSet)
 
     def _sendCommand(self, method, params):
         payload= {'jsonrpc': '2.0',
