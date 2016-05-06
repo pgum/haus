@@ -21,7 +21,7 @@
 % end
   <div class="panel">
     <h2>Kodi</h2>
-    % for command in ('PlayPause', 'Stop', 'VolumeDown','VolumeUp'):
+    % for command in ('PlayPause', 'Stop'):
     <button id="kodi-{{command}}" href="#/kodi/{{command}}" class="box device twice-big gray">{{command}}</button>
     %end
     <input type="text" placeholder="Paste youtube url here" class="yturl"/><br/><br/>
